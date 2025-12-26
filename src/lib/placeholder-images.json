@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "video-1",
+      "description": "A placeholder image for the first video.",
+      "imageUrl": "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMHRlY2h8ZW58MHx8fHwxNzY2NzI5NTAyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract tech"
+    },
+    {
+      "id": "video-2",
+      "description": "A placeholder image for the second video.",
+      "imageUrl": "https://images.unsplash.com/photo-1618856921788-9bc0b6ff8ca2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bmF0dXJlJTIwbGFuZHNjYXBlfGVufDB8fHx8MTc2NjY5OTE1M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "nature landscape"
+    },
+    {
+      "id": "video-3",
+      "description": "A placeholder image for the third video.",
+      "imageUrl": "https://images.unsplash.com/photo-1705435443661-927632c3c9cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjaXR5JTIwYXJjaGl0ZWN0dXJlfGVufDB8fHx8MTc2NjY3NDk3MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "city architecture"
+    },
+    {
+      "id": "video-4",
+      "description": "A placeholder image for the fourth video.",
+      "imageUrl": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzcGFjZSUyMGdhbGF4eXxlbnwwfHx8fDE3NjY2NTA3Njh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "space galaxy"
+    },
+    {
+      "id": "video-5",
+      "description": "A placeholder image for the fifth video.",
+      "imageUrl": "https://images.unsplash.com/photo-1669046222569-a7672da06e12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtaW5pbWFsaXN0JTIwZGVzaWdufGVufDB8fHx8MTc2NjcyODE3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "minimalist design"
+    },
+    {
+      "id": "avatar-1",
+      "description": "A placeholder image for a user avatar.",
+      "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjY2MzIzOTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "avatar-2",
+      "description": "A placeholder image for a user avatar.",
+      "imageUrl": "https://images.unsplash.com/photo-1607529378676-a20456ee2f6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb24lMjBzbWlsaW5nfGVufDB8fHx8MTc2NjY0MDc3NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person smiling"
+    },
+    {
+      "id": "avatar-3",
+      "description": "A placeholder image for a user avatar.",
+      "imageUrl": "https://images.unsplash.com/photo-1604072366595-e75dc92d6bdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d29tYW4lMjBmYWNlfGVufDB8fHx8MTc2NjY3NzUwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman face"
+    }
+  ]
 }
