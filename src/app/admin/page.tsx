@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { getVideos, getUsers } from '@/lib/data';
-import { Users, Video, Target } from 'lucide-react';
+import { Users, Video, Target, HeartHandshake, ShieldCheck, Lightbulb } from 'lucide-react';
 import PageHeader from './components/page-header';
 
 const objectives = [
@@ -21,6 +21,44 @@ export default async function AdminDashboardPage() {
   return (
     <>
       <PageHeader title="Dashboard" />
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 mb-8">
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+            <CardTitle className="text-sm font-medium">Confiance</CardTitle>
+            <HeartHandshake className="h-4 w-4 text-muted-foreground" />
+          </CardHeader>
+          <CardContent>
+            <div className="text-lg font-bold">Un environnement sécurisé</div>
+            <p className="text-xs text-muted-foreground">
+              Pour collaborer et s'épanouir.
+            </p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+            <CardTitle className="text-sm font-medium">Pas de jugement</CardTitle>
+            <ShieldCheck className="h-4 w-4 text-muted-foreground" />
+          </CardHeader>
+          <CardContent>
+             <div className="text-lg font-bold">Bienveillance et respect</div>
+            <p className="text-xs text-muted-foreground">
+              Chaque idée a de la valeur.
+            </p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+            <CardTitle className="text-sm font-medium">Liberté de création</CardTitle>
+            <Lightbulb className="h-4 w-4 text-muted-foreground" />
+          </CardHeader>
+          <CardContent>
+             <div className="text-lg font-bold">Exprimez votre potentiel</div>
+            <p className="text-xs text-muted-foreground">
+              Sans barrières ni contraintes.
+            </p>
+          </CardContent>
+        </Card>
+      </div>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
