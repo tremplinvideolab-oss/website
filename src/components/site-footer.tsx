@@ -1,6 +1,10 @@
+
+'use client';
 import { Clapperboard } from 'lucide-react';
+import { useI18n } from '@/hooks/use-i18n';
 
 export function SiteFooter() {
+  const { dict } = useI18n();
   return (
     <footer className="py-6 md:px-8 md:py-0 border-t">
       <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
@@ -11,7 +15,7 @@ export function SiteFooter() {
           </p>
         </div>
         <p className="text-center text-sm text-muted-foreground">
-          Built with passion.
+          {dict.siteFooter.builtWithPassion}
         </p>
       </div>
     </footer>

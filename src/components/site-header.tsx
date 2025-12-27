@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -13,15 +14,18 @@ import {
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { useState } from 'react';
-
-const mainNavLinks = [
-  { href: '/', label: 'Home' },
-  { href: '/videos', label: 'Videos' },
-];
+import { useI18n } from '@/hooks/use-i18n';
+import { LanguageSwitcher } from './language-switcher';
 
 export function SiteHeader() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { dict } = useI18n();
+
+  const mainNavLinks = [
+    { href: '/', label: dict.siteHeader.home },
+    { href: '/videos', label: dict.siteHeader.videos },
+  ];
 
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
@@ -59,7 +63,7 @@ export function SiteHeader() {
               className="mr-2 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
             >
               <Menu className="h-6 w-6" />
-              <span className="sr-only">Toggle Menu</span>
+              <span className="sr-only">{dict.siteHeader.toggleMenu}</span>
             </Button>
           </SheetTrigger>
           <SheetContent side="left" className="pr-0">
@@ -99,8 +103,9 @@ export function SiteHeader() {
         </Link>
         
         <div className="flex flex-1 items-center justify-end space-x-2">
+          <LanguageSwitcher />
           <Button asChild>
-            <Link href="/login">Admin Login</Link>
+            <Link href="/login">{dict.siteHeader.adminLogin}</Link>
           </Button>
         </div>
       </div>

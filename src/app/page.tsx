@@ -1,3 +1,5 @@
+
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -11,23 +13,62 @@ import { Button } from '@/components/ui/button';
 import { getLatestVideos, getHomepageContent } from '@/lib/data';
 import { VideoCard } from '@/components/video-card';
 import { ArrowRight } from 'lucide-react';
+import { useI18n } from '@/hooks/use-i18n';
+import { useEffect, useState } from 'react';
+import type { Video, HomepageContent } from '@/lib/definitions';
 
-export default async function Home() {
-  const latestVideos = await getLatestVideos();
-  const homepageContent = await getHomepageContent();
+export default function Home() {
+  const { dict } = useI18n();
+  const [latestVideos, setLatestVideos] = useState<Video[]>([]);
+  const [homepageContent, setHomepageContent] = useState<HomepageContent>({
+    headline: '',
+    subheadline: '',
+  });
+
+  useEffect(() => {
+    async function fetchData() {
+      const [videos, content] = await Promise.all([
+        getLatestVideos(),
+        getHomepageContent(),
+      ]);
+      setLatestVideos(videos);
+      
+      const translatedContent = {
+        headline: content.headline,
+        subheadline: content.subheadline,
+      };
+
+      if (dict.homePage) {
+          translatedContent.headline = 'Bienvenue sur VideoVerse';
+          translatedContent.subheadline = 'Votre nouvelle destination pour découvrir et partager des vidéos incroyables. Explorez notre collection organisée par des créateurs du monde entier.';
+      }
+      
+      setHomepageContent(translatedContent);
+    }
+    fetchData();
+  }, [dict]);
+
+  const content = dict.locale === 'fr' ? {
+    headline: 'Bienvenue sur VideoVerse',
+    subheadline: 'Votre nouvelle destination pour découvrir et partager des vidéos incroyables. Explorez notre collection organisée par des créateurs du monde entier.',
+  } : {
+    headline: 'Welcome to VideoVerse',
+    subheadline: 'Your new destination for discovering and sharing incredible videos. Explore our curated collection from creators around the globe.',
+  };
+
 
   return (
     <div className="container mx-auto px-4 py-8 md:py-12">
       <section className="text-center py-16 md:py-24">
         <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tighter mb-4">
-          {homepageContent.headline}
+          {content.headline}
         </h1>
         <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground mb-8">
-          {homepageContent.subheadline}
+          {content.subheadline}
         </p>
         <Button asChild size="lg">
           <Link href="/videos">
-            Explore Videos <ArrowRight className="ml-2 h-5 w-5" />
+            {dict.homePage.exploreVideos} <ArrowRight className="ml-2 h-5 w-5" />
           </Link>
         </Button>
       </section>
@@ -35,10 +76,10 @@ export default async function Home() {
       <section className="py-16 md:py-24 border-t">
         <div className="flex justify-between items-center mb-8">
           <h2 className="font-headline text-3xl font-bold tracking-tight">
-            Latest Videos
+            {dict.homePage.latestVideos}
           </h2>
           <Button variant="outline" asChild>
-            <Link href="/videos">View All</Link>
+            <Link href="/videos">{dict.homePage.viewAll}</Link>
           </Button>
         </div>
         {latestVideos.length > 0 ? (
@@ -65,7 +106,7 @@ export default async function Home() {
             <CarouselNext className="hidden sm:flex" />
           </Carousel>
         ) : (
-          <p>No videos available yet.</p>
+          <p>{dict.homePage.noVideos}</p>
         )}
       </section>
     </div>

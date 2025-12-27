@@ -1,16 +1,29 @@
+
+'use client';
 import Image from 'next/image';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import type { Video } from '@/lib/definitions';
 import { PlayCircle } from 'lucide-react';
 import Link from 'next/link';
 import { Badge } from './ui/badge';
-import { formatDistanceToNow } from 'date-fns';
+import { formatDistanceToNow, formatDistanceToNowStrict } from 'date-fns';
+import { fr } from 'date-fns/locale';
+import { useI18n } from '@/hooks/use-i18n';
 
 interface VideoCardProps {
   video: Video;
 }
 
 export function VideoCard({ video }: VideoCardProps) {
+  const { locale, dict } = useI18n();
+  
+  const postedAt = () => {
+    if (locale === 'fr') {
+      return formatDistanceToNowStrict(new Date(video.createdAt), { addSuffix: true, locale: fr });
+    }
+    return formatDistanceToNow(new Date(video.createdAt), { addSuffix: true });
+  }
+
   return (
     <Card className="overflow-hidden h-full flex flex-col group transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
       <CardHeader className="p-0">
@@ -38,7 +51,7 @@ export function VideoCard({ video }: VideoCardProps) {
           {video.description}
         </CardDescription>
         <div className="mt-auto">
-          <Badge variant="outline">{formatDistanceToNow(new Date(video.createdAt), { addSuffix: true })}</Badge>
+          <Badge variant="outline">{postedAt()}</Badge>
         </div>
       </CardContent>
     </Card>
