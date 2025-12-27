@@ -1,3 +1,4 @@
+
 import {
   Card,
   CardContent,
@@ -5,8 +6,13 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { getVideos, getUsers } from '@/lib/data';
-import { Users, Video } from 'lucide-react';
+import { Users, Video, Target } from 'lucide-react';
 import PageHeader from './components/page-header';
+
+const objectives = [
+  "Réussir a financer les outils ia par nos projets",
+  "Réussir a faire toujours plus de vidéos"
+];
 
 export default async function AdminDashboardPage() {
   const videos = await getVideos();
@@ -41,9 +47,26 @@ export default async function AdminDashboardPage() {
           </CardContent>
         </Card>
       </div>
-      <div className="mt-8">
-        <h2 className="text-2xl font-semibold tracking-tight mb-4">Welcome back, Admin!</h2>
-        <p className="text-muted-foreground">Here you can manage your platform's content and users. Use the navigation on the left to get started.</p>
+      <div className="mt-8 grid gap-8 md:grid-cols-2">
+        <div>
+            <h2 className="text-2xl font-semibold tracking-tight mb-4">Welcome back, Admin!</h2>
+            <p className="text-muted-foreground">Here you can manage your platform's content and users. Use the navigation on the left to get started.</p>
+        </div>
+        <Card>
+            <CardHeader>
+                <CardTitle>Nos Objectifs</CardTitle>
+            </CardHeader>
+            <CardContent>
+                <ul className="space-y-4">
+                    {objectives.map((objective, index) => (
+                        <li key={index} className="flex items-start">
+                            <Target className="h-5 w-5 mr-3 mt-1 text-primary flex-shrink-0" />
+                            <span>{objective}</span>
+                        </li>
+                    ))}
+                </ul>
+            </CardContent>
+        </Card>
       </div>
     </>
   );
