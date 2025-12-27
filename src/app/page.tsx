@@ -39,7 +39,7 @@ export default function Home() {
       };
 
       if (dict.homePage) {
-          translatedContent.headline = 'Bienvenue sur VideoVerse';
+          translatedContent.headline = 'Bienvenue sur Tremplin Video Lab';
           translatedContent.subheadline = 'Votre nouvelle destination pour découvrir et partager des vidéos incroyables. Explorez notre collection organisée par des créateurs du monde entier.';
       }
       
@@ -49,10 +49,10 @@ export default function Home() {
   }, [dict]);
 
   const content = dict.locale === 'fr' ? {
-    headline: 'Bienvenue sur VideoVerse',
+    headline: 'Bienvenue chez Tremplin Video Lab',
     subheadline: 'Votre nouvelle destination pour découvrir et partager des vidéos incroyables. Explorez notre collection organisée par des créateurs du monde entier.',
   } : {
-    headline: 'Welcome to VideoVerse',
+    headline: 'Welcome to Tremplin Video Lab',
     subheadline: 'Your new destination for discovering and sharing incredible videos. Explore our curated collection from creators around the globe.',
   };
 

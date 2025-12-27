@@ -8,8 +8,11 @@ import { Toaster } from '@/components/ui/toaster';
 import { I18nProvider } from '@/components/i18n-provider';
 
 export const metadata: Metadata = {
-  title: 'VideoVerse',
-  description: 'Une plateforme vidéo moderne.',
+  title: 'TremplinVideoLab',
+  description: 'Un site de partage de video modernes utilisant les dernièrs outils disponibles.',
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({

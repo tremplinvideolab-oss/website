@@ -39,7 +39,7 @@ export const dictionaries = {
     siteHeader: {
       home: 'Accueil',
       videos: 'Vidéos',
-      adminLogin: 'Connexion Admin',
+      adminLogin: 'Connexion',
       toggleMenu: 'Basculer le menu'
     },
     siteFooter: {
@@ -58,7 +58,7 @@ export const dictionaries = {
       checkBack: 'Revenez plus tard pour du nouveau contenu !',
     },
     loginPage: {
-      title: 'Connexion Admin',
+      title: 'Connexion',
       description: 'Entrez vos identifiants pour accéder au tableau de bord.',
       emailLabel: 'Email',
       passwordLabel: 'Mot de passe',

@@ -79,7 +79,7 @@ let users: User[] = [
 
 // Simulate a database table for homepage content
 let homepageContent: HomepageContent = {
-  headline: 'Welcome to VideoVerse',
+  headline: 'Welcome to Tremplin Video Lab',
   subheadline: 'Your new destination for discovering and sharing incredible videos. Explore our curated collection from creators around the globe.',
 };
 

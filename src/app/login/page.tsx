@@ -14,9 +14,10 @@ import {
 } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Clapperboard, Loader2 } from 'lucide-react';
+import { Loader2 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { useI18n } from '@/hooks/use-i18n';
+import { Logo } from '@/components/logo';
 
 export default function LoginPage() {
   const router = useRouter();
@@ -44,7 +45,9 @@ export default function LoginPage() {
       <Card className="w-full max-w-sm">
         <CardHeader className="text-center">
           <div className="flex justify-center items-center mb-4">
-            <Clapperboard className="h-8 w-8 mr-2 text-primary" />
+            <div className='mr-2'>
+              <Logo />
+            </div>
             <CardTitle className="font-headline text-2xl">{dict.loginPage.title}</CardTitle>
           </div>
           <CardDescription>{dict.loginPage.description}</CardDescription>
@@ -58,7 +61,7 @@ export default function LoginPage() {
                 type="email"
                 placeholder="admin@example.com"
                 required
-                defaultValue="admin@videovers.com"
+                defaultValue="admin@tremplinvideolab.com"
               />
             </div>
             <div className="grid gap-2">

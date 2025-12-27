@@ -2,7 +2,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Clapperboard, Menu, Video } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Sheet,
@@ -16,6 +16,7 @@ import { cn } from '@/lib/utils';
 import { useState } from 'react';
 import { useI18n } from '@/hooks/use-i18n';
 import { LanguageSwitcher } from './language-switcher';
+import { Logo } from './logo';
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -34,9 +35,9 @@ export function SiteHeader() {
       <div className="container flex h-16 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Clapperboard className="h-6 w-6 text-primary" />
+            <Logo />
             <span className="hidden font-bold sm:inline-block font-headline">
-              VideoVerse
+              Tremplin Video Lab
             </span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
@@ -70,8 +71,8 @@ export function SiteHeader() {
             <SheetHeader>
               <SheetTitle>
                 <Link href="/" className="flex items-center" onClick={closeMobileMenu}>
-                  <Clapperboard className="mr-2 h-6 w-6 text-primary" />
-                  <span className="font-bold font-headline">VideoVerse</span>
+                  <Logo />
+                  <span className="ml-2 font-bold font-headline">Tremplin Video Lab</span>
                 </Link>
               </SheetTitle>
             </SheetHeader>
@@ -98,8 +99,8 @@ export function SiteHeader() {
           href="/"
           className="flex items-center space-x-2 md:hidden"
         >
-          <Clapperboard className="h-6 w-6 text-primary" />
-          <span className="font-bold font-headline">VideoVerse</span>
+          <Logo />
+          <span className="font-bold font-headline">Tremplin Video Lab</span>
         </Link>
         
         <div className="flex flex-1 items-center justify-end space-x-2">

@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
-  Clapperboard,
   FileText,
   LayoutDashboard,
   LogOut,
@@ -31,6 +30,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import { Logo } from '@/components/logo';
 
 const navItems = [
   {
@@ -63,9 +63,9 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       <Sidebar>
         <SidebarHeader className="border-b">
           <div className="flex items-center gap-2">
-            <Clapperboard className="size-6 text-primary" />
+            <Logo />
             <h2 className="text-lg font-semibold font-headline tracking-tight">
-              VideoVerse
+              TremplinVideoLab
             </h2>
           </div>
         </SidebarHeader>
@@ -118,7 +118,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                       Admin User
                     </p>
                     <p className="text-xs leading-none text-muted-foreground">
-                      admin@videovers.com
+                      admin@tremplinvideolab.com
                     </p>
                   </div>
                 </DropdownMenuLabel>

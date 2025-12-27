@@ -1,4 +1,4 @@
-# **App Name**: VideoVerse
+# **App Name**: TremplinVideoLab
 
 ## Core Features:
 
