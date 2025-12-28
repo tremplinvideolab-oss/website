@@ -18,7 +18,7 @@ import { useEffect, useState } from 'react';
 import type { Video, HomepageContent } from '@/lib/definitions';
 
 export default function Home() {
-  const { dict } = useI18n();
+  const { dict, locale } = useI18n();
   const [latestVideos, setLatestVideos] = useState<Video[]>([]);
   const [homepageContent, setHomepageContent] = useState<HomepageContent>({
     headline: '',
@@ -32,23 +32,12 @@ export default function Home() {
         getHomepageContent(),
       ]);
       setLatestVideos(videos);
-      
-      const translatedContent = {
-        headline: content.headline,
-        subheadline: content.subheadline,
-      };
-
-      if (dict.homePage) {
-          translatedContent.headline = 'Bienvenue sur Tremplin Video Lab';
-          translatedContent.subheadline = 'Votre nouvelle destination pour découvrir et partager des vidéos incroyables. Explorez notre collection organisée par des créateurs du monde entier.';
-      }
-      
-      setHomepageContent(translatedContent);
+      setHomepageContent(content);
     }
     fetchData();
-  }, [dict]);
+  }, []);
 
-  const content = dict.locale === 'fr' ? {
+  const content = locale === 'fr' ? {
     headline: 'Bienvenue chez Tremplin Video Lab',
     subheadline: 'Votre nouvelle destination pour découvrir et partager des vidéos incroyables. Explorez notre collection organisée par des créateurs du monde entier.',
   } : {
