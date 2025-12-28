@@ -79,8 +79,8 @@ let users: User[] = [
 
 // Simulate a database table for homepage content
 let homepageContent: HomepageContent = {
-  headline: 'Welcome to Tremplin Video Lab',
-  subheadline: 'Your new destination for discovering and sharing incredible videos. Explore our curated collection from creators around the globe.',
+  headline: 'Bienvenue chez Tremplin Video Lab',
+  subheadline: 'Votre nouvelle destination pour découvrir et partager des vidéos incroyables. Explorez notre collection organisée par des créateurs du monde entier.',
 };
 
 // Simulate API latency
