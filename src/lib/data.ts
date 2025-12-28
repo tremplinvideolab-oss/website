@@ -9,7 +9,7 @@ let videos: Video[] = [
     thumbnailUrl: 'https://storage.googleapis.com/aifirebase-12d3c.appspot.com/user_images/zoolympic_game_2.webp',
     videoUrl: '#',
     createdAt: '2024-07-22T10:00:00Z',
-    thumbnailHint: 'cartoon skunk trap',
+    thumbnailHint: 'cartoon race animals',
   },
   {
     id: '2',
