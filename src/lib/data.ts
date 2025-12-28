@@ -7,7 +7,7 @@ let videos: Video[] = [
     title: 'Zoolympic Game : A race full of twists and turns !',
     description: 'In this video, a bear, a rabbit, a fox, and a turtle take part in a race between France and Italy.',
     thumbnailUrl: 'https://storage.googleapis.com/aifirebase-12d3c.appspot.com/user_images/zoolympic_game_2.webp',
-    videoUrl: '#',
+    videoUrl: 'https://www.youtube.com/watch?v=pZEC2KPkmCs',
     createdAt: '2024-07-22T10:00:00Z',
     thumbnailHint: 'cartoon race animals',
   },
@@ -89,6 +89,11 @@ const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 export async function getVideos(): Promise<Video[]> {
   await delay(100);
   return [...videos].sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
+}
+
+export async function getVideoById(id: string): Promise<Video | undefined> {
+  await delay(100);
+  return videos.find(v => v.id === id);
 }
 
 export async function getLatestVideos(limit: number = 3): Promise<Video[]> {
