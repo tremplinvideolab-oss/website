@@ -4,12 +4,12 @@ import { Video, User, HomepageContent } from './definitions';
 let videos: Video[] = [
   {
     id: '1',
-    title: 'Exploring the Cosmos',
-    description: 'A journey through the stars and beyond. Discover the wonders of our universe.',
-    thumbnailUrl: 'https://picsum.photos/seed/vid1/600/400',
+    title: 'Zoolympic Game : A race full of twists and turns !',
+    description: 'In this video, a bear, a rabbit, a fox, and a turtle take part in a race between France and Italy.',
+    thumbnailUrl: 'https://storage.googleapis.com/aifirebase-12d3c.appspot.com/user_images/zoolympic_game.webp',
     videoUrl: '#',
     createdAt: '2024-07-22T10:00:00Z',
-    thumbnailHint: 'abstract tech',
+    thumbnailHint: 'cartoon skunk',
   },
   {
     id: '2',
