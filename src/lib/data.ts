@@ -1,3 +1,4 @@
+
 import { Video, User, HomepageContent } from './definitions';
 
 // Simulate a database table for videos
@@ -80,12 +81,7 @@ let users: User[] = [
 // Simulate a database table for homepage content
 let homepageContent: HomepageContent = {
   headline: 'Tremplin Video Lab',
-  subheadline: `
-
-
-Tremplin Video Lab est un jeune laboratoire de création utilisant les outils d'IA générative du marché.
-
-L'équipe est composée de deux indépendants unissant leurs efforts pour proposer des vidéos et applications réalisées en essayant de trouver le meilleur rapport qualité / temps passés, grâce à l'utilisation des outils de créations standards et l'IA générative`,
+  subheadline: `Tremplin Video Lab teste et compare les outils d’IA générative pour accélérer la création vidéo et le développement d’applications. Deux indépendants, une approche pragmatique : combiner outils classiques + IA pour atteindre le meilleur rapport qualité / temps et produire plus vite, sans sacrifier la qualité.`,
 };
 
 // Simulate API latency
