@@ -55,8 +55,8 @@ let users: User[] = [
     id: 'usr_1',
     name: 'Admin User',
     email: 'admin@videovers.com',
-    role: 'Admin',
     avatarUrl: 'https://picsum.photos/seed/avatar1/100/100',
+    role: 'Admin',
     joinedAt: '2024-01-15T09:00:00Z',
   },
   {
