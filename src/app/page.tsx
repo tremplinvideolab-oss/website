@@ -60,7 +60,7 @@ L'équipe est composée de deux indépendants unissant leurs efforts pour propos
         </p>
       </section>
 
-      <div className="flex justify-center py-12">
+      <div className="flex justify-center">
         <FullLogo className="text-foreground" />
       </div>
 

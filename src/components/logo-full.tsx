@@ -6,8 +6,8 @@ export function FullLogo({ className, ...props }: React.SVGProps<SVGSVGElement>)
     <svg
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
-      width="150"
-      height="150"
+      width="750"
+      height="750"
       viewBox="0 0 600.000000 600.000000"
       preserveAspectRatio="xMidYMid meet"
       className={cn('fill-current', className)}
