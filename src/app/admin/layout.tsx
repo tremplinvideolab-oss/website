@@ -8,6 +8,7 @@ import {
   LogOut,
   Users,
   Video,
+  ClipboardList,
 } from 'lucide-react';
 import {
   Sidebar,
@@ -42,6 +43,11 @@ const navItems = [
     href: '/admin/videos',
     label: 'Videos',
     icon: Video,
+  },
+  {
+    href: '/admin/projets',
+    label: 'Projets',
+    icon: ClipboardList,
   },
   {
     href: '/admin/users',

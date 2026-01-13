@@ -26,6 +26,7 @@ export function SiteHeader() {
   const mainNavLinks = [
     { href: '/', label: dict.siteHeader.home },
     { href: '/videos', label: dict.siteHeader.videos },
+    { href: '/projets', label: dict.siteHeader.projets },
   ];
 
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
