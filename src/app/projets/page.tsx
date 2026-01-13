@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export default function ProjetsPage() {
   const { dict } = useI18n();
@@ -13,11 +14,15 @@ export default function ProjetsPage() {
         id: 'zoolympic-games',
         title: "Zoolympic Games",
         description: dict.projetsPage.zoolympicGamesDescription,
+        imageSrc: "/zoolympic_games.webp",
+        imageHint: "cartoon animals race"
     },
     {
         id: 'zoolympic-world',
         title: "Zoolympic World",
         description: dict.projetsPage.zoolympicWorldDescription,
+        imageSrc: "/zoolympic_world.webp",
+        imageHint: "cartoon tree face"
     }
   ];
 
@@ -30,7 +35,17 @@ export default function ProjetsPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project) => (
-          <Card key={project.id} className="flex flex-col">
+          <Card key={project.id} className="flex flex-col overflow-hidden">
+            <div className="relative">
+                <Image 
+                    src={project.imageSrc}
+                    alt={`Image for ${project.title}`}
+                    width={600}
+                    height={400}
+                    className="aspect-video w-full object-cover"
+                    data-ai-hint={project.imageHint}
+                />
+            </div>
             <CardHeader>
               <CardTitle>{project.title}</CardTitle>
               <CardDescription className="pt-2">{project.description}</CardDescription>
