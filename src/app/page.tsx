@@ -16,6 +16,7 @@ import { ArrowRight } from 'lucide-react';
 import { useI18n } from '@/hooks/use-i18n';
 import { useEffect, useState } from 'react';
 import type { Video, HomepageContent } from '@/lib/definitions';
+import { FullLogo } from '@/components/logo-full';
 
 export default function Home() {
   const { dict, locale } = useI18n();
@@ -58,6 +59,10 @@ L'équipe est composée de deux indépendants unissant leurs efforts pour propos
           {homepageContent.subheadline}
         </p>
       </section>
+
+      <div className="flex justify-center py-12">
+        <FullLogo className="text-foreground" />
+      </div>
 
       <section className="py-16 md:py-24 border-t">
         <div className="max-w-4xl mx-auto text-left">
