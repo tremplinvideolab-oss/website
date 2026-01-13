@@ -70,7 +70,7 @@ export const dictionaries = {
       title: 'Nos Projets',
       description: 'Découvrez les créations nées de notre laboratoire.',
       zoolympicGamesDescription: "Des JO de Paris 2024 à Milan 2026 : des animaux anthropomorphes s'affrontent dans des sports variés !",
-      zoolympicWorldDescription: 'Explorez le monde des Zoolympics, rencontrez les personnages et découvrez les coulisses.',
+      zoolympicWorldDescription: "Explorez le monde des Zoolympics : rencontrez nos personnages dans un cadre non-sportifs et découvrez les coulisses !",
       learnMore: 'En savoir plus'
     },
     loginPage: {
