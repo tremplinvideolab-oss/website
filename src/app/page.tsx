@@ -39,7 +39,9 @@ export default function Home() {
 
   const content = locale === 'fr' ? {
     headline: 'Bienvenue chez Tremplin Video Lab',
-    subheadline: 'Votre nouvelle destination pour découvrir et partager des vidéos incroyables. Explorez notre collection organisée par des créateurs du monde entier.',
+    subheadline: `Tremplin Video Lab est un jeune laboratoire de test des outils d'IA générative du marché,
+
+L'équipe est composée de deux indépendants unissant leurs efforts pour proposer des vidéos et applications réalisées en essayant de trouver le meilleur rapport qualité / temps passés, et en utilisant les outils de créations standards et l'IA générative`,
   } : {
     headline: 'Welcome to Tremplin Video Lab',
     subheadline: 'Your new destination for discovering and sharing incredible videos. Explore our curated collection from creators around the globe.',
@@ -50,10 +52,10 @@ export default function Home() {
     <div className="container mx-auto px-4 py-8 md:py-12">
       <section className="text-center py-16 md:py-24">
         <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tighter mb-4">
-          {content.headline}
+          {homepageContent.headline}
         </h1>
-        <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground mb-8">
-          {content.subheadline}
+        <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground mb-8 whitespace-pre-line">
+          {homepageContent.subheadline}
         </p>
         <Button asChild size="lg">
           <Link href="/videos">
