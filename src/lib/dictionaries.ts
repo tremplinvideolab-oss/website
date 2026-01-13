@@ -26,7 +26,7 @@ export const dictionaries = {
     projetsPage: {
       title: 'Our Projects',
       description: 'Discover the creations born from our lab.',
-      zoolympicGamesDescription: 'A frantic race between colorful animals!',
+      zoolympicGamesDescription: "From the Paris 2024 Olympic Games to Milan 2026: anthropomorphic animals compete in various sports!",
       zoolympicWorldDescription: 'Explore the world of Zoolympics, meet the characters and go behind the scenes.',
       learnMore: 'Learn more'
     },
@@ -69,7 +69,7 @@ export const dictionaries = {
     projetsPage: {
       title: 'Nos Projets',
       description: 'Découvrez les créations nées de notre laboratoire.',
-      zoolympicGamesDescription: 'Une course effrénée entre des animaux hauts en couleur !',
+      zoolympicGamesDescription: "Des JO de Paris 2024 à Milan 2026 : des animaux anthropomorphes s'affrontent dans des sports variés !",
       zoolympicWorldDescription: 'Explorez le monde des Zoolympics, rencontrez les personnages et découvrez les coulisses.',
       learnMore: 'En savoir plus'
     },
