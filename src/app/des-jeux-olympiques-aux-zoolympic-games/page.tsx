@@ -10,7 +10,7 @@ export default function ZoolympicGamesPage() {
   return (
     <div className="container mx-auto px-4 py-8 md:py-12">
       <div className="mb-8">
-        <h1 className="font-headline text-4xl font-bold tracking-tight">Zoolympic Games : Des Jeux Olympiques de Paris 2024 au JO 2026 de Milan Cortina !</h1>
+        <h1 className="font-headline text-4xl font-bold tracking-tight">Zoolympic Games : Des Jeux Olympiques de Paris 2024 aux JO 2026 de Milan Cortina !</h1>
         <p className="text-muted-foreground mt-4">Le contenu de cette page est en cours de création.</p>
       </div>
       <Card>
