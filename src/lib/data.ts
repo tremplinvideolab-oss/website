@@ -81,7 +81,9 @@ let users: User[] = [
 // Simulate a database table for homepage content
 let homepageContent: HomepageContent = {
   headline: 'Tremplin Video Lab',
-  subheadline: `Tremplin Video Lab teste et compare les outils d’IA générative pour accélérer la création vidéo et le développement d’applications. Deux indépendants, une approche pragmatique : combiner outils classiques + IA pour atteindre le meilleur rapport qualité / temps et produire plus vite, sans sacrifier la qualité.`,
+  subheadline: `Tremplin Video Lab conçoit des vidéos d'animations à partir de scénarios originaux. 
+
+Une approche pragmatique : combiner les outils de créations classiques et l'IA générative pour atteindre le meilleur rapport qualité / temps de production.`,
 };
 
 // Simulate API latency
