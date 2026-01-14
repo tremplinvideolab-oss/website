@@ -1,3 +1,4 @@
+
 'use client';
 import { useI18n } from "@/hooks/use-i18n";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -13,16 +14,18 @@ export default function ProjetsPage() {
     {
         id: 'zoolympic-games',
         title: "Zoolympic Games",
-        description: dict.projetsPage.zoolympicGamesDescription,
+        description: "Des JO de Paris 2024 à Milan 2026 : des animaux anthropomorphes s'affrontent dans des sports variés !",
         imageSrc: "/zoolympic_games.webp",
-        imageHint: "cartoon animals race"
+        imageHint: "cartoon animals race",
+        link: "#"
     },
     {
         id: 'zoolympic-world',
         title: "Zoolympic World",
-        description: dict.projetsPage.zoolympicWorldDescription,
+        description: "Explorez le monde des Zoolympics : rencontrez nos personnages dans un cadre non-sportifs et découvrez les coulisses !",
         imageSrc: "/zoolympic_world.webp",
-        imageHint: "cartoon tree face"
+        imageHint: "cartoon tree face",
+        link: "/des-jeux-olympiques-au-zoolympic-world.html"
     }
   ];
 
@@ -30,6 +33,8 @@ export default function ProjetsPage() {
     <div className="container mx-auto px-4 py-8 md:py-12">
       <div className="mb-8">
         <h1 className="font-headline text-4xl font-bold tracking-tight mb-8">{dict.projetsPage.title}</h1>
+        <div className="mb-2"></div>
+        <div className="mb-2"></div>
         <p className="text-muted-foreground mt-2">{dict.projetsPage.description}</p>
       </div>
 
@@ -48,11 +53,11 @@ export default function ProjetsPage() {
             </div>
             <CardHeader>
               <CardTitle>{project.title}</CardTitle>
-              <CardDescription className="pt-2">{project.description}</CardDescription>
+              <CardDescription className="pt-2 h-16">{project.description}</CardDescription>
             </CardHeader>
             <CardContent className="flex-grow flex items-end">
                 <Button variant="outline" asChild>
-                    <Link href="#">
+                    <Link href={project.link}>
                         {dict.projetsPage.learnMore} <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                 </Button>
