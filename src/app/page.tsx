@@ -48,7 +48,7 @@ export default function Home() {
                 <FullLogo className="text-foreground w-full h-full" />
               </div>
               <div className="font-headline text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter">
-                {homepageContent.headline}
+               {homepageContent.headline}
               </div>
             </div>
             
@@ -61,11 +61,14 @@ export default function Home() {
 
       <section className="w-full bg-white py-16 md:py-24 border-y">
         <div className="container mx-auto px-4">
-          <h1 className="font-headline text-xl font-bold tracking-tight text-left max-w-4xl mx-auto leading-relaxed text-gray-800">
-          Tremplin Video Lab conçoit des vidéos d'animations à partir de scénarios originaux.
-          <br /><br />
-          Notre équipe réunit deux freelances qui associent leurs compétences pour produire des vidéos et développer des applications en combinant outils de création standards et intelligence artificielle générative. Objectif : obtenir le meilleur rapport qualité / temps de production, tout en assurant un rendu professionnel, rapide et adapté à tes usages (contenus marketing, réseaux sociaux, démonstrations produit, prototypes, etc.).
-          </h1>
+          <div className="max-w-4xl mx-auto text-gray-800">
+            <h2 className="font-headline text-xl font-bold tracking-tight mb-6">
+              Qui sommes-nous ?
+            </h2>
+            <p className="leading-relaxed">
+              Notre équipe réunit deux freelances qui associent leurs compétences pour produire des vidéos et développer des applications en combinant outils de création standards et intelligence artificielle générative. Objectif : obtenir le meilleur rapport qualité / temps de production, tout en assurant un rendu professionnel, rapide et adapté à tes usages (contenus marketing, réseaux sociaux, démonstrations produit, prototypes, etc.).
+            </p>
+          </div>
         </div>
       </section>
 
