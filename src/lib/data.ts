@@ -7,7 +7,7 @@ let videos: Video[] = [
     id: '1',
     title: 'Zoolympic Game : A race full of twists and turns !',
     description: 'In this video, a bear, a rabbit, a fox, and a turtle take part in a race between France and Italy.',
-    thumbnailUrl: 'https://storage.googleapis.com/aifirebase-12d3c.appspot.com/user_images/zoolympic_game.webp',
+    thumbnailUrl: '/images/zoolympic_game.webp',
     videoUrl: 'https://www.youtube.com/watch?v=pZEC2KPkmCs',
     createdAt: '2024-07-22T10:00:00Z',
     thumbnailHint: 'cartoon race animals',
