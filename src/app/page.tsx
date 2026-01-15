@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <>
       <div className="container mx-auto px-4 py-8 md:py-12">
-        <section className="text-center pt-16 md:pt-24 mb-16">
+        <section className="text-center pt-6 md:pt-14 mb-16">
           <div className="border bg-card text-card-foreground p-8 rounded-lg">
             <div className="flex justify-center items-center gap-4 md:gap-8 mb-8 flex-wrap">
               <div className="w-24 h-24 md:w-28 md:h-28 flex-shrink-0">
