@@ -8,7 +8,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { I18nProvider } from '@/components/i18n-provider';
 
 export const metadata: Metadata = {
-  title: 'TremplinVideoLab',
+  title: 'Tremplin Video Lab : Des scénarios d\'animation orignaux !',
   description: 'Un site de partage de video modernes utilisant les dernièrs outils disponibles.',
   icons: {
     icon: '/logo-blanc.png',
