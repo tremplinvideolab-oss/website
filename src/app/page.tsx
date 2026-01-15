@@ -40,7 +40,7 @@ export default function Home() {
 
   const content = locale === 'fr' ? {
     headline: 'Bienvenue chez Tremplin Video Lab',
-    subheadline: 'L\'équipe est composée de deux indépendants unissant leurs efforts pour proposer des vidéos et applications réalisées en essayant de trouver le meilleur rapport qualité / temps passés, et en utilisant les outils de créations standards et l\'IA générative',
+    subheadline: 'Tremplin Video Lab conçoit des vidéos d\'animations à partir de scénarios originaux.\n\nUne approche pragmatique : combiner les outils de créations classiques et l\'IA générative pour atteindre le meilleur rapport qualité / temps de production.',
   } : {
     headline: 'Welcome to Tremplin Video Lab',
     subheadline: 'Your new destination for discovering and sharing incredible videos. Explore our curated collection from creators around the globe.',
@@ -52,14 +52,14 @@ export default function Home() {
       <div className="container mx-auto px-4 py-8 md:py-12">
         <section className="text-center pt-16 md:pt-24 mb-16">
           <div className="border bg-card text-card-foreground p-8 rounded-lg">
-            <div className="max-w-xs mx-auto mb-6">
+            <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-4">
+              {homepageContent.headline}
+            </h1>
+            <div className="max-w-xs mx-auto my-8">
                 <div className="aspect-square relative">
                      <FullLogo className="text-foreground w-full h-full" />
                 </div>
             </div>
-            <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tighter mb-6">
-              {homepageContent.headline}
-            </h1>
             <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground whitespace-pre-line">
               {homepageContent.subheadline}
             </p>
