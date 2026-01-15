@@ -59,7 +59,7 @@ export default async function AdminDashboardPage() {
           </CardContent>
         </Card>
       </div>
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-8">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Total Videos</CardTitle>
@@ -85,7 +85,7 @@ export default async function AdminDashboardPage() {
           </CardContent>
         </Card>
       </div>
-      <div className="mt-8 grid gap-8 md:grid-cols-2">
+      <div className="grid gap-8 md:grid-cols-2">
         <div>
             <h2 className="text-2xl font-semibold tracking-tight mb-4">Welcome back, Admin!</h2>
             <p className="text-muted-foreground">Here you can manage your platform's content and users. Use the navigation on the left to get started.</p>
