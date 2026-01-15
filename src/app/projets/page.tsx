@@ -38,8 +38,8 @@ export default function ProjetsPage() {
       
       <div className="w-full whitesection py-16">
         <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-gray-800">
-                <p className="leading-relaxed">
+            <div className="text-gray-800">
+                <p className="leading-relaxed max-w-4xl">
                     Tremplin Video Lab plannifie la création de ses vidéos comme faisant partie de différents projets.
                     <br /><br />
                     Ainsi, bien que chaque vidéo dispose de son propre scénario, elle fait partie d'un projet global composé de plusieurs vidéos.
