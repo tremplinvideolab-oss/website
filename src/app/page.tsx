@@ -52,9 +52,9 @@ export default function Home() {
               </h1>
             </div>
             
-            <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground whitespace-pre-line">
+            <h2 className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground whitespace-pre-line font-bold">
               {homepageContent.subheadline}
-            </p>
+            </h2>
           </div>
         </section>
       </div>
