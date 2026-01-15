@@ -59,9 +59,9 @@ export default function Home() {
         </section>
       </div>
 
-      <section className="bg-white text-gray-800 py-16 md:py-24 border-y">
+      <section className="bg-white py-16 md:py-24 border-y">
         <div className="container mx-auto px-4">
-          <h2 className="font-headline text-xl font-bold tracking-tight text-left max-w-4xl mx-auto leading-relaxed">
+          <h2 className="font-headline text-xl font-bold tracking-tight text-left max-w-4xl mx-auto leading-relaxed text-gray-800">
           Tremplin Video Lab est un laboratoire indépendant spécialisé dans le test et la comparaison des meilleurs outils d’IA générative du marché. Nous explorons en continu les solutions de création vidéo, de montage, de génération d’images, de voix IA et d’automatisation, afin d’identifier les outils les plus efficaces selon chaque besoin.
           <br /><br />
           Notre équipe réunit deux freelances qui associent leurs compétences pour produire des vidéos et développer des applications en combinant outils de création standards et intelligence artificielle générative. Objectif : obtenir le meilleur rapport qualité / temps de production, tout en assurant un rendu professionnel, rapide et adapté à tes usages (contenus marketing, réseaux sociaux, démonstrations produit, prototypes, etc.).
