@@ -2,6 +2,7 @@ export type Video = {
   id: string;
   title: string;
   description: string;
+  type: string;
   thumbnailUrl: string;
   videoUrl: string;
   createdAt: string; // ISO 8601 date string

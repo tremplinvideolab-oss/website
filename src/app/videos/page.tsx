@@ -20,6 +20,9 @@ export default function VideosPage() {
     fetchVideos();
   }, []);
 
+  const longVideos = videos.filter(video => video.type === 'video-longue');
+  const shortVideos = videos.filter(video => video.type === 'video-short');
+
   return (
     <>
       <div className="container mx-auto px-4 py-8 md:py-12">
@@ -49,12 +52,27 @@ export default function VideosPage() {
 
       {videos.length > 0 ? (
         <div className="w-full bg-muted/30 py-16">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              {videos.map((video) => (
-                  <VideoCard key={video.id} video={video} />
-              ))}
-            </div>
+          <div className="container mx-auto px-4 space-y-12">
+            {longVideos.length > 0 && (
+              <div>
+                <h2 className="font-headline text-3xl font-bold tracking-tight mb-8">Nos vidéos longues :</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                  {longVideos.map((video) => (
+                      <VideoCard key={video.id} video={video} />
+                  ))}
+                </div>
+              </div>
+            )}
+            {shortVideos.length > 0 && (
+              <div>
+                <h2 className="font-headline text-3xl font-bold tracking-tight mb-8">Nos vidéos shorts :</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                  {shortVideos.map((video) => (
+                      <VideoCard key={video.id} video={video} />
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       ) : (
