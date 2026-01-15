@@ -39,15 +39,16 @@ export default function ProjetsPage() {
       <div className="w-full whitesection py-16">
         <div className="container mx-auto px-4">
             <div className="text-gray-800">
-                <p className="leading-relaxed max-w-4xl">
-                    Tremplin Video Lab plannifie la création de ses vidéos comme faisant partie de différents projets.
-                    <br /><br />
-                    Ainsi, bien que chaque vidéo dispose de son propre scénario, elle fait partie d'un projet global composé de plusieurs vidéos.
-                    <br /><br />
-                    Nous ne nous contentons pas de réutiliser des personnages, mais de leur donner une histoire.
-                    <br /><br />
-                    Tortue, Kangourou, Hibou, Ours, Guépard, Loutre... elles ont toutes leur propre caractère et leur propre destin !
-                </p>
+            <p className="leading-relaxed max-w-8xl">
+              Tremplin Video Lab conçoit et planifie ses vidéos dans le cadre de projets structurés.
+              <br /><br />
+              Ainsi, chaque vidéo possède son propre scénario tout en s’inscrivant dans un univers cohérent, pensé comme un projet global composé de plusieurs épisodes.
+              <br /><br />
+              Au-delà de la réutilisation de personnages, nous construisons de véritables trajectoires narratives : une histoire, une personnalité et une évolution pour chacun.
+              <br /><br />
+              Tortue, Kangourou, Hibou, Ours, Guépard, Loutre… chacun a son caractère et son propre parcours.
+            </p>
+
             </div>
         </div>
       </div>

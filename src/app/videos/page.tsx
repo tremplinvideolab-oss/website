@@ -39,9 +39,9 @@ export default function VideosPage() {
         <div className="container mx-auto px-4">
           <div className="text-gray-800">
             <p className="leading-relaxed">
-                Nous créons nos vidéos en utilisant les outils de créations standards mais aussi les outils d'IA générative.
-                <br /><br />
-                Ces différents outils nous permettent de proposer sur notre chaîne Youtube des scénarios variés et d'essayer de conserver une cohérence sur plusieurs vidéos.
+              Nous produisons nos vidéos en combinant des outils de création standards et des solutions d’IA générative.
+              <br /><br />
+              Cette approche nous permet de proposer, sur notre<Link href="https://www.youtube.com/@TremplinVideoLab" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline ml-1 font-bold">chaîne YouTube</Link>, des scénarios variés tout en garantissant une cohérence éditoriale et narrative d’une vidéo à l’autre.
             </p>
           </div>
         </div>

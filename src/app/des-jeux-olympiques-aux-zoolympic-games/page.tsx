@@ -12,7 +12,7 @@ export default function ZoolympicGamesPage() {
   const features = [
     "La tortue est sympathique et vaillante !",
     "L'ours est plein de roublardise ...",
-    "Et le lapin et le renard ont des pouvoirs de métamorphoses étranges !",
+    "Le lapin et le renard ont des pouvoirs de métamorphoses étranges et surprenants !",
     "Notre mouffette arbitre, est juste, et fait preuve de compassion.",
   ];
 
@@ -51,7 +51,7 @@ export default function ZoolympicGamesPage() {
             </Card>
 
             <p className="text-lg mt-8 text-gray-800">
-              Mais les Zoolympic Games, c'est aussi tout un monde autour ayant amené à la création du projet <Link href="/des-jeux-olympiques-au-zoolympic-world" className="text-primary hover:underline">Zoolympic World</Link>.
+              Mais les Zoolympic Games, c'est aussi tout un monde autour ayant amené à la création du projet <Link href="/des-jeux-olympiques-au-zoolympic-world" className="text-primary hover:underline font-bold">Zoolympic World</Link>.
             </p>
           </div>
         </div>
