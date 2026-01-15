@@ -52,17 +52,34 @@ export default function VideoPage({ params }: { params: { id: string } }) {
       </div>
 
       {videoId ? (
-        <div className="mb-6 overflow-hidden rounded-lg shadow-xl">
-            <AspectRatio ratio={16 / 9}>
+        <>
+          {video.type === 'video-short' ? (
+            <div className="flex justify-center mb-6">
+              <div className="overflow-hidden rounded-lg shadow-xl">
                 <iframe
-                className="w-full h-full"
-                src={`https://www.youtube.com/embed/${videoId}`}
-                title={video.title}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
+                  width="320"
+                  height="568"
+                  src={`https://www.youtube.com/embed/${videoId}`}
+                  title={video.title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
                 ></iframe>
-            </AspectRatio>
-        </div>
+              </div>
+            </div>
+          ) : (
+            <div className="mb-6 overflow-hidden rounded-lg shadow-xl">
+              <AspectRatio ratio={16 / 9}>
+                  <iframe
+                  className="w-full h-full"
+                  src={`https://www.youtube.com/embed/${videoId}`}
+                  title={video.title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  ></iframe>
+              </AspectRatio>
+            </div>
+          )}
+        </>
       ) : (
         <div className="mb-6 p-8 text-center bg-muted rounded-lg">
             <p className='text-muted-foreground'>Video player is not available for this entry.</p>
@@ -77,4 +94,3 @@ export default function VideoPage({ params }: { params: { id: string } }) {
     </div>
   );
 }
-

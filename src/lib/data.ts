@@ -34,7 +34,7 @@ let videos: Video[] = [
     thumbnailUrl: '/images/thumb_hibou_mery_xmas.png',
     videoUrl: 'https://www.youtube.com/shorts/2hfaPC9bB2Y',
     createdAt: '2026-01-01T12:00:00Z',
-    thumbnailHint: 'journaliste hibou',
+    thumbnailHint: 'journaliste hibou présentant les voeux de la chaîne',
     project: 'zoolympic-world',
   },
   {
@@ -45,7 +45,7 @@ let videos: Video[] = [
     thumbnailUrl: '/images/thumb_manger_la_galette.png',
     videoUrl: 'https://www.youtube.com/shorts/xQeXf9q1-4Q',
     createdAt: '2026-01-03T12:00:00Z',
-    thumbnailHint: 'cartoon animals eating cake',
+    thumbnailHint: 'Des animaux déguste une galette des rois à la frangipane',
     project: 'zoolympic-world',
   },
   {
@@ -56,7 +56,7 @@ let videos: Video[] = [
     thumbnailUrl: '/images/thumb_bataille_pour_devenir_roi.png',
     videoUrl: 'https://youtube.com/shorts/LOwffKm1LGI',
     createdAt: '2026-01-05T12:00:00Z',
-    thumbnailHint: 'cartoon animal sword fight',
+    thumbnailHint: 'Un Guépard et un Kangourou livre une bataille pour devenir le roi',
     project: 'zoolympic-world',
   }, 
 ];
