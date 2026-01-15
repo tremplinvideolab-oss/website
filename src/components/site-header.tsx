@@ -57,7 +57,7 @@ export function SiteHeader() {
                   {link.label}
                 </Link>
                 {index < mainNavLinks.length - 1 && (
-                  <div className="h-6 w-px bg-border" />
+                  <div className="h-6 w-[2px] bg-border" />
                 )}
               </React.Fragment>
             ))}
