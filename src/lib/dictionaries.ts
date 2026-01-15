@@ -25,7 +25,7 @@ export const dictionaries = {
     },
     projetsPage: {
       title: 'Les projets de Tremplin Video Lab',
-      description: 'Tremplin Video Lab imagine des scénarios variés, au travers de divers projets !',
+      description: 'Tremplin Video Lab imagines scenarios in various universes, through various projects!',
       zoolympicGamesDescription: "From the Paris 2024 Olympic Games to Milan 2026: anthropomorphic animals compete in various sports!",
       zoolympicWorldDescription: 'Explore the world of Zoolympics, meet the characters and go behind the scenes.',
       learnMore: 'Discover the project'
@@ -68,7 +68,7 @@ export const dictionaries = {
     },
     projetsPage: {
       title: 'Les projets de Tremplin Video Lab',
-      description: 'Tremplin Video Lab imagine des scénarios variés, au travers de divers projets !',
+      description: 'Tremplin Video Lab imagine des scénarios variés dans divers projets !',
       zoolympicGamesDescription: "Des JO de Paris 2024 à Milan 2026 : des animaux anthropomorphes s'affrontent dans des sports variés !",
       zoolympicWorldDescription: "Explorez le monde des Zoolympics : rencontrez nos personnages dans un cadre non-sportifs et découvrez les coulisses !",
       learnMore: 'Découvrir le projet'
