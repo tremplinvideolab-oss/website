@@ -6,6 +6,7 @@ export type Video = {
   videoUrl: string;
   createdAt: string; // ISO 8601 date string
   thumbnailHint: string;
+  project: string;
 };
 
 export type User = {

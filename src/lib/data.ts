@@ -11,6 +11,7 @@ let videos: Video[] = [
     videoUrl: 'https://www.youtube.com/watch?v=pZEC2KPkmCs',
     createdAt: '2025-12-27T12:00:00Z',
     thumbnailHint: 'animation cartoon race animals',
+    project: 'zoolympic-games',
   },
   {
     id: '2',
@@ -19,8 +20,40 @@ let videos: Video[] = [
     thumbnailUrl: '/images/thumb_zoolympic_world_1.png',
     videoUrl: 'https://www.youtube.com/watch?v=nfk3BYiyP7I',
     createdAt: '2026-01-14T18:30:00Z',
-    thumbnailHint: 'animatec tree',
+    thumbnailHint: 'animation d\'arbre vivant en morphing 3D',
+    project: 'zoolympic-world',
+
   },
+  {
+    id: '3',
+    title: 'Short - Zoolympic World : Meilleurs voeux 2026 !',
+    description: 'Dans cette vidéo, un hibou présente les voeux de la chaîne et annonce les projets à venir en 2026.',
+    thumbnailUrl: 'https://picsum.photos/seed/voeux2026/600/400',
+    videoUrl: 'https://www.youtube.com/shorts/2hfaPC9bB2Y',
+    createdAt: '2026-01-01T12:00:00Z',
+    thumbnailHint: 'journaliste hibou',
+    project: 'zoolympic-world',
+  },
+  {
+    id: '4',
+    title: 'Short - Zoolympic World : Déguster une bonne galette des rois !',
+    description: 'Les personnages de Zoolympic World se retrouvent pour partager la traditionnelle galette des rois. Qui sera couronné roi ou reine ?',
+    thumbnailUrl: 'https://picsum.photos/seed/galette/600/400',
+    videoUrl: 'https://www.youtube.com/shorts/xQeXf9q1-4Q',
+    createdAt: '2026-01-06T12:00:00Z',
+    thumbnailHint: 'cartoon animals eating cake',
+    project: 'zoolympic-world',
+  },
+  {
+    id: '5',
+    title: 'Short - Zoolympic World : Une bataille pour devenir le Roi !',
+    description: 'Après avoir trouvé la fève, un combat amical à l\'épée s\'engage entre le Guépard et le Kangourou pour décider qui sera le vrai roi.',
+    thumbnailUrl: 'https://picsum.photos/seed/bataille/600/400',
+    videoUrl: 'https://youtube.com/shorts/LOwffKm1LGI',
+    createdAt: '2026-01-05T12:00:00Z',
+    thumbnailHint: 'cartoon animal sword fight',
+    project: 'zoolympic-world',
+  }, 
 ];
 
 // Simulate a database table for users
@@ -53,9 +86,8 @@ let users: User[] = [
 
 // Simulate a database table for homepage content
 let homepageContent: HomepageContent = {
-  headline: 'Tremplin Video Lab',
-  subheadlineH1: `Tremplin Video Lab conçoit des vidéos d'animations 3D à partir de scénarios originaux.`,
-  subheadlineH2: `Une approche pragmatique : combiner les outils de créations classiques et l\'IA générative pour atteindre le meilleur rapport qualité / temps de production.`,
+  headline: 'Tremplin Video Lab conçoit des vidéos d\'animations à partir de scénarios originaux.',
+  subheadline: 'Une approche pragmatique : combiner les outils de créations classiques et l\'IA générative pour atteindre le meilleur rapport qualité / temps de production.',
 };
 
 // Simulate a database table for projects
@@ -113,9 +145,11 @@ export async function getHomepageContent(): Promise<HomepageContent> {
   return homepageContent;
 }
 
-export async function updateHomepageContent(data: HomepageContent): Promise<HomepageContent> {
+export async function updateHomepageContent(data: Omit<HomepageContent, 'headline' | 'subheadline'> & { headline?: string; subheadline?: string }): Promise<HomepageContent> {
   await delay(500);
-  homepageContent = { ...data };
+  const { headline, subheadline } = data;
+  if (headline) homepageContent.headline = headline;
+  if (subheadline) homepageContent.subheadline = subheadline;
   console.log('Updated homepage content:', homepageContent);
   return homepageContent;
 }
