@@ -33,10 +33,12 @@ export default function VideosPage() {
       </div>
 
       {videos.length > 0 ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {videos.map((video) => (
-            <VideoCard key={video.id} video={video} />
-          ))}
+        <div className="bg-muted/40 p-6 md:p-8 rounded-lg">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {videos.map((video) => (
+                <VideoCard key={video.id} video={video} />
+            ))}
+            </div>
         </div>
       ) : (
         <div className="text-center py-16 border rounded-lg">
