@@ -1,5 +1,5 @@
 
-import { Video, User, HomepageContent } from './definitions';
+import { Video, User, HomepageContent, Project } from './definitions';
 
 // Simulate a database table for videos
 let videos: Video[] = [
@@ -86,8 +86,33 @@ let homepageContent: HomepageContent = {
 Une approche pragmatique : combiner les outils de créations classiques et l'IA générative pour atteindre le meilleur rapport qualité / temps de production.`,
 };
 
+// Simulate a database table for projects
+const projects: Project[] = [
+    {
+        id: 'zoolympic-games',
+        title: "Zoolympic Games",
+        description: "Des JO de Paris 2024 à Milan 2026 : des animaux anthropomorphes s'affrontent dans des sports variés !",
+        imageSrc: "/images/zoolympic_game.webp",
+        imageHint: "cartoon animals race",
+        link: "/des-jeux-olympiques-aux-zoolympic-games"
+    },
+    {
+        id: 'zoolympic-world',
+        title: "Zoolympic World",
+        description: "Explorez le monde des Zoolympics : rencontrez nos personnages dans un cadre non-sportifs et découvrez les coulisses !",
+        imageSrc: "/images/zoolympic_world.webp",
+        imageHint: "cartoon tree face",
+        link: "/des-jeux-olympiques-au-zoolympic-world"
+    }
+];
+
 // Simulate API latency
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
+export async function getProjects(): Promise<Project[]> {
+    await delay(100);
+    return projects;
+}
 
 export async function getVideos(): Promise<Video[]> {
   await delay(100);

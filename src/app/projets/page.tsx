@@ -4,30 +4,26 @@ import { useI18n } from "@/hooks/use-i18n";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Loader2 } from "lucide-react";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import type { Project } from "@/lib/definitions";
+import { getProjects } from "@/lib/data";
 
 export default function ProjetsPage() {
   const { dict } = useI18n();
+  const [projects, setProjects] = useState<Project[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
-  const projects = [
-    {
-        id: 'zoolympic-games',
-        title: "Zoolympic Games",
-        description: "Des JO de Paris 2024 à Milan 2026 : des animaux anthropomorphes s'affrontent dans des sports variés !",
-        imageSrc: "https://storage.googleapis.com/aifirebase-12d3c.appspot.com/user_images/zoolympic_game.webp",
-        imageHint: "cartoon animals race",
-        link: "/des-jeux-olympiques-aux-zoolympic-games"
-    },
-    {
-        id: 'zoolympic-world',
-        title: "Zoolympic World",
-        description: "Explorez le monde des Zoolympics : rencontrez nos personnages dans un cadre non-sportifs et découvrez les coulisses !",
-        imageSrc: "https://storage.googleapis.com/aifirebase-12d3c.appspot.com/user_images/zoolympic_world.webp",
-        imageHint: "cartoon tree face",
-        link: "/des-jeux-olympiques-au-zoolympic-world"
+  useEffect(() => {
+    async function fetchProjects() {
+        setIsLoading(true);
+        const fetchedProjects = await getProjects();
+        setProjects(fetchedProjects);
+        setIsLoading(false);
     }
-  ];
+    fetchProjects();
+  }, []);
 
   return (
     <div className="container mx-auto px-4 py-8 md:py-12">
@@ -37,34 +33,39 @@ export default function ProjetsPage() {
         <div className="mb-2"></div>
         <p className="text-muted-foreground mt-2">{dict.projetsPage.description}</p>
       </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {projects.map((project) => (
-          <Card key={project.id} className="flex flex-col overflow-hidden">
-            <div className="relative">
-                <Image 
-                    src={project.imageSrc}
-                    alt={`Image for ${project.title}`}
-                    width={600}
-                    height={400}
-                    className="aspect-video w-full object-cover"
-                    data-ai-hint={project.imageHint}
-                />
+        {isLoading ? (
+            <div className="flex justify-center items-center h-64">
+                <Loader2 className="h-8 w-8 animate-spin text-muted-foreground" />
             </div>
-            <CardHeader>
-              <CardTitle>{project.title}</CardTitle>
-              <CardDescription className="pt-2 h-16">{project.description}</CardDescription>
-            </CardHeader>
-            <CardContent className="flex-grow flex items-end">
-                <Button variant="outline" asChild>
-                    <Link href={project.link}>
-                        {dict.projetsPage.learnMore} <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                </Button>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
+        ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {projects.map((project) => (
+                <Card key={project.id} className="flex flex-col overflow-hidden">
+                    <div className="relative">
+                        <Image 
+                            src={project.imageSrc}
+                            alt={`Image for ${project.title}`}
+                            width={600}
+                            height={400}
+                            className="aspect-video w-full object-cover"
+                            data-ai-hint={project.imageHint}
+                        />
+                    </div>
+                    <CardHeader>
+                    <CardTitle>{project.title}</CardTitle>
+                    <CardDescription className="pt-2 h-16">{project.description}</CardDescription>
+                    </CardHeader>
+                    <CardContent className="flex-grow flex items-end">
+                        <Button variant="outline" asChild>
+                            <Link href={project.link}>
+                                {dict.projetsPage.learnMore} <ArrowRight className="ml-2 h-4 w-4" />
+                            </Link>
+                        </Button>
+                    </CardContent>
+                </Card>
+                ))}
+            </div>
+        )}
     </div>
   );
 }

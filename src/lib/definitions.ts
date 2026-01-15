@@ -21,3 +21,12 @@ export type HomepageContent = {
   headline: string;
   subheadline: string;
 };
+
+export type Project = {
+    id: string;
+    title: string;
+    description: string;
+    imageSrc: string;
+    imageHint: string;
+    link: string;
+};
