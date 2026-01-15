@@ -47,7 +47,7 @@ export function SiteHeader() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  'transition-colors hover:text-primary',
+                  'transition-colors hover:text-primary tracking-wider',
                   pathname === link.href
                     ? 'text-muted-foreground underline'
                     : 'text-foreground'
@@ -87,7 +87,7 @@ export function SiteHeader() {
                     href={link.href}
                     onClick={closeMobileMenu}
                     className={cn(
-                      'transition-colors hover:text-primary font-extrabold',
+                      'transition-colors hover:text-primary font-extrabold tracking-wider',
                       pathname === link.href ? 'text-muted-foreground underline' : 'text-foreground'
                     )}
                   >
