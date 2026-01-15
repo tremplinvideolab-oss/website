@@ -69,43 +69,45 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="container mx-auto px-4 py-8 md:py-12">
-        <section className="py-16 md:py-24">
-          <div className="flex justify-between items-center mb-8">
-            <h2 className="font-headline text-3xl font-bold tracking-tight">
-              {dict.homePage.latestVideos}
-            </h2>
-            <Button variant="outline" asChild>
-              <Link href="/videos">{dict.homePage.viewAll}</Link>
-            </Button>
-          </div>
-          {latestVideos.length > 0 ? (
-            <Carousel
-              opts={{
-                align: 'start',
-                loop: true,
-              }}
-              className="w-full"
-            >
-              <CarouselContent>
-                {latestVideos.map((video) => (
-                  <CarouselItem
-                    key={video.id}
-                    className="md:basis-1/2 lg:basis-1/3"
-                  >
-                    <div className="p-1">
-                      <VideoCard video={video} />
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="hidden sm:flex" />
-              <CarouselNext className="hidden sm:flex" />
-            </Carousel>
-          ) : (
-            <p>{dict.homePage.noVideos}</p>
-          )}
-        </section>
+      <div className="bg-secondary/20">
+        <div className="container mx-auto px-4 py-8 md:py-12">
+            <section className="py-16 md:py-24">
+            <div className="flex justify-between items-center mb-8">
+                <h2 className="font-headline text-3xl font-bold tracking-tight">
+                {dict.homePage.latestVideos}
+                </h2>
+                <Button variant="outline" asChild>
+                <Link href="/videos">{dict.homePage.viewAll}</Link>
+                </Button>
+            </div>
+            {latestVideos.length > 0 ? (
+                <Carousel
+                opts={{
+                    align: 'start',
+                    loop: true,
+                }}
+                className="w-full"
+                >
+                <CarouselContent>
+                    {latestVideos.map((video) => (
+                    <CarouselItem
+                        key={video.id}
+                        className="md:basis-1/2 lg:basis-1/3"
+                    >
+                        <div className="p-1">
+                        <VideoCard video={video} />
+                        </div>
+                    </CarouselItem>
+                    ))}
+                </CarouselContent>
+                <CarouselPrevious className="hidden sm:flex" />
+                <CarouselNext className="hidden sm:flex" />
+                </Carousel>
+            ) : (
+                <p>{dict.homePage.noVideos}</p>
+            )}
+            </section>
+        </div>
       </div>
     </>
   );
