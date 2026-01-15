@@ -40,9 +40,7 @@ export default function Home() {
 
   const content = locale === 'fr' ? {
     headline: 'Bienvenue chez Tremplin Video Lab',
-    subheadline: `Tremplin Video Lab est un jeune laboratoire de test des outils d'IA générative du marché,
-
-L'équipe est composée de deux indépendants unissant leurs efforts pour proposer des vidéos et applications réalisées en essayant de trouver le meilleur rapport qualité / temps passés, et en utilisant les outils de créations standards et l'IA générative`,
+    subheadline: 'L\'équipe est composée de deux indépendants unissant leurs efforts pour proposer des vidéos et applications réalisées en essayant de trouver le meilleur rapport qualité / temps passés, et en utilisant les outils de créations standards et l\'IA générative',
   } : {
     headline: 'Welcome to Tremplin Video Lab',
     subheadline: 'Your new destination for discovering and sharing incredible videos. Explore our curated collection from creators around the globe.',
@@ -54,6 +52,11 @@ L'équipe est composée de deux indépendants unissant leurs efforts pour propos
       <div className="container mx-auto px-4 py-8 md:py-12">
         <section className="text-center pt-16 md:pt-24 mb-16">
           <div className="border bg-card text-card-foreground p-8 rounded-lg">
+            <div className="max-w-xs mx-auto mb-6">
+                <div className="aspect-square relative">
+                     <FullLogo className="text-foreground w-full h-full" />
+                </div>
+            </div>
             <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tighter mb-6">
               {homepageContent.headline}
             </h1>
@@ -63,17 +66,11 @@ L'équipe est composée de deux indépendants unissant leurs efforts pour propos
           </div>
         </section>
 
-        <section className="py-12">
-            <div className="max-w-4xl mx-auto">
-                <div className="aspect-[4/3] relative">
-                     <FullLogo className="text-foreground w-full h-full" />
-                </div>
-            </div>
-        </section>
-
         <section className="py-8 md:py-12 border-t">
-          <h2 className="font-headline text-3xl font-bold tracking-tight mb-4">
-              L'équipe est composée de deux indépendants unissant leurs efforts pour proposer des vidéos et applications réalisées en essayant de trouver le meilleur rapport qualité / temps passés, et en utilisant les outils de créations standards et l'IA générative
+          <h2 className="font-headline text-xl font-bold tracking-tight mb-4 text-center max-w-4xl mx-auto leading-relaxed text-foreground/90">
+          Tremplin Video Lab est un laboratoire indépendant spécialisé dans le test et la comparaison des meilleurs outils d’IA générative du marché. Nous explorons en continu les solutions de création vidéo, de montage, de génération d’images, de voix IA et d’automatisation, afin d’identifier les outils les plus efficaces selon chaque besoin.
+          <br /><br />
+          Notre équipe réunit deux freelances qui associent leurs compétences pour produire des vidéos et développer des applications en combinant outils de création standards et intelligence artificielle générative. Objectif : obtenir le meilleur rapport qualité / temps de production, tout en assurant un rendu professionnel, rapide et adapté à tes usages (contenus marketing, réseaux sociaux, démonstrations produit, prototypes, etc.).
           </h2>
         </section>
 
