@@ -50,66 +50,72 @@ L'équipe est composée de deux indépendants unissant leurs efforts pour propos
 
 
   return (
-    <div className="container mx-auto px-4 py-8 md:py-12">
-      <section className="text-center pt-16 md:pt-24 border border-border bg-muted/20 rounded-xl p-12 shadow-lg">
-        <h1 className="font-headline text-7xl md:text-9xl font-black tracking-tighter mb-24">
-          {homepageContent.headline}
-        </h1>
-        <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground whitespace-pre-line">
-          {homepageContent.subheadline}
-        </p>
-      </section>
+    <>
+      <div className="container mx-auto px-4 py-8 md:py-12">
+        <section className="text-center pt-16 md:pt-24 border border-border bg-muted/20 rounded-xl p-12 shadow-lg mb-24">
+          <h1 className="font-headline text-7xl md:text-9xl font-black tracking-tighter mb-24">
+            {homepageContent.headline}
+          </h1>
+          <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground whitespace-pre-line">
+            {homepageContent.subheadline}
+          </p>
+        </section>
 
-      <div className="flex justify-center">
-        <FullLogo className="text-foreground w-[750px] h-[750px]" />
+        <div className="flex justify-center">
+          <FullLogo className="text-foreground w-[750px] h-[750px]" />
+        </div>
       </div>
-
-      <section className="pb-16 md:pb-24 bg-white text-black py-16 md:py-24 -mx-4 px-4 sm:-mx-8 sm:px-8">
-        <div className="max-w-4xl mx-auto text-left">
-            <p className="text-lg whitespace-pre-line">
+      
+      <section className="w-full bg-white text-black py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-left">
+              <p className="text-lg whitespace-pre-line">
 {`Tremplin Video Lab est un laboratoire indépendant spécialisé dans le test et la comparaison des meilleurs outils d’IA générative du marché. Nous explorons en continu les solutions de création vidéo, de montage, de génération d’images, de voix IA et d’automatisation, afin d’identifier les outils les plus efficaces selon chaque besoin.
 
 Notre équipe réunit deux freelances qui associent leurs compétences pour produire des vidéos et développer des applications en combinant outils de création standards et intelligence artificielle générative. Objectif : obtenir le meilleur rapport qualité / temps de production, tout en assurant un rendu professionnel, rapide et adapté à tes usages (contenus marketing, réseaux sociaux, démonstrations produit, prototypes, etc.).`}
-            </p>
+              </p>
+          </div>
         </div>
       </section>
 
-      <section className="py-16 md:py-24 border-t">
-        <div className="flex justify-between items-center mb-8">
-          <h2 className="font-headline text-3xl font-bold tracking-tight">
-            {dict.homePage.latestVideos}
-          </h2>
-          <Button variant="outline" asChild>
-            <Link href="/videos">{dict.homePage.viewAll}</Link>
-          </Button>
-        </div>
-        {latestVideos.length > 0 ? (
-          <Carousel
-            opts={{
-              align: 'start',
-              loop: true,
-            }}
-            className="w-full"
-          >
-            <CarouselContent>
-              {latestVideos.map((video) => (
-                <CarouselItem
-                  key={video.id}
-                  className="md:basis-1/2 lg:basis-1/3"
-                >
-                  <div className="p-1">
-                    <VideoCard video={video} />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="hidden sm:flex" />
-            <CarouselNext className="hidden sm:flex" />
-          </Carousel>
-        ) : (
-          <p>{dict.homePage.noVideos}</p>
-        )}
-      </section>
-    </div>
+      <div className="container mx-auto px-4 py-8 md:py-12">
+        <section className="py-16 md:py-24 border-t">
+          <div className="flex justify-between items-center mb-8">
+            <h2 className="font-headline text-3xl font-bold tracking-tight">
+              {dict.homePage.latestVideos}
+            </h2>
+            <Button variant="outline" asChild>
+              <Link href="/videos">{dict.homePage.viewAll}</Link>
+            </Button>
+          </div>
+          {latestVideos.length > 0 ? (
+            <Carousel
+              opts={{
+                align: 'start',
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                {latestVideos.map((video) => (
+                  <CarouselItem
+                    key={video.id}
+                    className="md:basis-1/2 lg:basis-1/3"
+                  >
+                    <div className="p-1">
+                      <VideoCard video={video} />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="hidden sm:flex" />
+              <CarouselNext className="hidden sm:flex" />
+            </Carousel>
+          ) : (
+            <p>{dict.homePage.noVideos}</p>
+          )}
+        </section>
+      </div>
+    </>
   );
 }
