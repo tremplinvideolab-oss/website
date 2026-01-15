@@ -9,8 +9,8 @@ let videos: Video[] = [
     description: 'Dans cette vidéo, un ours, un lapin, un renard, et une tortue prennent part à une course entre la France et l\'Italie.',
     thumbnailUrl: '/images/thumb_zoolympic_games_1.png',
     videoUrl: 'https://www.youtube.com/watch?v=pZEC2KPkmCs',
-    createdAt: '2024-07-22T10:00:00Z',
-    thumbnailHint: 'cartoon race animals',
+    createdAt: '2025-12-27T12:00:00Z',
+    thumbnailHint: 'animation cartoon race animals',
   },
   {
     id: '2',
@@ -18,8 +18,8 @@ let videos: Video[] = [
     description: 'Un lapin aux pouvoirs magiques, donnent vie à un arbre qui s\'anime durant les 4 saisons !',
     thumbnailUrl: '/images/thumb_zoolympic_world_1.png',
     videoUrl: '#',
-    createdAt: '2024-07-21T14:30:00Z',
-    thumbnailHint: 'nature landscape',
+    createdAt: '2026-01-14T18:30:00Z',
+    thumbnailHint: 'animatec tree',
   },
 ];
 
