@@ -18,7 +18,7 @@ export const dictionaries = {
       noVideos: 'No videos available yet.'
     },
     videosPage: {
-      allVideos: 'All Videos',
+      allVideos: 'Videos created by Tremplin Video Lab',
       browse: 'Browse our full collection of amazing content.',
       noVideos: 'No Videos Yet',
       checkBack: 'Check back later for new content!',
@@ -61,7 +61,7 @@ export const dictionaries = {
       noVideos: 'Aucune vidéo disponible pour le moment.'
     },
     videosPage: {
-      allVideos: 'Toutes les vidéos',
+      allVideos: 'Les vidéos créées par Tremplin Video Lab',
       browse: 'Parcourez notre collection complète de contenus incroyables.',
       noVideos: 'Pas encore de vidéos',
       checkBack: 'Revenez plus tard pour du nouveau contenu !',
