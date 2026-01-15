@@ -59,7 +59,7 @@ export default function Home() {
         </section>
       </div>
 
-      <section className="bg-white py-16 md:py-24 border-y">
+      <section className="w-full bg-white py-16 md:py-24 border-y">
         <div className="container mx-auto px-4">
           <h2 className="font-headline text-xl font-bold tracking-tight text-left max-w-4xl mx-auto leading-relaxed text-gray-800">
           Tremplin Video Lab est un laboratoire indépendant spécialisé dans le test et la comparaison des meilleurs outils d’IA générative du marché. Nous explorons en continu les solutions de création vidéo, de montage, de génération d’images, de voix IA et d’automatisation, afin d’identifier les outils les plus efficaces selon chaque besoin.
@@ -69,9 +69,8 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="bg-muted/30">
-        <div className="container mx-auto px-4 py-8 md:py-12">
-            <section className="py-16 md:py-24">
+      <section className="bg-muted/40 py-16 md:py-24">
+        <div className="container mx-auto px-4">
             <div className="flex justify-between items-center mb-8">
                 <h2 className="font-headline text-3xl font-bold tracking-tight">
                 {dict.homePage.latestVideos}
@@ -106,9 +105,8 @@ export default function Home() {
             ) : (
                 <p>{dict.homePage.noVideos}</p>
             )}
-            </section>
         </div>
-      </div>
+      </section>
     </>
   );
 }
