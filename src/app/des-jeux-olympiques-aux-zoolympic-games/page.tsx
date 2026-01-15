@@ -4,6 +4,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useI18n } from "@/hooks/use-i18n";
 import { ListChecks } from "lucide-react";
+import Link from "next/link";
 
 export default function ZoolympicGamesPage() {
   const { dict } = useI18n();
@@ -47,7 +48,7 @@ export default function ZoolympicGamesPage() {
           </Card>
 
           <p className="text-lg mt-8">
-            Mais les Zoolympic Games, c'est aussi tout un monde autour ayant amené à la création du projet Zoolympic World.
+            Mais les Zoolympic Games, c'est aussi tout un monde autour ayant amené à la création du projet <Link href="/des-jeux-olympiques-au-zoolympic-world" className="text-primary hover:underline">Zoolympic World</Link>.
           </p>
         </div>
       </div>
