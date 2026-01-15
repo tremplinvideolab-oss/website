@@ -51,7 +51,7 @@ export default function Home() {
                 Tremplin Video Lab
               </div>
               <div className="w-full">
-            <div className="w-2/5 mx-auto my-6 h-[3px] bg-border mb-16" />
+            <div className="w-2/5 mx-auto my-6 h-[3px] bg-border mb-8" />
             <h1 className="font-headline text-xl font-bold tracking-tight mb-6 mt-5">
               Tremplin Video Lab conçoit des vidéos d'animations à partir de scénarios originaux.
             </h1>
@@ -73,7 +73,7 @@ export default function Home() {
               Qui sommes-nous ?
             </h2>
             <p className="leading-relaxed">
-            Nous sommes une équipe de deux freelances qui combine ses expertises pour produire des vidéos et développer des applications, en associant des outils de création standards à l’intelligence artificielle générative.
+            Nous sommes une équipe de deux indépendants qui combine ses expertises pour produire des vidéos et développer des applications, en associant des outils de création standards à l’intelligence artificielle générative.
             <br/><br/>
             Notre ambition : offrir le meilleur équilibre entre qualité et délais de production, tout en garantissant un rendu de qualité, rapide et adapté à vos usages (marketing, réseaux sociaux, démonstrations produit, prototypes, etc.).
             </p>
