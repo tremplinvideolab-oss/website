@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'TremplinVideoLab',
   description: 'Un site de partage de video modernes utilisant les dernièrs outils disponibles.',
   icons: {
-    icon: '/favicon.png',
+    icon: '/logo.png',
   },
 };
 

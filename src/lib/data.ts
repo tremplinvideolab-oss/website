@@ -5,8 +5,8 @@ import { Video, User, HomepageContent, Project } from './definitions';
 let videos: Video[] = [
   {
     id: '1',
-    title: 'Zoolympic Game : A race full of twists and turns !',
-    description: 'In this video, a bear, a rabbit, a fox, and a turtle take part in a race between France and Italy.',
+    title: 'Zoolympic Games #1 : Une course pleine de rebondissements !',
+    description: 'Dans cette vidéo, un ours, un lapin, un renard, et une tortue prennent part à une course entre la France et l\'Italie.',
     thumbnailUrl: '/images/thumb_zoolympic_games_1.png',
     videoUrl: 'https://www.youtube.com/watch?v=pZEC2KPkmCs',
     createdAt: '2024-07-22T10:00:00Z',
@@ -14,39 +14,12 @@ let videos: Video[] = [
   },
   {
     id: '2',
-    title: 'The Serenity of Nature',
-    description: 'Immerse yourself in the calming sounds and beautiful sights of the natural world.',
-    thumbnailUrl: 'https://picsum.photos/seed/vid2/600/400',
+    title: 'Zoolympic World #1 : Un arbre prends vie et s\anime durant les 4 saisons !',
+    description: 'Un lapin aux pouvoirs magiques, donnent vie à un arbre qui s\anime durant les 4 saisons !',
+    thumbnailUrl: '/images/thumb_zoolympic_world_1.png',
     videoUrl: '#',
     createdAt: '2024-07-21T14:30:00Z',
     thumbnailHint: 'nature landscape',
-  },
-  {
-    id: '3',
-    title: 'Architectural Marvels',
-    description: 'A look at some of the most innovative and breathtaking architectural designs.',
-    thumbnailUrl: 'https://picsum.photos/seed/vid3/600/400',
-    videoUrl: '#',
-    createdAt: '2024-07-20T18:00:00Z',
-    thumbnailHint: 'city architecture',
-  },
-  {
-    id: '4',
-    title: 'Deep Dive into AI',
-    description: 'Understanding the fundamentals of Artificial Intelligence and its future potential.',
-    thumbnailUrl: 'https://picsum.photos/seed/vid4/600/400',
-    videoUrl: '#',
-    createdAt: '2024-07-19T09:00:00Z',
-    thumbnailHint: 'space galaxy',
-  },
-  {
-    id: '5',
-    title: 'The Art of Minimalism',
-    description: 'Learn how to declutter your life and find joy in simplicity.',
-    thumbnailUrl: 'https://picsum.photos/seed/vid5/600/400',
-    videoUrl: '#',
-    createdAt: '2024-07-18T12:00:00Z',
-    thumbnailHint: 'minimalist design',
   },
 ];
 
