@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <>
       <div className="container mx-auto px-4">
-        <section className="text-center mb-16 pt-0">
+        <section className="text-center">
           <div className="border bg-card text-card-foreground p-8 rounded-lg">
             <div className="flex justify-center items-center gap-4 md:gap-8 mb-8 flex-wrap">
               <div className="w-24 h-24 md:w-28 md:h-28 flex-shrink-0">
@@ -51,24 +51,34 @@ export default function Home() {
                 Tremplin Video Lab
               </div>
             </div>
-            
-            <h2 className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground whitespace-pre-line font-bold">
-              {homepageContent.subheadline}
-            </h2>
           </div>
         </section>
+      </div>
+
+      <div className="w-full bg-white py-16 md:py-24 border-t">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-gray-800">
+            <h1 className="font-headline text-xl font-bold tracking-tight mb-6">
+              Tremplin Video Lab conçoit des vidéos d'animations à partir de scénarios originaux.
+            </h1>
+            <p className="leading-relaxed">
+              Une approche pragmatique : combiner les outils de créations classiques et l'IA générative pour atteindre le meilleur rapport qualité / temps de production.
+            </p>
+            <hr className="my-8 w-1/2 mx-auto border-muted" />
+          </div>
+        </div>
       </div>
 
       <section className="w-full bg-white py-16 md:py-24 border-y">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-gray-800">
-            <h2 className="font-headline text-xl font-bold tracking-tight mb-6" style={{fontSize: '20px'}}>
+            <h2 className="font-headline text-[20px] font-bold tracking-tight mb-6">
               Qui sommes-nous ?
             </h2>
-            <p className="leading-relaxed whitespace-pre-line">
-{`Nous sommes une équipe de deux freelances qui combine ses expertises pour produire des vidéos et développer des applications, en associant des outils de création standards à l’intelligence artificielle générative.
-
-Notre ambition : offrir le meilleur équilibre entre qualité et délais de production, tout en garantissant un rendu de qualité, rapide et adapté à vos usages (marketing, réseaux sociaux, démonstrations produit, prototypes, etc.).`}
+            <p className="leading-relaxed">
+            Nous sommes une équipe de deux freelances qui combine ses expertises pour produire des vidéos et développer des applications, en associant des outils de création standards à l’intelligence artificielle générative.
+            <br/><br/>
+            Notre ambition : offrir le meilleur équilibre entre qualité et délais de production, tout en garantissant un rendu de qualité, rapide et adapté à vos usages (marketing, réseaux sociaux, démonstrations produit, prototypes, etc.).
             </p>
           </div>
         </div>
@@ -77,14 +87,13 @@ Notre ambition : offrir le meilleur équilibre entre qualité et délais de prod
         <br/>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-gray-800">
-            <div className="w-1/2 mx-auto h-px bg-border my-8"></div>
-            <h1 className="font-headline text-xl font-bold tracking-tight mb-6 text-center">
-            Tremplin Video Lab conçoit des vidéos d'animations à partir de scénarios originaux.
-            </h1>
-            <p className="leading-relaxed text-center whitespace-pre-line">
-{`À court terme, nos efforts se concentrent sur deux projets phares : `}<Link href="/des-jeux-olympiques-aux-zoolympic-games" className="text-primary hover:underline font-bold">Zoolympic Games</Link>{` et son `}<span className="italic">(spin-off)</span>{`, `}<Link href="/des-jeux-olympiques-au-zoolympic-world" className="text-primary hover:underline font-bold">Zoolympic World</Link>{`. Parallèlement, nous développons un troisième projet actuellement en phase de conception. Nous en partagerons davantage lorsqu’il atteindra un niveau de maturité suffisant.
-
-La production régulière de vidéos pour notre `}<a href="https://www.youtube.com/@TremplinVideoLab" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">chaîne YouTube</a>{` nous permet d’expérimenter progressivement différents aspects de la conception de cinématiques, de renforcer notre savoir-faire et d’accélérer le développement de ce futur projet.`}
+            <h2 className="font-headline text-xl font-bold tracking-tight mb-6">
+              Quels sont nos objectifs ?
+            </h2>
+            <p className="leading-relaxed">
+            À court terme, nos efforts se concentrent sur deux projets phares : <a href="/des-jeux-olympiques-aux-zoolympic-games" className="text-primary hover:underline font-bold">Zoolympic Games</a> et son <i>(spin-off)</i>, <a href="/des-jeux-olympiques-au-zoolympic-world" className="text-primary hover:underline font-bold">Zoolympic World</a>. Parallèlement, nous développons un troisième projet actuellement en phase de conception. Nous en partagerons davantage lorsqu’il atteindra un niveau de maturité suffisant.
+            <br/><br/>
+            La production régulière de vidéos pour notre <a href="https://www.youtube.com/@TremplinVideoLab" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">chaîne YouTube</a> nous permet d’expérimenter progressivement différents aspects de la conception de cinématiques, de renforcer notre savoir-faire et d’accélérer le développement de ce futur projet.
              </p>
           </div>
         </div>
