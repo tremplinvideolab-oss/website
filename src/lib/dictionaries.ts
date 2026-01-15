@@ -67,7 +67,7 @@ export const dictionaries = {
       checkBack: 'Revenez plus tard pour du nouveau contenu !',
     },
     projetsPage: {
-      title: 'Nos Projets',
+      title: 'Les projets de Tremplin Video Lab',
       description: 'Tremplin Video lab : des concepts de vidéos variées mais des projets liés !',
       zoolympicGamesDescription: "Des JO de Paris 2024 à Milan 2026 : des animaux anthropomorphes s'affrontent dans des sports variés !",
       zoolympicWorldDescription: "Explorez le monde des Zoolympics : rencontrez nos personnages dans un cadre non-sportifs et découvrez les coulisses !",
