@@ -27,7 +27,7 @@ export default function VideosPage() {
           <h1 className="font-headline text-4xl font-bold tracking-tight">{dict.videosPage.allVideos}</h1>
           <p className="text-muted-foreground mt-2 mb-12">
             Voici la liste de toutes nos vidéos partagées, à retrouver sur notre 
-            <Link href="https://www.youtube.com/@TremplinVideoLab" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline ml-1">
+            <Link href="https://www.youtube.com/@TremplinVideoLab" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline ml-1 font-bold">
               chaîne YouTube
             </Link>.
           </p>
@@ -38,7 +38,7 @@ export default function VideosPage() {
 
         <div className="container mx-auto px-4">
           <div className="text-gray-800">
-            <p className="leading-relaxed max-w-4xl">
+            <p className="leading-relaxed">
                 Nous créons nos vidéos en utilisant les outils de créations standards mais aussi les outils d'IA générative.
                 <br /><br />
                 Ces différents outils nous permettent de proposer sur notre chaîne Youtube des scénarios variés et d'essayer de conserver une cohérence sur plusieurs vidéos.
