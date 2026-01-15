@@ -63,7 +63,7 @@ const projects: Project[] = [
     {
         id: 'zoolympic-games',
         title: "Zoolympic Games",
-        description: "Des JO de Paris 2024 à Milan 2026 : des animaux anthropomorphes s'affrontent dans des sports variés !",
+        description: "Des JO de Paris 2024 à ceux de Milan 2026, suivez des animaux anthropomorphes en compétition sur de multiples disciplines !",
         imageSrc: "/images/thumb_zoolympic_games_1.png",
         imageHint: "cartoon animals race",
         link: "/des-jeux-olympiques-aux-zoolympic-games"
@@ -71,7 +71,7 @@ const projects: Project[] = [
     {
         id: 'zoolympic-world',
         title: "Zoolympic World",
-        description: "Explorez le monde des Zoolympics : rencontrez nos personnages dans un cadre non-sportifs et découvrez les coulisses !",
+        description: "Explorez l’univers des Zoolympics : découvrez nos personnages dans des contextes extra-sportifs et plongez dans les coulisses !",
         imageSrc: "/images/thumb_zoolympic_world_1.png",
         imageHint: "cartoon tree face",
         link: "/des-jeux-olympiques-au-zoolympic-world"
