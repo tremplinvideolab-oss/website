@@ -78,6 +78,6 @@
     @apply bg-background text-foreground;
   }
   .whitesection {
-    background-color: #FFFFFF;
+    @apply bg-white;
   }
 }

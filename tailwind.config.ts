@@ -22,6 +22,7 @@ export default {
         code: ['monospace'],
       },
       colors: {
+        white: '#FFFFFF',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
