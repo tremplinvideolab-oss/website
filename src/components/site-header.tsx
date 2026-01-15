@@ -17,6 +17,7 @@ import { useState } from 'react';
 import { useI18n } from '@/hooks/use-i18n';
 import { LanguageSwitcher } from './language-switcher';
 import { Logo } from './logo';
+import React from 'react';
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -42,19 +43,23 @@ export function SiteHeader() {
             </span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-extrabold">
-            {mainNavLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={cn(
-                  'transition-colors hover:text-primary tracking-wider',
-                  pathname === link.href
-                    ? 'text-muted-foreground underline underline-offset-4'
-                    : 'text-foreground'
+            {mainNavLinks.map((link, index) => (
+              <React.Fragment key={link.href}>
+                <Link
+                  href={link.href}
+                  className={cn(
+                    'transition-colors hover:text-primary tracking-wider',
+                    pathname === link.href
+                      ? 'text-muted-foreground underline underline-offset-8'
+                      : 'text-foreground'
+                  )}
+                >
+                  {link.label}
+                </Link>
+                {index < mainNavLinks.length - 1 && (
+                  <div className="h-6 w-px bg-border" />
                 )}
-              >
-                {link.label}
-              </Link>
+              </React.Fragment>
             ))}
           </nav>
         </div>
@@ -88,7 +93,7 @@ export function SiteHeader() {
                     onClick={closeMobileMenu}
                     className={cn(
                       'transition-colors hover:text-primary font-extrabold tracking-wider',
-                      pathname === link.href ? 'text-muted-foreground underline underline-offset-4' : 'text-foreground'
+                      pathname === link.href ? 'text-muted-foreground underline underline-offset-8' : 'text-foreground'
                     )}
                   >
                     {link.label}
