@@ -40,7 +40,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="container mx-auto px-4 pt-8">
+      <div className="container mx-auto px-4">
         <section className="text-center">
           <div className="border bg-card text-card-foreground p-8 rounded-lg">
             <div className="flex justify-center items-center gap-4 md:gap-8 mb-8 flex-wrap">
@@ -62,16 +62,21 @@ export default function Home() {
       <section className="w-full bg-white py-16 md:py-24 border-y">
         <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-gray-800">
+                <hr className="w-1/2 mx-auto border-border mb-12" />
                 <h1 className="text-xl font-bold tracking-tight mb-6">
                 Tremplin Video Lab conçoit des vidéos d'animations à partir de scénarios originaux.
                 </h1>
-                <hr className="w-1/2 mx-auto border-border mb-12" />
-                <h2 className="text-xl font-bold tracking-tight mb-6">
+                <h2 className="text-xl font-bold tracking-tight mb-6 text-[20px]">
                 Qui sommes-nous ?
                 </h2>
-                <p className="leading-relaxed">
-                Notre équipe réunit deux freelances qui associent leurs compétences pour produire des vidéos et développer des applications en combinant outils de création standards et intelligence artificielle générative. Objectif : obtenir le meilleur rapport qualité / temps de production, tout en assurant un rendu professionnel, rapide et adapté à tes usages (contenus marketing, réseaux sociaux, démonstrations produit, prototypes, etc.).
-                </p>
+                <div className="leading-relaxed space-y-4">
+                  <p>
+                    Nous sommes une équipe de deux freelances qui combine ses expertises pour produire des vidéos et développer des applications, en associant des outils de création standards à l’intelligence artificielle générative.
+                  </p>
+                  <p>
+                    Notre ambition : offrir le meilleur équilibre entre qualité et délais de production, tout en garantissant un rendu qualitatif, rapide et adapté à vos usages (marketing, réseaux sociaux, démonstrations produit, prototypes, etc.).
+                  </p>
+                </div>
             </div>
         </div>
         <br/>
