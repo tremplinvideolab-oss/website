@@ -52,7 +52,7 @@ L'équipe est composée de deux indépendants unissant leurs efforts pour propos
   return (
     <>
       <div className="container mx-auto px-4 py-8 md:py-12">
-        <section className="text-center pt-16 md:pt-24 border border-gray-300 bg-gray-100 rounded-xl p-12 shadow-lg mb-16">
+        <section className="text-center pt-16 md:pt-24 border border-gray-300 bg-gray-100 rounded-xl p-12 shadow-lg mb-10">
           <h1 className="font-headline text-7xl md:text-9xl font-black tracking-tighter mb-10">
             {homepageContent.headline}
           </h1>
