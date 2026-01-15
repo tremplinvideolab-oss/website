@@ -51,7 +51,7 @@ export default function Home() {
                 Tremplin Video Lab
               </div>
               <div className="w-full">
-            <div className="w-2/5 mx-auto my-6 h-[3px] bg-border mb-8" />
+            <div className="w-2/5 mx-auto my-6 h-[3px] bg-border mb-16" />
             <h1 className="font-headline text-xl font-bold tracking-tight mb-6 mt-5">
               Tremplin Video Lab conçoit des vidéos d'animations à partir de scénarios originaux.
             </h1>

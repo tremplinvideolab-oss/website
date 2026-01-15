@@ -37,13 +37,13 @@ export default function VideosPage() {
       <section className="w-full whitesection py-16">
 
         <div className="container mx-auto px-4">
-          <p className="text-lg max-w-4xl text-left">
-            <h2 className="font-headline text-xl font-bold tracking-tight text-left max-w-4xl mx-auto leading-relaxed text-gray-800">
+          <div className="text-gray-800 max-w-4xl mx-auto">
+            <p className="leading-relaxed">
                 Nous créons nos vidéos en utilisant les outils de créations standards mais aussi les outils d'IA générative.
                 <br /><br />
                 Ces différents outils nous permettent de proposer sur notre chaîne Youtube des scénarios variés et d'essayer de conserver une cohérence sur plusieurs vidéos.
-            </h2>
-          </p>
+            </p>
+          </div>
         </div>
       </section>
 

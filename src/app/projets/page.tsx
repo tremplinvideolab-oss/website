@@ -38,15 +38,17 @@ export default function ProjetsPage() {
       
       <div className="w-full whitesection py-16">
         <div className="container mx-auto px-4">
-            <h2 className="font-headline text-xl font-bold tracking-tight text-left max-w-4xl leading-relaxed text-gray-800">
-                Tremplin Video Lab plannifie la création de ses vidéos comme faisant partie de différents projets.
-                <br /><br />
-                Ainsi, bien que chaque vidéo dispose de son propre scénario, elle fait partie d'un projet global composé de plusieurs vidéos.
-                <br /><br />
-                Nous ne nous contentons pas de réutiliser des personnages, mais de leur donner une histoire.
-                <br /><br />
-                Tortue, Kangourou, Hibou, Ours, Guépard, Loutre... elles ont toutes leur propre caractère et leur propre destin !
-            </h2>
+            <div className="max-w-4xl mx-auto text-gray-800">
+                <p className="leading-relaxed">
+                    Tremplin Video Lab plannifie la création de ses vidéos comme faisant partie de différents projets.
+                    <br /><br />
+                    Ainsi, bien que chaque vidéo dispose de son propre scénario, elle fait partie d'un projet global composé de plusieurs vidéos.
+                    <br /><br />
+                    Nous ne nous contentons pas de réutiliser des personnages, mais de leur donner une histoire.
+                    <br /><br />
+                    Tortue, Kangourou, Hibou, Ours, Guépard, Loutre... elles ont toutes leur propre caractère et leur propre destin !
+                </p>
+            </div>
         </div>
       </div>
 
