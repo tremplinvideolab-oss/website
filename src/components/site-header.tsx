@@ -35,20 +35,22 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
         <div className="mr-4 hidden md:flex">
-          <Link href="/" className="mr-8 flex items-center space-x-2">
+          <Link href="/" className="mr-14 flex items-center space-x-2">
             <Logo />
             <span className="hidden font-bold sm:inline-block font-headline">
               Tremplin Video Lab
             </span>
           </Link>
-          <nav className="flex items-center space-x-6 text-sm font-medium">
+          <nav className="flex items-center space-x-6 text-sm font-extrabold">
             {mainNavLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className={cn(
                   'transition-colors hover:text-primary',
-                  pathname === link.href ? 'text-primary' : 'text-muted-foreground'
+                  pathname === link.href
+                    ? 'text-muted-foreground underline'
+                    : 'text-foreground'
                 )}
               >
                 {link.label}
@@ -85,8 +87,8 @@ export function SiteHeader() {
                     href={link.href}
                     onClick={closeMobileMenu}
                     className={cn(
-                      'transition-colors hover:text-primary',
-                      pathname === link.href ? 'text-primary font-semibold' : 'text-muted-foreground'
+                      'transition-colors hover:text-primary font-extrabold',
+                      pathname === link.href ? 'text-muted-foreground underline' : 'text-foreground'
                     )}
                   >
                     {link.label}
