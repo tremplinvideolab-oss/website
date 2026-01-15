@@ -53,7 +53,7 @@ L'équipe est composée de deux indépendants unissant leurs efforts pour propos
     <>
       <div className="container mx-auto px-4 py-8 md:py-12">
         <section className="text-center pt-16 md:pt-24 border border-border bg-muted/20 rounded-xl p-12 shadow-lg mb-24">
-          <h1 className="font-headline text-7xl md:text-9xl font-black tracking-tighter mb-24">
+          <h1 className="font-headline text-7xl md:text-9xl font-black tracking-tighter mb-10">
             {homepageContent.headline}
           </h1>
           <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground whitespace-pre-line">
@@ -61,12 +61,12 @@ L'équipe est composée de deux indépendants unissant leurs efforts pour propos
           </p>
         </section>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-12">
           <FullLogo className="text-foreground w-[750px] h-[750px]" />
         </div>
       </div>
       
-      <section className="w-full bg-white text-black py-16 md:py-24">
+      <section className="w-full bg-background text-foreground py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-left">
               <p className="text-lg whitespace-pre-line">
