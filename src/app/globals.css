@@ -77,4 +77,8 @@
   body {
     @apply bg-background text-foreground;
   }
+  .whitesection {
+    background-color: #FFFFFF;
+    color: #0A0A0A;
+  }
 }

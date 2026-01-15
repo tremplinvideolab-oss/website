@@ -34,7 +34,7 @@ export default function VideosPage() {
         </div>
       </div>
 
-      <section className="w-full bg-background py-16">
+      <section className="w-full whitesection py-16">
         <div className="container mx-auto">
             <p className="text-lg max-w-4xl mx-auto text-left">
                 Nous créons nos vidéos en utilisant les outils de créations standards mais aussi les outils d'IA générative.
