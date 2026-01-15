@@ -43,6 +43,7 @@ export function SiteHeader() {
             </span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-extrabold">
+            <div className="h-6 w-[4px] bg-muted/30" />
             {mainNavLinks.map((link, index) => (
               <React.Fragment key={link.href}>
                 <Link
@@ -61,6 +62,7 @@ export function SiteHeader() {
                 )}
               </React.Fragment>
             ))}
+            <div className="h-6 w-[4px] bg-muted/30" />
           </nav>
         </div>
 
