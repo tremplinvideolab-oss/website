@@ -17,7 +17,7 @@ let videos: Video[] = [
     title: 'Zoolympic World #1 : Un arbre prends vie et s\'anime durant les 4 saisons !',
     description: "Un lapin aux pouvoirs magiques, donne vie à un arbre qui s'anime durant les 4 saisons !",
     thumbnailUrl: '/images/thumb_zoolympic_world_1.png',
-    videoUrl: '#',
+    videoUrl: 'https://www.youtube.com/watch?v=nfk3BYiyP7I',
     createdAt: '2026-01-14T18:30:00Z',
     thumbnailHint: 'animatec tree',
   },
