@@ -62,9 +62,9 @@ export default function Home() {
       <section className="w-full bg-white py-16 md:py-24 border-y">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-gray-800">
-            <h1 className="font-headline text-xl font-bold tracking-tight mb-6">
+            <h2 className="font-headline text-xl font-bold tracking-tight mb-6">
               Qui sommes-nous ?
-            </h1>
+            </h2>
             <p className="leading-relaxed">
               Notre équipe réunit deux freelances qui associent leurs compétences pour produire des vidéos et développer des applications en combinant outils de création standards et intelligence artificielle générative. Objectif : obtenir le meilleur rapport qualité / temps de production, tout en assurant un rendu professionnel, rapide et adapté à tes usages (contenus marketing, réseaux sociaux, démonstrations produit, prototypes, etc.).
             </p>
@@ -79,9 +79,9 @@ export default function Home() {
               Quels sont nos objectifs ?
             </h2>
             <p className="leading-relaxed">
-             Même si dans un premier temps les projets <a href="/des-jeux-olympiques-aux-zoolympic-games" className="text-primary hover:underline font-bold">Zoolympic Games</a> et son dérivé "spin-off" <a href="/des-jeux-olympiques-au-zoolympic-world" className="text-primary hover:underline font-bold">Zoolympic World</a> sont les deux projets principaux de l'équipe, nous travaillons sur un projet en phase de conception, sur lequel nous communiquerons une fois qu'il sera dans une phase suffisamment avancée.
+             Même si dans un premier temps les projets <a href="/des-jeux-olympiques-aux-zoolympic-games" className="text-primary hover:underline font-bold">Zoolympic Games</a> et son dérivé <em className='italic'>spin-off</em> <a href="/des-jeux-olympiques-au-zoolympic-world" className="text-primary hover:underline font-bold">Zoolympic World</a> sont les deux projets principaux de l'équipe, nous travaillons sur un projet en phase de conception, sur lequel nous communiquerons une fois qu'il sera dans une phase suffisamment avancée.
             <br/><br/>
-             La création des vidéos de notre <a href="https://www.youtube.com/@TremplinVideoLab">chaîne Youtube</a> nous permettrons de tester petit à petit diverses pans de la conception de cinématiques pour progresser sur notre projet et vous le proposer très prochainement.
+             La création des vidéos de notre <a href="https://www.youtube.com/@TremplinVideoLab" target="_blank" rel="noopener noreferrer">chaîne Youtube</a> nous permettrons de tester petit à petit diverses pans de la conception de cinématiques pour progresser sur notre projet et vous le proposer très prochainement.
 
 
              </p>
