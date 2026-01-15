@@ -61,7 +61,6 @@ export default function LoginPage() {
                 type="email"
                 placeholder="admin@example.com"
                 required
-                defaultValue="admin@tremplinvideolab.com"
               />
             </div>
             <div className="grid gap-2">
@@ -70,7 +69,6 @@ export default function LoginPage() {
                 id="password" 
                 type="password" 
                 required 
-                defaultValue="password"
               />
             </div>
           </CardContent>
