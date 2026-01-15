@@ -52,7 +52,7 @@ export default function VideosPage() {
 
       {videos.length > 0 ? (
         <div className="w-full bg-muted/30 py-16">
-          <div className="container mx-auto px-4 space-y-12">
+          <div className="container mx-auto px-4">
             {longVideos.length > 0 && (
               <div>
                 <h2 className="font-headline text-3xl font-bold tracking-tight mb-8">Nos vidéos longues :</h2>
@@ -63,6 +63,11 @@ export default function VideosPage() {
                 </div>
               </div>
             )}
+
+            {longVideos.length > 0 && shortVideos.length > 0 && (
+              <div className="my-12 h-[2px] bg-border" />
+            )}
+
             {shortVideos.length > 0 && (
               <div>
                 <h2 className="font-headline text-3xl font-bold tracking-tight mb-8">Nos vidéos shorts :</h2>
