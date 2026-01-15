@@ -18,17 +18,17 @@ export const dictionaries = {
       noVideos: 'No videos available yet.'
     },
     videosPage: {
-      allVideos: 'Videos created by Tremplin Video Lab',
+      allVideos: 'Les vidéos créées par Tremplin Video Lab',
       browse: 'Browse our full collection of amazing content.',
       noVideos: 'No Videos Yet',
       checkBack: 'Check back later for new content!',
     },
     projetsPage: {
-      title: 'Our Projects',
-      description: 'Tremplin Video Lab imagines varied scenarios through various projects!',
+      title: 'Les projets de Tremplin Video Lab',
+      description: 'Tremplin Video Lab imagines scenarios in different universes, through various projects!',
       zoolympicGamesDescription: "From the Paris 2024 Olympic Games to Milan 2026: anthropomorphic animals compete in various sports!",
       zoolympicWorldDescription: 'Explore the world of Zoolympics, meet the characters and go behind the scenes.',
-      learnMore: 'View details'
+      learnMore: 'Discover the project'
     },
     loginPage: {
       title: 'Admin Login',
@@ -68,10 +68,10 @@ export const dictionaries = {
     },
     projetsPage: {
       title: 'Les projets de Tremplin Video Lab',
-      description: 'Tremplin Video Lab imagine des scénarios variées, au travers de divers projets !',
+      description: 'Tremplin Video Lab imagine des scénarios dans différents univers, au travers de divers projets !',
       zoolympicGamesDescription: "Des JO de Paris 2024 à Milan 2026 : des animaux anthropomorphes s'affrontent dans des sports variés !",
       zoolympicWorldDescription: "Explorez le monde des Zoolympics : rencontrez nos personnages dans un cadre non-sportifs et découvrez les coulisses !",
-      learnMore: 'Consulter le détail'
+      learnMore: 'Découvrir le projet'
     },
     loginPage: {
       title: 'Connexion',
