@@ -21,20 +21,20 @@ export default function ZoolympicGamesPage() {
     <>
       <div className="container mx-auto px-4 py-8 md:py-12">
         <div className="mb-8 text-center">
-            <div className="flex justify-center items-center mb-6">
-                <Image 
-                    src="/images/logo-projects/logo_zoolympig_games.png" 
-                    alt="Zoolympic Games Logo"
-                    width={120}
-                    height={120}
-                />
-            </div>
           <h1 className="font-headline text-4xl font-bold tracking-tight">Zoolympic Games : Des Jeux Olympiques de Paris 2024 aux JO 2026 de Milan Cortina !</h1>
         </div>
       </div>
       
       <div className="w-full bg-white py-16 md:py-24">
   <div className="container mx-auto px-4">
+    <div className="flex justify-center items-center mb-6">
+        <Image 
+            src="/images/logo-projects/logo_zoolympic_games.png" 
+            alt="Zoolympic Games Logo"
+            width={512}
+            height={512}
+        />
+    </div>
     <div className="max-w-4xl mx-auto">
       <p className="text-lg mb-6 text-gray-800">
         Zoolympic Games réinvente l’esprit des Jeux Olympiques à travers un univers peuplé d’animaux.

@@ -8,7 +8,7 @@ let videos: Video[] = [
     title: 'Zoolympic Games #1 : Une course pleine de rebondissements !',
     description: 'Dans cette vidéo, un ours, un lapin, un renard, et une tortue prennent part à une course entre la France et l\'Italie.',
     type: 'video-longue',
-    thumbnailUrl: '/images/thumb_zoolympic_games_1.png',
+    thumbnailUrl: '/images/thumb_zoolympic_games_1.jpg',
     videoUrl: 'https://www.youtube.com/watch?v=pZEC2KPkmCs',
     createdAt: '2025-12-27T12:00:00Z',
     thumbnailHint: 'animation cartoon race animals',
@@ -19,7 +19,7 @@ let videos: Video[] = [
     title: 'Zoolympic World #1 : Un arbre prends vie et s\'anime durant les 4 saisons !',
     description: "Un lapin aux pouvoirs magiques, donne vie à un arbre qui s'anime durant les 4 saisons !",
     type: 'video-longue',
-    thumbnailUrl: '/images/thumb_zoolympic_world_1.png',
+    thumbnailUrl: '/images/thumb_zoolympic_world_1.jpg',
     videoUrl: 'https://www.youtube.com/watch?v=nfk3BYiyP7I',
     createdAt: '2026-01-14T18:30:00Z',
     thumbnailHint: 'animation d\'arbre vivant en morphing 3D',
@@ -40,7 +40,7 @@ let videos: Video[] = [
   {
     id: '4',
     title: 'Short - Zoolympic World : Déguster une bonne galette des rois !',
-    description: 'Les personnages de Zoolympic World se retrouvent pour partager la traditionnelle galette des rois. Qui sera couronné roi ou reine ?',
+    description: 'Les personnages de Zoolympic World se retrouvent pour partager la traditionnelle galette des rois. Qui sera couronné roi ?',
     type: 'video-short',
     thumbnailUrl: '/images/thumb_manger_la_galette.png',
     videoUrl: 'https://www.youtube.com/shorts/LOwffKm1LGI',
@@ -101,19 +101,19 @@ const projects: Project[] = [
         id: 'zoolympic-games',
         title: "Zoolympic Games",
         description: "Des JO de Paris 2024 à ceux de Milan 2026, suivez des animaux anthropomorphes en compétition sur de multiples disciplines !",
-        imageSrc: "/images/thumb_zoolympic_games_1.png",
+        imageSrc: "/images/thumb_zoolympic_games_1.jpg",
         imageHint: "cartoon animals race",
         link: "/des-jeux-olympiques-aux-zoolympic-games",
-        logo:'/images/logo-projects/logo_zoolympig_games.png'
+        logo:'/images/logo-projects/logo_zoolympic_games.png'
     },
     {
         id: 'zoolympic-world',
         title: "Zoolympic World",
         description: "Explorez l’univers des Zoolympics : découvrez nos personnages dans des contextes extra-sportifs et plongez dans les coulisses !",
-        imageSrc: "/images/thumb_zoolympic_world_1.png",
+        imageSrc: "/images/thumb_zoolympic_world_1.jpg",
         imageHint: "cartoon tree face",
         link: "/des-jeux-olympiques-au-zoolympic-world",
-        logo:'/images/logo-projects/logo_zoolympig_world.png'
+        logo:'/images/logo-projects/logo_zoolympic_world.png'
     }
 ];
 
