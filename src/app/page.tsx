@@ -47,9 +47,9 @@ export default function Home() {
               <div className="w-24 h-24 md:w-28 md:h-28 flex-shrink-0">
                 <FullLogo className="text-foreground w-full h-full" />
               </div>
-              <h1 className="font-headline text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter">
+              <div className="font-headline text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter">
                 {homepageContent.headline}
-              </h1>
+              </div>
             </div>
             
             <h2 className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground whitespace-pre-line font-bold">
