@@ -15,7 +15,7 @@ export default function ProjetsPage() {
         id: 'zoolympic-games',
         title: "Zoolympic Games",
         description: "Des JO de Paris 2024 à Milan 2026 : des animaux anthropomorphes s'affrontent dans des sports variés !",
-        imageSrc: "https://storage.googleapis.com/aifirebase-12d3c.appspot.com/user_images/zoolympic_game.webp",
+        imageSrc: "/images/zoolympic_game.webp",
         imageHint: "cartoon animals race",
         link: "/des-jeux-olympiques-aux-zoolympic-games"
     },
@@ -23,7 +23,7 @@ export default function ProjetsPage() {
         id: 'zoolympic-world',
         title: "Zoolympic World",
         description: "Explorez le monde des Zoolympics : rencontrez nos personnages dans un cadre non-sportifs et découvrez les coulisses !",
-        imageSrc: "/zoolympic_world.webp",
+        imageSrc: "/images/zoolympic_world.webp",
         imageHint: "cartoon tree face",
         link: "/des-jeux-olympiques-au-zoolympic-world"
     }
