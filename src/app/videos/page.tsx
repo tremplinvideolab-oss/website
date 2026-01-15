@@ -24,7 +24,7 @@ export default function VideosPage() {
     <div className="container mx-auto px-4 py-8 md:py-12">
       <div className="mb-8">
         <h1 className="font-headline text-4xl font-bold tracking-tight">{dict.videosPage.allVideos}</h1>
-        <p className="text-muted-foreground mt-2 mb-8">
+        <p className="text-muted-foreground mt-2 mb-12">
           Voici la liste de toutes nos vidéos partagées, à retrouver sur notre 
           <Link href="https://www.youtube.com/@TremplinVideoLab" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline ml-1">
             chaîne YouTube
