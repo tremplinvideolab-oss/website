@@ -29,7 +29,7 @@ export default function ProjetsPage() {
     <div className="container mx-auto px-4 py-8 md:py-12">
       <div className="mb-8">
         <h1 className="font-headline text-4xl font-bold tracking-tight">{dict.projetsPage.title}</h1>
-        <p className="text-muted-foreground mt-2">{dict.projetsPage.description}</p>
+        <p className="text-muted-foreground mt-2 mb-8">{dict.projetsPage.description}</p>
       </div>
         {isLoading ? (
             <div className="flex justify-center items-center h-64">
