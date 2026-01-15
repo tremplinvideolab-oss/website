@@ -1,4 +1,3 @@
-
 'use client';
 
 import Link from 'next/link';
@@ -43,7 +42,7 @@ export function SiteHeader() {
             </span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-extrabold">
-            <div className="h-6 w-[4px] bg-muted-foreground" />
+            <div className="h-6 w-[2px] bg-muted-foreground" />
             {mainNavLinks.map((link, index) => (
               <React.Fragment key={link.href}>
                 <Link
@@ -58,11 +57,11 @@ export function SiteHeader() {
                   {link.label}
                 </Link>
                 {index < mainNavLinks.length - 1 && (
-                  <div className="h-6 w-[4px] bg-muted-foreground" />
+                  <div className="h-6 w-[2px] bg-muted-foreground" />
                 )}
               </React.Fragment>
             ))}
-            <div className="h-6 w-[4px] bg-muted-foreground" />
+            <div className="h-6 w-[2px] bg-muted-foreground" />
           </nav>
         </div>
 
