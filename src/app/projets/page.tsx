@@ -30,16 +30,11 @@ export default function ProjetsPage() {
       <div className="container mx-auto px-4 py-8 md:py-12">
         <div className="mb-8">
           <h1 className="font-headline text-4xl font-bold tracking-tight">{dict.projetsPage.title}</h1>
+          <p className="text-muted-foreground mt-2 max-w-4xl">
+            {dict.projetsPage.description}
+          </p>
         </div>
       </div>
-      
-      <section className="w-full whitesection py-16">
-        <div className="container mx-auto px-4">
-            <h2 className="font-headline text-xl font-bold tracking-tight text-left max-w-4xl mx-auto leading-relaxed text-gray-800">
-                {dict.projetsPage.description}
-            </h2>
-        </div>
-      </section>
 
       <div className="w-full bg-muted/30 py-16">
         <div className="container mx-auto px-4">
