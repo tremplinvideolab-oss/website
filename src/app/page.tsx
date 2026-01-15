@@ -79,7 +79,7 @@ export default function Home() {
               Quels sont nos objectifs ?
             </h2>
             <p className="leading-relaxed">
-             Même si dans un premier temps les projets <a href="/des-jeux-olympiques-aux-zoolympic-games" className="text-primary hover:underline">Zoolympic Games</a> et son dérivé "spin-off" <a href="/des-jeux-olympiques-au-zoolympic-world" className="text-primary hover:underline">Zoolympic World</a> sont les deux projets principaux de l'équipe, nous travaillons sur un projet en phase de conception, sur lequel nous communiquerons une fois qu'il sera dans une phase suffisamment avancée.
+             Même si dans un premier temps les projets <a href="/des-jeux-olympiques-aux-zoolympic-games" className="text-primary hover:underline font-bold">Zoolympic Games</a> et son dérivé "spin-off" <a href="/des-jeux-olympiques-au-zoolympic-world" className="text-primary hover:underline font-bold">Zoolympic World</a> sont les deux projets principaux de l'équipe, nous travaillons sur un projet en phase de conception, sur lequel nous communiquerons une fois qu'il sera dans une phase suffisamment avancée.
             <br/><br/>
              La création des vidéos de notre <a href="https://www.youtube.com/@TremplinVideoLab">chaîne Youtube</a> nous permettrons de tester petit à petit diverses pans de la conception de cinématiques pour progresser sur notre projet et vous le proposer très prochainement.
 
