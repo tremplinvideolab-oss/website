@@ -52,13 +52,15 @@ L'équipe est composée de deux indépendants unissant leurs efforts pour propos
   return (
     <>
       <div className="container mx-auto px-4 py-8 md:py-12">
-        <section className="text-center pt-16 md:pt-24">
-          <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tighter mb-6">
-            {homepageContent.headline}
-          </h1>
-          <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground whitespace-pre-line">
-            {homepageContent.subheadline}
-          </p>
+        <section className="text-center pt-16 md:pt-24 mb-16">
+          <div className="border bg-card text-card-foreground p-8 rounded-lg">
+            <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tighter mb-6">
+              {homepageContent.headline}
+            </h1>
+            <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground whitespace-pre-line">
+              {homepageContent.subheadline}
+            </p>
+          </div>
         </section>
 
         <section className="py-12">
