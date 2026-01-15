@@ -58,13 +58,13 @@ export default function Home() {
       <div className="w-full bg-white py-16 md:py-24 border-t">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-gray-800">
+            <hr className="my-8 w-1/2 mx-auto border-muted" />
             <h1 className="font-headline text-xl font-bold tracking-tight mb-6">
               Tremplin Video Lab conçoit des vidéos d'animations à partir de scénarios originaux.
             </h1>
             <p className="leading-relaxed">
               Une approche pragmatique : combiner les outils de créations classiques et l'IA générative pour atteindre le meilleur rapport qualité / temps de production.
             </p>
-            <hr className="my-8 w-1/2 mx-auto border-muted" />
           </div>
         </div>
       </div>
@@ -91,9 +91,9 @@ export default function Home() {
               Quels sont nos objectifs ?
             </h2>
             <p className="leading-relaxed">
-            À court terme, nos efforts se concentrent sur deux projets phares : <a href="/des-jeux-olympiques-aux-zoolympic-games" className="text-primary hover:underline font-bold">Zoolympic Games</a> et son <i>(spin-off)</i>, <a href="/des-jeux-olympiques-au-zoolympic-world" className="text-primary hover:underline font-bold">Zoolympic World</a>. Parallèlement, nous développons un troisième projet actuellement en phase de conception. Nous en partagerons davantage lorsqu’il atteindra un niveau de maturité suffisant.
+            À court terme, nos efforts se concentrent sur deux projets phares : <a href="/des-jeux-olympiques-aux-zoolympic-games" className="text-primary hover:underline font-bold">Zoolympic Games</a> et son <i>(spin-off)</i>, <a href="/des-jeux-olympiques-au-zoolympic-world" className="text-primary hover:underline font-bold">Zoolympic World</a>. Parallèlement, nous développons un troisième projet actuellement en phase de conception. Nous partagerons davantage d'informations lorsqu’il atteindra un niveau de maturité suffisamment important.
             <br/><br/>
-            La production régulière de vidéos pour notre <a href="https://www.youtube.com/@TremplinVideoLab" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">chaîne YouTube</a> nous permet d’expérimenter progressivement différents aspects de la conception de cinématiques, de renforcer notre savoir-faire et d’accélérer le développement de ce futur projet.
+            La production régulière de vidéos pour notre <a href="https://www.youtube.com/@TremplinVideoLab" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-bold">chaîne YouTube</a> nous permet d’expérimenter progressivement différents aspects de la conception de cinématiques, de renforcer notre savoir-faire et d’accélérer le développement de ce futur projet.
              </p>
           </div>
         </div>
