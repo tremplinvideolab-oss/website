@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useI18n } from "@/hooks/use-i18n";
 import { ListChecks } from "lucide-react";
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function ZoolympicGamesPage() {
   const { dict } = useI18n();
@@ -19,7 +20,15 @@ export default function ZoolympicGamesPage() {
   return (
     <>
       <div className="container mx-auto px-4 py-8 md:py-12">
-        <div className="mb-8">
+        <div className="mb-8 text-center">
+            <div className="flex justify-center items-center mb-6">
+                <Image 
+                    src="/images/logo-projects/logo_zoolympig_games.png" 
+                    alt="Zoolympic Games Logo"
+                    width={120}
+                    height={120}
+                />
+            </div>
           <h1 className="font-headline text-4xl font-bold tracking-tight">Zoolympic Games : Des Jeux Olympiques de Paris 2024 aux JO 2026 de Milan Cortina !</h1>
         </div>
       </div>
@@ -70,4 +79,3 @@ export default function ZoolympicGamesPage() {
     </>
   );
 }
-

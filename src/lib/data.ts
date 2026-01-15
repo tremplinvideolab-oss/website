@@ -43,7 +43,7 @@ let videos: Video[] = [
     description: 'Les personnages de Zoolympic World se retrouvent pour partager la traditionnelle galette des rois. Qui sera couronné roi ou reine ?',
     type: 'video-short',
     thumbnailUrl: '/images/thumb_manger_la_galette.png',
-    videoUrl: 'https://www.youtube.com/shorts/xQeXf9q1-4Q',
+    videoUrl: 'https://www.youtube.com/shorts/LOwffKm1LGI',
     createdAt: '2026-01-03T12:00:00Z',
     thumbnailHint: 'Des animaux déguste une galette des rois à la frangipane',
     project: 'zoolympic-world',
@@ -103,7 +103,8 @@ const projects: Project[] = [
         description: "Des JO de Paris 2024 à ceux de Milan 2026, suivez des animaux anthropomorphes en compétition sur de multiples disciplines !",
         imageSrc: "/images/thumb_zoolympic_games_1.png",
         imageHint: "cartoon animals race",
-        link: "/des-jeux-olympiques-aux-zoolympic-games"
+        link: "/des-jeux-olympiques-aux-zoolympic-games",
+        logo:'/images/logo-projects/logo_zoolympig_games.png'
     },
     {
         id: 'zoolympic-world',
@@ -111,7 +112,8 @@ const projects: Project[] = [
         description: "Explorez l’univers des Zoolympics : découvrez nos personnages dans des contextes extra-sportifs et plongez dans les coulisses !",
         imageSrc: "/images/thumb_zoolympic_world_1.png",
         imageHint: "cartoon tree face",
-        link: "/des-jeux-olympiques-au-zoolympic-world"
+        link: "/des-jeux-olympiques-au-zoolympic-world",
+        logo:'/images/logo-projects/logo_zoolympig_world.png'
     }
 ];
 

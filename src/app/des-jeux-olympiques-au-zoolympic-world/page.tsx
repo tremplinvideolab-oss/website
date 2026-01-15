@@ -4,6 +4,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useI18n } from "@/hooks/use-i18n";
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function ZoolympicWorldPage() {
   const { dict } = useI18n();
@@ -11,7 +12,15 @@ export default function ZoolympicWorldPage() {
   return (
     <>
       <div className="container mx-auto px-4 py-8 md:py-12">
-        <div className="mb-8">
+        <div className="mb-8 text-center">
+            <div className="flex justify-center items-center mb-6">
+                <Image 
+                    src="/images/logo-projects/logo_zoolympig_world.png" 
+                    alt="Zoolympic World Logo"
+                    width={120}
+                    height={120}
+                />
+            </div>
           <h1 className="font-headline text-4xl font-bold tracking-tight">Zoolympic World : Des vidéos des personnages des Zoolympic Games dans des contextes variés</h1>
         </div>
       </div>

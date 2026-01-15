@@ -31,4 +31,5 @@ export type Project = {
     imageSrc: string;
     imageHint: string;
     link: string;
+    logo: string;
 };
