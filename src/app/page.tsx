@@ -52,7 +52,7 @@ L'équipe est composée de deux indépendants unissant leurs efforts pour propos
   return (
     <>
       <div className="container mx-auto px-4 py-8 md:py-12">
-        <section className="text-center pt-16 md:pt-24 border border-border bg-muted/20 rounded-xl p-12 shadow-lg mb-24">
+        <section className="text-center pt-16 md:pt-24 border border-border bg-card rounded-xl p-12 shadow-lg mb-10">
           <h1 className="font-headline text-7xl md:text-9xl font-black tracking-tighter mb-10">
             {homepageContent.headline}
           </h1>
@@ -69,7 +69,7 @@ L'équipe est composée de deux indépendants unissant leurs efforts pour propos
       <section className="w-full bg-background text-foreground py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-left">
-              <p className="text-lg whitespace-pre-line">
+              <p className="text-lg whitespace-pre-line text-muted-foreground font-normal">
 {`Tremplin Video Lab est un laboratoire indépendant spécialisé dans le test et la comparaison des meilleurs outils d’IA générative du marché. Nous explorons en continu les solutions de création vidéo, de montage, de génération d’images, de voix IA et d’automatisation, afin d’identifier les outils les plus efficaces selon chaque besoin.
 
 Notre équipe réunit deux freelances qui associent leurs compétences pour produire des vidéos et développer des applications en combinant outils de création standards et intelligence artificielle générative. Objectif : obtenir le meilleur rapport qualité / temps de production, tout en assurant un rendu professionnel, rapide et adapté à tes usages (contenus marketing, réseaux sociaux, démonstrations produit, prototypes, etc.).`}
