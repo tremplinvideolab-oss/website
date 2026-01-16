@@ -1,9 +1,8 @@
-
 'use client';
 import { useState, useEffect } from 'react';
+import { useParams, notFound } from 'next/navigation';
 import { getVideoById } from '@/lib/data';
 import type { Video } from '@/lib/definitions';
-import { notFound } from 'next/navigation';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Badge } from '@/components/ui/badge';
 import { format } from 'date-fns';
@@ -21,16 +20,20 @@ function getYouTubeVideoId(url: string) {
 }
 
 
-export default function VideoPage({ params }: { params: { id: string } }) {
+export default function VideoPage() {
+  const params = useParams();
+  const id = Array.isArray(params.id) ? params.id[0] : (params.id as string);
   const [video, setVideo] = useState<Video | null | undefined>(undefined);
 
   useEffect(() => {
-    async function fetchVideo() {
-      const fetchedVideo = await getVideoById(params.id);
-      setVideo(fetchedVideo);
+    if (id) {
+      async function fetchVideo() {
+        const fetchedVideo = await getVideoById(id);
+        setVideo(fetchedVideo);
+      }
+      fetchVideo();
     }
-    fetchVideo();
-  }, [params.id]);
+  }, [id]);
 
   if (video === undefined) {
     return <div className="container mx-auto px-4 py-8 md:py-12 text-center">Loading...</div>;
