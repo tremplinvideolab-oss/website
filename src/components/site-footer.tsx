@@ -2,21 +2,37 @@
 'use client';
 import { useI18n } from '@/hooks/use-i18n';
 import { Logo } from './logo';
+import { NewsletterForm } from './newsletter-form';
 
 export function SiteFooter() {
   const { dict } = useI18n();
   return (
-    <footer className="py-6 md:px-8 md:py-0 border-t">
-      <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
-        <div className="flex items-center space-x-2">
-          <Logo />
-          <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            <span className="font-bold font-headline">Tremplin Video Lab</span> &copy; {new Date().getFullYear()}
+    <footer className="border-t bg-muted/20">
+      <div className="container py-12">
+        <div className="grid gap-8 md:grid-cols-12">
+          <div className="md:col-span-4">
+            <div className="flex items-center space-x-2 mb-4">
+              <Logo size={32} />
+              <p className="text-lg font-bold font-headline">
+                Tremplin Video Lab
+              </p>
+            </div>
+            <p className="text-sm text-muted-foreground">
+              Création de vidéos d'animation originales, alliant outils classiques et IA générative.
+            </p>
+          </div>
+          <div className="md:col-span-8 lg:col-span-6 lg:col-start-7">
+            <NewsletterForm />
+          </div>
+        </div>
+        <div className="mt-8 border-t pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-sm text-muted-foreground">
+            &copy; {new Date().getFullYear()} Tremplin Video Lab. Tous droits réservés.
+          </p>
+          <p className="text-center text-sm text-muted-foreground">
+            {dict.siteFooter.builtWithPassion}
           </p>
         </div>
-        <p className="text-center text-sm text-muted-foreground">
-          {dict.siteFooter.builtWithPassion}
-        </p>
       </div>
     </footer>
   );
