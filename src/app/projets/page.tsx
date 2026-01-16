@@ -40,7 +40,7 @@ export default function ProjetsPage() {
         <div className="container mx-auto px-4">
             <div className="text-gray-800">
             <h2 className="font-headline text-[20px] font-bold tracking-tight mb-6">
-              Qui sommes nous ?
+              Comment gérons-nous nos projets vidéos ?
             </h2>
             <p className="leading-relaxed max-w-8xl">
               Tremplin Video Lab conçoit et planifie ses vidéos dans le cadre de projets structurés.
