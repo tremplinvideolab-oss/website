@@ -17,6 +17,17 @@ import { useEffect, useState } from 'react';
 import type { Video, HomepageContent } from '@/lib/definitions';
 import { FullLogo } from '@/components/logo-full';
 
+const TikTokIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      {...props}
+    >
+      <path d="M16.6 5.82a4.48 4.48 0 0 1-3.68 3.68V14.5a5 5 0 1 0-5-5h1.5v2.32a2.5 2.5 0 1 1-2.5 2.5v-6.5a4.5 4.5 0 0 1 4.5-4.5c.34 0 .67.04 1 .12v2.3a2.5 2.5 0 0 0-1-.22 2.5 2.5 0 0 0-2.5 2.5v.18a4.48 4.48 0 0 1 7.18-1.68z" />
+    </svg>
+  );
+
 export default function Home() {
   const { dict, locale } = useI18n();
   const [latestVideos, setLatestVideos] = useState<Video[]>([]);
@@ -65,23 +76,29 @@ export default function Home() {
 
       <section className="w-full bg-muted/40 py-8">
         <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <Link href="https://www.youtube.com/@TremplinVideoLab" target="_blank" rel="noopener noreferrer" className="group block px-8 py-4 rounded-lg border bg-card text-card-foreground hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
                     <div className="flex flex-col items-center text-center gap-4">
                         <Youtube className="h-12 w-12 text-primary group-hover:scale-110 transition-transform" />
-                        <h3 className="font-headline text-xl font-bold">Accéder à notre chaine Youtube</h3>
+                        <h3 className="font-headline text-xl font-bold">Notre chaîne Youtube</h3>
                     </div>
                 </Link>
                 <Link href="https://www.facebook.com/profile.php?id=61586480589051" target="_blank" rel="noopener noreferrer" className="group block px-8 py-4 rounded-lg border bg-card text-card-foreground hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
                     <div className="flex flex-col items-center text-center gap-4">
                         <Facebook className="h-12 w-12 text-primary group-hover:scale-110 transition-transform" />
-                        <h3 className="font-headline text-xl font-bold">Notre Page Facebook</h3>
+                        <h3 className="font-headline text-xl font-bold">Notre page Facebook</h3>
                     </div>
                 </Link>
                 <Link href="https://www.instagram.com/tremplinvideolab/" target="_blank" rel="noopener noreferrer" className="group block px-8 py-4 rounded-lg border bg-card text-card-foreground hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
                     <div className="flex flex-col items-center text-center gap-4">
                         <Instagram className="h-12 w-12 text-primary group-hover:scale-110 transition-transform" />
-                        <h3 className="font-headline text-xl font-bold">Nous suivre sur Instagram</h3>
+                        <h3 className="font-headline text-xl font-bold">Notre page Instagram</h3>
+                    </div>
+                </Link>
+                <Link href="https://www.tiktok.com/@tremplinvideolab" target="_blank" rel="noopener noreferrer" className="group block px-8 py-4 rounded-lg border bg-card text-card-foreground hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div className="flex flex-col items-center text-center gap-4">
+                        <TikTokIcon className="h-12 w-12 text-primary group-hover:scale-110 transition-transform" />
+                        <h3 className="font-headline text-xl font-bold">Notre page TikTok</h3>
                     </div>
                 </Link>
             </div>

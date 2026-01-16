@@ -18,6 +18,17 @@ import { LanguageSwitcher } from './language-switcher';
 import { Logo } from './logo';
 import React from 'react';
 
+const TikTokIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      {...props}
+    >
+      <path d="M16.6 5.82a4.48 4.48 0 0 1-3.68 3.68V14.5a5 5 0 1 0-5-5h1.5v2.32a2.5 2.5 0 1 1-2.5 2.5v-6.5a4.5 4.5 0 0 1 4.5-4.5c.34 0 .67.04 1 .12v2.3a2.5 2.5 0 0 0-1-.22 2.5 2.5 0 0 0-2.5 2.5v.18a4.48 4.48 0 0 1 7.18-1.68z" />
+    </svg>
+  );
+
 export function SiteHeader() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -116,6 +127,10 @@ export function SiteHeader() {
                 <Link href="https://www.instagram.com/tremplinvideolab/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-foreground transition-colors hover:text-primary font-bold" onClick={closeMobileMenu}>
                     <Instagram className="h-6 w-6" />
                     <span>Instagram</span>
+                </Link>
+                <Link href="https://www.tiktok.com/@tremplinvideolab" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-foreground transition-colors hover:text-primary font-bold" onClick={closeMobileMenu}>
+                    <TikTokIcon className="h-6 w-6" />
+                    <span>TikTok</span>
                 </Link>
               </div>
 
