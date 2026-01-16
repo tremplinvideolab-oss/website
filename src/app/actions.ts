@@ -5,7 +5,7 @@ export async function subscribeToNewsletter(email: string, token: string): Promi
   // IMPORTANT: Verify the reCAPTCHA token to ensure the request is legitimate.
   // This requires your reCAPTCHA secret key, which should be stored as an environment variable.
   
-  const secretKey = process.env.RECAPTCHA_SECRET_KEY;
+  const secretKey = process.env.RECAPTCHA_SECRET_KEY || '6Lf6ukwsAAAAABqs5v2OvHsl_B2fiKOTIxSpcH3O';
   if (!secretKey) {
       console.error("RECAPTCHA_SECRET_KEY is not set.");
       return { success: false, message: "Le serveur n'est pas configuré correctement." };
@@ -39,3 +39,4 @@ export async function subscribeToNewsletter(email: string, token: string): Promi
     return { success: false, message: "Une erreur est survenue lors de l'inscription." };
   }
 }
+

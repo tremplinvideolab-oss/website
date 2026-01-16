@@ -71,7 +71,7 @@ export function NewsletterForm() {
     setIsSubmitting(false);
   }
   
-  const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
+  const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || '6Lf6ukwsAAAAAM40u2RvF1fv3bo8iEFpy9gG9z2Y';
 
   if (!siteKey) {
       if (process.env.NODE_ENV !== 'production') {
