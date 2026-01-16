@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Menu, Youtube, Facebook, Instagram } from 'lucide-react';
+import { Menu, Youtube, Facebook, Instagram, Mail } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Sheet,
@@ -16,6 +16,8 @@ import { useState } from 'react';
 import { useI18n } from '@/hooks/use-i18n';
 import { Logo } from './logo';
 import React from 'react';
+import { Popover, PopoverContent, PopoverTrigger } from './ui/popover';
+import { NewsletterForm } from './newsletter-form';
 
 const TikTokIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg
@@ -82,7 +84,7 @@ export function SiteHeader() {
               variant="ghost"
               className="mr-2 h-16 w-16 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden [&_svg]:h-12 [&_svg]:w-12"
             >
-              <Menu />
+              <Menu className="h-12 w-12" />
               <span className="sr-only">{dict.siteHeader.toggleMenu}</span>
             </Button>
           </SheetTrigger>
@@ -95,7 +97,7 @@ export function SiteHeader() {
                 </Link>
               </SheetTitle>
             </SheetHeader>
-            <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
+            <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6 overflow-y-auto">
               <div className="flex flex-col space-y-3">
                 {mainNavLinks.map((link) => (
                   <Link
@@ -133,6 +135,12 @@ export function SiteHeader() {
                 </Link>
               </div>
 
+              <div className="my-6 w-11/12 h-[1px] bg-border" />
+
+              <div className="pr-6">
+                <NewsletterForm />
+              </div>
+
             </div>
           </SheetContent>
         </Sheet>
@@ -144,7 +152,21 @@ export function SiteHeader() {
           <span className="font-bold font-headline">Tremplin Video Lab</span>
         </Link>
         
-        <div className="flex flex-1 items-center justify-end space-x-2" />
+        <div className="flex flex-1 items-center justify-end space-x-2">
+            <div className="hidden md:block">
+                <Popover>
+                    <PopoverTrigger asChild>
+                        <Button variant="outline">
+                            <Mail className="h-4 w-4 mr-2" />
+                            S'abonner
+                        </Button>
+                    </PopoverTrigger>
+                    <PopoverContent className="w-96">
+                        <NewsletterForm />
+                    </PopoverContent>
+                </Popover>
+            </div>
+        </div>
       </div>
     </header>
   );
