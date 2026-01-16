@@ -81,9 +81,9 @@ export function SiteHeader() {
           <SheetTrigger asChild>
             <Button
               variant="ghost"
-              className="mr-2 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden h-16 w-16"
+              className="mr-2 h-16 w-16 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden [&_svg]:h-10 [&_svg]:w-10"
             >
-              <Menu className="h-16 w-16" />
+              <Menu />
               <span className="sr-only">{dict.siteHeader.toggleMenu}</span>
             </Button>
           </SheetTrigger>
