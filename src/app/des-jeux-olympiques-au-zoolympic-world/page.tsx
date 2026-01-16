@@ -34,7 +34,7 @@ export default function ZoolympicWorldPage() {
         <div className="container mx-auto px-4">
           <div className="flex justify-center items-center mb-6">
             <Image 
-                src="/images/logo_zoolympic_world.png" 
+                src="/images/logo-projects/logo_zoolympic_world.png" 
                 alt="Zoolympic World Logo"
                 width={512}
                 height={512}

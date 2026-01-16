@@ -8,7 +8,7 @@ let videos: Video[] = [
     title: 'Zoolympic Games #1 : Une course pleine de rebondissements !',
     description: 'Dans cette vidéo, un ours, un lapin, un renard, et une tortue prennent part à une course entre la France et l\'Italie.',
     type: 'video-longue',
-    thumbnailUrl: '/images/thumb_zoolympic_games_1.jpg',
+    thumbnailUrl: '/images/thumb_zoolympic_games_1b.jpg',
     videoUrl: 'https://www.youtube.com/watch?v=pZEC2KPkmCs',
     createdAt: '2025-12-27T12:00:00Z',
     thumbnailHint: 'animation cartoon race animals',
@@ -101,7 +101,7 @@ const projects: Project[] = [
         id: 'zoolympic-games',
         title: "Zoolympic Games",
         description: "Des JO de Paris 2024 à ceux de Milan 2026, suivez des animaux anthropomorphes en compétition sur de multiples disciplines !",
-        imageSrc: "/images/thumb_zoolympic_games_1.jpg",
+        imageSrc: "/images/thumb_zoolympic_games_1b.jpg",
         imageHint: "cartoon animals race",
         link: "/des-jeux-olympiques-aux-zoolympic-games",
         logo:'/images/logo-projects/logo_zoolympic_games.png'
