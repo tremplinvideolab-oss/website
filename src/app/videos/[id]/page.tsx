@@ -89,7 +89,7 @@ export default function VideoPage({ params }: { params: { id: string } }) {
 
       <div>
         <h2 className="font-headline text-2xl font-bold mb-3">Description</h2>
-        <p className="text-muted-foreground leading-relaxed">{video.descriptionLong ? video.descriptionLong : video.description}</p>
+        <p style={{ whiteSpace: "pre-line" }} className="text-muted-foreground leading-relaxed">{ (video.descriptionLong && video.descriptionLong.trim() !== '') ? video.descriptionLong : video.description }</p>
       </div>
     </div>
   );

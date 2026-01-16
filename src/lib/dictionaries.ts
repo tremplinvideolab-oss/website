@@ -52,7 +52,7 @@ export const dictionaries = {
       toggleMenu: 'Basculer le menu'
     },
     siteFooter: {
-      builtWithPassion: 'Construit avec passion.'
+      builtWithPassion: ''
     },
     homePage: {
       exploreVideos: 'Explorer les vidéos',
