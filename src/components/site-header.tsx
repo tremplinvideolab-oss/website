@@ -14,7 +14,6 @@ import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { useState } from 'react';
 import { useI18n } from '@/hooks/use-i18n';
-import { LanguageSwitcher } from './language-switcher';
 import { Logo } from './logo';
 import React from 'react';
 
@@ -83,7 +82,7 @@ export function SiteHeader() {
               variant="ghost"
               className="mr-2 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden h-16 w-16"
             >
-              <Menu className="h-10 w-10" />
+              <Menu className="h-14 w-14" />
               <span className="sr-only">{dict.siteHeader.toggleMenu}</span>
             </Button>
           </SheetTrigger>
