@@ -2,6 +2,7 @@ export type Video = {
   id: string;
   title: string;
   description: string;
+  descriptionLong: string;
   type: string;
   thumbnailUrl: string;
   videoUrl: string;

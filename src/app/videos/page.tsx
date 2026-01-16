@@ -41,8 +41,8 @@ export default function VideosPage() {
         <div className="container mx-auto px-4">
           <div className="text-gray-800">
             <h2 className="font-headline text-[20px] font-bold tracking-tight mb-6">
-                Comment gérons-nous nos projets vidéos ?
-              </h2>
+                Comment créons-nous nos vidéos ?
+            </h2>
             <p className="leading-relaxed">
               Nous produisons nos vidéos en combinant des outils de création standards et des solutions d’IA générative.
               <br /><br />
