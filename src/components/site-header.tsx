@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Menu } from 'lucide-react';
+import { Menu, Youtube, Facebook, Instagram } from 'lucide-react';
 import { Button } from './ui/button';
 import {
   Sheet,
@@ -70,9 +70,9 @@ export function SiteHeader() {
           <SheetTrigger asChild>
             <Button
               variant="ghost"
-              className="mr-2 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
+              className="mr-2 h-8 w-8 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
             >
-              <Menu className="h-6 w-6" />
+              <Menu className="h-8 w-8" />
               <span className="sr-only">{dict.siteHeader.toggleMenu}</span>
             </Button>
           </SheetTrigger>
@@ -101,6 +101,24 @@ export function SiteHeader() {
                   </Link>
                 ))}
               </div>
+
+              <div className="my-6 w-11/12 h-[1px] bg-border" />
+
+              <div className="flex flex-col space-y-4">
+                <Link href="https://www.youtube.com/@TremplinVideoLab" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-foreground transition-colors hover:text-primary font-bold" onClick={closeMobileMenu}>
+                    <Youtube className="h-6 w-6" />
+                    <span>Youtube</span>
+                </Link>
+                <Link href="https://www.facebook.com/profile.php?id=61586480589051" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-foreground transition-colors hover:text-primary font-bold" onClick={closeMobileMenu}>
+                    <Facebook className="h-6 w-6" />
+                    <span>Facebook</span>
+                </Link>
+                <Link href="https://www.instagram.com/tremplinvideolab/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-foreground transition-colors hover:text-primary font-bold" onClick={closeMobileMenu}>
+                    <Instagram className="h-6 w-6" />
+                    <span>Instagram</span>
+                </Link>
+              </div>
+
             </div>
           </SheetContent>
         </Sheet>
