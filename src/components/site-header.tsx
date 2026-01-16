@@ -140,7 +140,7 @@ export function SiteHeader() {
           href="/"
           className="flex items-center space-x-2 md:hidden"
         >
-          <Logo />
+          <Logo size={48} />
           <span className="font-bold font-headline">Tremplin Video Lab</span>
         </Link>
         
