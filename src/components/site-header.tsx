@@ -81,9 +81,9 @@ export function SiteHeader() {
           <SheetTrigger asChild>
             <Button
               variant="ghost"
-              className="mr-2 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden h-16 w-16 [&_svg]:h-10 [&_svg]:w-10"
+              className="mr-2 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden h-16 w-16"
             >
-              <Menu />
+              <Menu className="h-10 w-10" />
               <span className="sr-only">{dict.siteHeader.toggleMenu}</span>
             </Button>
           </SheetTrigger>
@@ -117,7 +117,7 @@ export function SiteHeader() {
 
               <div className="flex flex-col space-y-4">
                 <Link href="https://www.youtube.com/@TremplinVideoLab" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-foreground transition-colors hover:text-primary font-bold" onClick={closeMobileMenu}>
-                    <Youtube className="h-6 w-6" />
+                    <Youtube className="h-6 w-6 text-red-600" />
                     <span>Youtube</span>
                 </Link>
                 <Link href="https://www.facebook.com/profile.php?id=61586480589051" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-foreground transition-colors hover:text-primary font-bold" onClick={closeMobileMenu}>
@@ -125,7 +125,7 @@ export function SiteHeader() {
                     <span>Facebook</span>
                 </Link>
                 <Link href="https://www.instagram.com/tremplinvideolab/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-foreground transition-colors hover:text-primary font-bold" onClick={closeMobileMenu}>
-                    <Instagram className="h-6 w-6" />
+                    <Instagram className="h-6 w-6 text-violet-400" />
                     <span>Instagram</span>
                 </Link>
                 <Link href="https://www.tiktok.com/@tremplinvideolab" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-foreground transition-colors hover:text-primary font-bold" onClick={closeMobileMenu}>
@@ -145,9 +145,7 @@ export function SiteHeader() {
           <span className="font-bold font-headline">Tremplin Video Lab</span>
         </Link>
         
-        <div className="flex flex-1 items-center justify-end space-x-2">
-          <LanguageSwitcher />
-        </div>
+        <div className="flex flex-1 items-center justify-end space-x-2" />
       </div>
     </header>
   );

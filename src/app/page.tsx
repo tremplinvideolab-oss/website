@@ -74,28 +74,28 @@ export default function Home() {
         </section>
       </div>
 
-      <section className="w-full bg-muted/40 py-8">
+      <section className="w-full bg-muted/40 py-5">
         <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <Link href="https://www.youtube.com/@TremplinVideoLab" target="_blank" rel="noopener noreferrer" className="group block px-8 py-4 rounded-lg border bg-card text-card-foreground hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                <Link href="https://www.youtube.com/@TremplinVideoLab" target="_blank" rel="noopener noreferrer" className="group block px-8 py-5 rounded-lg border bg-card text-card-foreground hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
                     <div className="flex flex-col items-center text-center gap-4">
-                        <Youtube className="h-12 w-12 text-primary group-hover:scale-110 transition-transform" />
+                        <Youtube className="h-12 w-12 text-red-600 group-hover:scale-110 transition-transform" />
                         <h3 className="font-headline text-xl font-bold">Notre chaîne Youtube</h3>
                     </div>
                 </Link>
-                <Link href="https://www.facebook.com/profile.php?id=61586480589051" target="_blank" rel="noopener noreferrer" className="group block px-8 py-4 rounded-lg border bg-card text-card-foreground hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                <Link href="https://www.facebook.com/profile.php?id=61586480589051" target="_blank" rel="noopener noreferrer" className="group block px-8 py-5 rounded-lg border bg-card text-card-foreground hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
                     <div className="flex flex-col items-center text-center gap-4">
                         <Facebook className="h-12 w-12 text-primary group-hover:scale-110 transition-transform" />
                         <h3 className="font-headline text-xl font-bold">Notre page Facebook</h3>
                     </div>
                 </Link>
-                <Link href="https://www.instagram.com/tremplinvideolab/" target="_blank" rel="noopener noreferrer" className="group block px-8 py-4 rounded-lg border bg-card text-card-foreground hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                <Link href="https://www.instagram.com/tremplinvideolab/" target="_blank" rel="noopener noreferrer" className="group block px-8 py-5 rounded-lg border bg-card text-card-foreground hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
                     <div className="flex flex-col items-center text-center gap-4">
-                        <Instagram className="h-12 w-12 text-primary group-hover:scale-110 transition-transform" />
+                        <Instagram className="h-12 w-12 text-violet-400 group-hover:scale-110 transition-transform" />
                         <h3 className="font-headline text-xl font-bold">Notre page Instagram</h3>
                     </div>
                 </Link>
-                <Link href="https://www.tiktok.com/@tremplinvideolab" target="_blank" rel="noopener noreferrer" className="group block px-8 py-4 rounded-lg border bg-card text-card-foreground hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                <Link href="https://www.tiktok.com/@tremplinvideolab" target="_blank" rel="noopener noreferrer" className="group block px-8 py-5 rounded-lg border bg-card text-card-foreground hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
                     <div className="flex flex-col items-center text-center gap-4">
                         <TikTokIcon className="h-12 w-12 text-primary group-hover:scale-110 transition-transform" />
                         <h3 className="font-headline text-xl font-bold">Notre page TikTok</h3>
