@@ -94,7 +94,7 @@ export default function ZoolympicGamesPage() {
         <section className="bg-muted/40 py-16 md:py-24">
           <div className="container mx-auto px-4">
             <h2 className="font-headline text-3xl font-bold tracking-tight mb-8">
-              Vidéos du projet
+              Vidéos du projet :
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {projectVideos.map((video) => (
