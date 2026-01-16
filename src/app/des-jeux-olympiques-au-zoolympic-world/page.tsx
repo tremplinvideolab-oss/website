@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useI18n } from "@/hooks/use-i18n";
@@ -50,7 +51,7 @@ export default function ZoolympicWorldPage() {
                 C’est pourquoi, en amont des Jeux Olympiques de Milan-Cortina 2026, nous lançons — en complément de <Link href="/des-jeux-olympiques-aux-zoolympic-games" className="text-primary hover:underline font-bold">Zoolympic Games</Link> — une série de vidéos qui met en scène nos animaux dans leur quotidien.
               </p>
               <p className="leading-relaxed">
-                Galettes, duels amicaux à l’épée, balades en forêt… leurs passe-temps pourraient vous surprendre, tout comme les lieux où ils évoluent.
+                Galettes, duels amicaux à l’épée, balades en forêt… leurs passe-temps pourraient vous surprendre, tout comme les lieux dans lesquels ils peuvent être amenés à évoluer.
               </p>
             </div>
         </div>
