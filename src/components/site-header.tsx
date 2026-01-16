@@ -125,7 +125,7 @@ export function SiteHeader() {
                     <span>Facebook</span>
                 </Link>
                 <Link href="https://www.instagram.com/tremplinvideolab/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-foreground transition-colors hover:text-primary font-bold" onClick={closeMobileMenu}>
-                    <Instagram className="h-6 w-6 text-violet-400" />
+                    <Instagram className="h-6 w-6" />
                     <span>Instagram</span>
                 </Link>
                 <Link href="https://www.tiktok.com/@tremplinvideolab" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-foreground transition-colors hover:text-primary font-bold" onClick={closeMobileMenu}>

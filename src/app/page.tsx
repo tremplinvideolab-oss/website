@@ -85,19 +85,19 @@ export default function Home() {
                 </Link>
                 <Link href="https://www.facebook.com/profile.php?id=61586480589051" target="_blank" rel="noopener noreferrer" className="group block px-8 py-5 rounded-lg border bg-card text-card-foreground hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
                     <div className="flex flex-col items-center text-center gap-4">
-                        <Facebook className="h-12 w-12 text-primary group-hover:scale-110 transition-transform" />
+                        <Facebook className="h-12 w-12 group-hover:scale-110 transition-transform" />
                         <h3 className="font-headline text-xl font-bold">Notre page Facebook</h3>
                     </div>
                 </Link>
                 <Link href="https://www.instagram.com/tremplinvideolab/" target="_blank" rel="noopener noreferrer" className="group block px-8 py-5 rounded-lg border bg-card text-card-foreground hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
                     <div className="flex flex-col items-center text-center gap-4">
-                        <Instagram className="h-12 w-12 text-violet-400 group-hover:scale-110 transition-transform" />
+                        <Instagram className="h-12 w-12 group-hover:scale-110 transition-transform" />
                         <h3 className="font-headline text-xl font-bold">Notre page Instagram</h3>
                     </div>
                 </Link>
                 <Link href="https://www.tiktok.com/@tremplinvideolab" target="_blank" rel="noopener noreferrer" className="group block px-8 py-5 rounded-lg border bg-card text-card-foreground hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
                     <div className="flex flex-col items-center text-center gap-4">
-                        <TikTokIcon className="h-12 w-12 text-primary group-hover:scale-110 transition-transform" />
+                        <TikTokIcon className="h-12 w-12 group-hover:scale-110 transition-transform" />
                         <h3 className="font-headline text-xl font-bold">Notre page TikTok</h3>
                     </div>
                 </Link>
