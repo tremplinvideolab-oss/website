@@ -30,7 +30,7 @@ export default function VideosPage() {
           <h1 className="font-headline text-4xl font-bold tracking-tight">{dict.videosPage.allVideos}</h1>
           <p className="text-muted-foreground mt-2 mb-12">
             Voici la liste de toutes nos vidéos partagées, à retrouver sur notre 
-            <Link href="https://www.youtube.com/@TremplinVideoLab" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline ml-1 font-bold">
+            <Link href="https://www.youtube.com/@TremplinVideoLab?sub_confirmation=1" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline ml-1 font-bold">
               chaîne YouTube
             </Link>.
           </p>
@@ -40,13 +40,13 @@ export default function VideosPage() {
       <section className="w-full whitesection py-16">
         <div className="container mx-auto px-4">
           <div className="text-gray-800">
-            <h2 className="font-headline text-[20px] font-bold tracking-tight mb-6">
+            <h2 className="font-headline text-[20px] font-bold tracking-tight mb-6 text-gray-800">
                 Comment créons-nous nos vidéos ?
             </h2>
             <p className="leading-relaxed">
               Nous produisons nos vidéos en combinant des outils de création standards et des solutions d’IA générative.
               <br /><br />
-              Cette approche nous permet de proposer, sur notre<Link href="https://www.youtube.com/@TremplinVideoLab" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline ml-1 font-bold">chaîne YouTube</Link>, des scénarios variés tout en garantissant une cohérence éditoriale et narrative d’une vidéo à l’autre.
+              Cette approche nous permet de proposer, sur notre<Link href="https://www.youtube.com/@TremplinVideoLab?sub_confirmation=1" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline ml-1 font-bold">chaîne YouTube</Link>, des scénarios variés tout en garantissant une cohérence éditoriale et narrative d’une vidéo à l’autre.
             </p>
           </div>
         </div>

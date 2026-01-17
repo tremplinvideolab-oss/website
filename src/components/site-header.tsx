@@ -113,11 +113,17 @@ export function SiteHeader() {
                   </Link>
                 ))}
               </div>
+              
+              <div className="my-6 w-11/12 h-[1px] bg-border" />
+              
+              <div className="pr-6 mb-6">
+                <NewsletterForm />
+              </div>
 
               <div className="my-6 w-11/12 h-[1px] bg-border" />
 
               <div className="flex flex-col space-y-4">
-                <Link href="https://www.youtube.com/@TremplinVideoLab" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-foreground transition-colors hover:text-primary font-bold" onClick={closeMobileMenu}>
+                <Link href="https://www.youtube.com/@TremplinVideoLab?sub_confirmation=1" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-foreground transition-colors hover:text-primary font-bold" onClick={closeMobileMenu}>
                     <Youtube className="h-6 w-6 text-red-600" />
                     <span>Youtube</span>
                 </Link>
@@ -133,12 +139,6 @@ export function SiteHeader() {
                     <TikTokIcon className="h-6 w-6" />
                     <span>TikTok</span>
                 </Link>
-              </div>
-
-              <div className="my-6 w-11/12 h-[1px] bg-border" />
-
-              <div className="pr-6">
-                <NewsletterForm />
               </div>
 
             </div>

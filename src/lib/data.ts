@@ -64,6 +64,18 @@ let videos: Video[] = [
     thumbnailHint: 'Un Guépard et un Kangourou livre une bataille pour devenir le roi',
     project: 'zoolympic-world',
   }, 
+  {
+    id: '6',
+    title: 'Zoolympic Games #2 : Un destin en or pour notre Kangourou aux Jeux Olympiques ?',
+    description: 'Un Kangourou affronte d\'autres animaux dans des sports olympiques en espérant décrocher une médaille aux JO !',
+    descriptionLong: "Découvrez notre 3e vidéo longue d’animation, une création originale où un kangourou se mesure à une galerie d’animaux hauts en couleur à travers plusieurs disciplines sportives : boxe, tennis, basket, gymnastique et natation.\n\nDéterminé à viser l\'or olympique, parviendra-t-il à décrocher une médaille face à un singe, un éléphant, un guépard, un chat, un suricate, une tortue, un chien, une loutre et un cochon ?\n\nUne chose est certaine : notre kangourou a décidément quelques problèmes dentaires… et cela promet des scènes aussi drôles que surprenantes !",
+    type: 'video-longue',
+    thumbnailUrl: '/images/thumb_zoolympic_games_2.png',
+    videoUrl: 'https://youtube.com/shorts/LOwffKm1LGI',
+    createdAt: '2026-01-17T10:30:00Z',
+    thumbnailHint: 'Un Kangourou aux jeux olympiques',
+    project: 'zoolympic-games',
+  }, 
 ];
 
 // Simulate a database table for users
