@@ -9,6 +9,7 @@ import { I18nProvider } from '@/components/i18n-provider';
 import { GoogleAnalytics } from '@/components/google-analytics';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://tremplin-video-lab.com/'),
   title: 'Tremplin Video Lab : Des scénarios d\'animation orignaux !',
   description: 'Un site de partage de video modernes utilisant les dernièrs outils disponibles.',
   icons: {
