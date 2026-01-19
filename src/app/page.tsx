@@ -24,7 +24,7 @@ const TikTokIcon = (props: React.SVGProps<SVGSVGElement>) => (
       fill="currentColor"
       {...props}
     >
-      <path d="M16.6 5.82a4.48 4.48 0 0 1-3.68 3.68V14.5a5 5 0 1 0-5-5h1.5v2.32a2.5 2.5 0 1 1-2.5 2.5v-6.5a4.5 4.5 0 0 1 4.5-4.5c.34 0 .67.04 1 .12v2.3a2.5 2.5 0 0 0-1-.22 2.5 2.5 0 0 0-2.5 2.5v.18a4.48 4.48 0 0 1 7.18-1.68z" />
+      <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-2.5.04-4.87-1.1-6.73-3.04-1.25-1.3-2.07-2.82-2.31-4.5-1.51.02-3.02.01-4.53.01v-4.13c1.44.02 2.88.02 4.32.02.16-1.18.49-2.32 1.02-3.39.6-1.17 1.41-2.22 2.4-3.11 1.08-1 2.33-1.74 3.73-2.27.02-2.56-.01-5.12.01-7.68z" />
     </svg>
 );
 
@@ -167,8 +167,8 @@ export default function Home() {
                     </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious className="hidden sm:flex -left-4" />
-                <CarouselNext className="hidden sm:flex -right-4" />
+                <CarouselPrevious className="hidden sm:flex" />
+                <CarouselNext className="hidden sm:flex" />
                 </Carousel>
             ) : (
                 <p>{dict.homePage.noVideos}</p>
