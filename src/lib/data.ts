@@ -76,6 +76,19 @@ let videos: Video[] = [
     thumbnailHint: 'Un Kangourou aux jeux olympiques',
     project: 'zoolympic-games',
   }, 
+  {
+    id: '2',
+    title: 'Zoolympic World #1 : Un arbre prends vie et s\'anime durant les 4 saisons !',
+    description: "Un lapin aux pouvoirs magiques, donne vie à un arbre qui s'anime durant les 4 saisons !",
+    descriptionLong: "Dans cette vidéo d\’animation, un lapin explore une forêt énigmatique. Au fil de sa promenade, il donne vie à l\’arbre en le métamorphosant en une créature animée.\n\n Les saisons se succèdent, de l\’été au printemps en passant par l\’automne et l\’hiver, et l\’arbre traverse chacune de ces étapes avec résilience, affrontant les épreuves du temps, mais aussi la présence d’un loup prédateur inquiétant.\n\nPortée par une musique classique, l\’histoire met en lumière le rayonnement de l\’arbre, symbole de sympathie et de bienveillance.",
+    type: 'video-longue',
+    thumbnailUrl: '/images/thumb_zoolympic_world_1.jpg',
+    videoUrl: 'https://www.youtube.com/watch?v=nfk3BYiyP7I',
+    createdAt: '2026-01-14T18:30:00Z',
+    thumbnailHint: 'animation d\'arbre vivant en morphing 3D',
+    project: 'zoolympic-world',
+
+  },
 ];
 
 // Simulate a database table for users

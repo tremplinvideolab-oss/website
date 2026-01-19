@@ -34,6 +34,7 @@ export default function RootLayout({
         />
       </head>
       <body className={cn('min-h-screen bg-background font-body antialiased')}>
+        <div dangerouslySetInnerHTML={{ __html: `<!-- Build Version: ${process.env.NEXT_PUBLIC_BUILD_ID} -->` }} />
         <I18nProvider>
           <GoogleAnalytics />
           <div className="relative flex min-h-screen flex-col">
