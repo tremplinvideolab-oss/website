@@ -1,10 +1,26 @@
 
 import { Video, User, HomepageContent, Project } from './definitions';
 
+function generateSlug(text: string): string {
+    const a = 'àáâäæãåāăąçćčđďèéêëēėęěğǵḧîïíīįìłḿñńǹňôöòóœøōõőṕŕřßśšşșťțûüùúūǘůűųẃẍÿýžźż·/_,:;'
+    const b = 'aaaaaaaaaacccddeeeeeeeegghiiiiiilmnnnnoooooooooprrsssssttuuuuuuuuuwxyyzzz------'
+    const p = new RegExp(a.split('').join('|'), 'g')
+
+    return text.toString().toLowerCase()
+        .replace(/\s+/g, '-') // Replace spaces with -
+        .replace(p, c => b.charAt(a.indexOf(c))) // Replace special characters
+        .replace(/&/g, '-and-') // Replace & with 'and'
+        .replace(/[^\w\-]+/g, '') // Remove all non-word chars
+        .replace(/\-\-+/g, '-') // Replace multiple - with single -
+        .replace(/^-+/, '') // Trim - from start of text
+        .replace(/-+$/, '') // Trim - from end of text
+}
+
 // Simulate a database table for videos
 let videos: Video[] = [
   {
     id: '1',
+    slug: 'zoolympic-games-1-une-course-pleine-de-rebondissements',
     title: 'Zoolympic Games #1 : Une course pleine de rebondissements !',
     description: 'Dans cette vidéo, un ours, un lapin, un renard, et une tortue prennent part à une course entre la France et l\'Italie.',
     descriptionLong: 'Dans cette vidéo, une course est organisée de Paris jusqu’aux sites des Jeux Olympiques de Milan–Cortina 2026.\nL\’ours, le lapin, le renard et la tortue s’affrontent dans une compétition haletante, riche en rebondissements.\n\nSur la neige comme sur la glace, à skis, en luge, en patins ou en bobsleigh, nos animaux relèvent chaque défi avec brio.\n Malgré son statut de grand favori, l’ours n’hésite pas à mettre toutes les chances de son côté pour tenter de décrocher la victoire !\n\nQui sera le vainqueur ?',
@@ -17,6 +33,7 @@ let videos: Video[] = [
   },
   {
     id: '2',
+    slug: 'zoolympic-world-1-un-arbre-prends-vie-et-s-anime-durant-les-4-saisons',
     title: 'Zoolympic World #1 : Un arbre prends vie et s\'anime durant les 4 saisons !',
     description: "Un lapin aux pouvoirs magiques, donne vie à un arbre qui s'anime durant les 4 saisons !",
     descriptionLong: "Dans cette vidéo d\’animation, un lapin explore une forêt énigmatique. Au fil de sa promenade, il donne vie à l\’arbre en le métamorphosant en une créature animée.\n\n Les saisons se succèdent, de l\’été au printemps en passant par l\’automne et l\’hiver, et l\’arbre traverse chacune de ces étapes avec résilience, affrontant les épreuves du temps, mais aussi la présence d’un loup prédateur inquiétant.\n\nPortée par une musique classique, l\’histoire met en lumière le rayonnement de l\’arbre, symbole de sympathie et de bienveillance.",
@@ -30,6 +47,7 @@ let videos: Video[] = [
   },
   {
     id: '3',
+    slug: 'short-zoolympic-world-meilleurs-voeux-2026',
     title: 'Short - Zoolympic World : Meilleurs voeux 2026 !',
     description: 'Dans cette vidéo, un hibou présente les voeux de la chaîne et annonce les projets à venir en 2026.',
     descriptionLong: "Pour bien démarrer l\u2019ann\u00e9e 2026, l\u2019\u00e9quipe de Tremplin Video Lab a choisi de vous pr\u00e9senter ses v\u0153ux au travers d\u2019une vid\u00e9o au format short, la premi\u00e8re d\u2019une longue s\u00e9rie \u00e0 d\u00e9couvrir sur notre cha\u00eene YouTube.\n\nDans ce premier \u00e9pisode, notre hibou journaliste prend la parole devant la tour Eiffel pour partager les v\u0153ux de la cha\u00eene et lever le voile sur les projets \u00e0 venir...",
@@ -42,6 +60,7 @@ let videos: Video[] = [
   },
   {
     id: '4',
+    slug: 'short-zoolympic-world-deguster-une-bonne-galette-des-rois',
     title: 'Short - Zoolympic World : Déguster une bonne galette des rois !',
     description: 'Les personnages de Zoolympic World se retrouvent pour partager la traditionnelle galette des rois. Qui sera couronné roi ?',
     descriptionLong: "Le deuxième short de la chaîne YouTube s’inscrit lui aussi dans un rendez-vous incontournable du calendrier : l’Épiphanie.\n\nCertes, il ne s’agit pas de la galette de Lionel Bonnamy, mais nos Zoolympics ont tout de même pu se régaler… et couronner un roi !",
@@ -54,6 +73,7 @@ let videos: Video[] = [
   },
   {
     id: '5',
+    slug: 'short-zoolympic-world-une-bataille-pour-devenir-le-roi',
     title: 'Short - Zoolympic World : Une bataille pour devenir le Roi !',
     description: 'Après avoir trouvé la fève, un combat amical à l\'épée s\'engage entre le Guépard et le Kangourou pour décider qui sera le vrai roi.',
     descriptionLong: "",
@@ -66,6 +86,7 @@ let videos: Video[] = [
   }, 
   {
     id: '6',
+    slug: 'zoolympic-games-2-un-destin-en-or-pour-notre-kangourou-aux-jeux-olympiques',
     title: 'Zoolympic Games #2 : Un destin en or pour notre Kangourou aux Jeux Olympiques ?',
     description: 'Un Kangourou affronte d\'autres animaux dans des sports olympiques en espérant décrocher une médaille aux JO !',
     descriptionLong: "Découvrez notre 3e vidéo longue d’animation, une création originale où un kangourou se mesure à une galerie d’animaux hauts en couleur à travers plusieurs disciplines sportives : boxe, tennis, basket, gymnastique et natation.\n\nDéterminé à viser l\'or olympique, parviendra-t-il à décrocher une médaille face à un singe, un éléphant, un guépard, un chat, un suricate, une tortue, un chien, une loutre et un cochon ?\n\nUne chose est certaine : notre kangourou a décidément quelques problèmes dentaires… et cela promet des scènes aussi drôles que surprenantes !",
@@ -78,6 +99,7 @@ let videos: Video[] = [
   }, 
   {
     id: '7',
+    slug: 'short-morphing-rapide-de-l-arbre-durant-les-4-saisons',
     title: 'Short - Morphing rapide de l\'arbre durant les 4 saisons !',
     description: "Version raccourcie de notre video de l'arbre qui s'anime durant les 4 saisons.",
     descriptionLong: "Cette vidéo est un court extrait au format short de notre vidéo longue \"Cet arbre prends vie !\", durant laquelle un arbre s'anime en morphing durant les 4 saisons de l'année sur un air de musique classique qui appartient à Tremplin Video Lab !",
@@ -160,9 +182,9 @@ export async function getVideos(): Promise<Video[]> {
   return [...videos].sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
 }
 
-export async function getVideoById(id: string): Promise<Video | undefined> {
+export async function getVideoBySlug(slug: string): Promise<Video | undefined> {
   await delay(100);
-  return videos.find(v => v.id === id);
+  return videos.find(v => v.slug === slug);
 }
 
 export async function getLatestVideos(limit: number = 3): Promise<Video[]> {
@@ -191,11 +213,12 @@ export async function updateHomepageContent(data: Omit<HomepageContent, 'headlin
   return homepageContent;
 }
 
-export async function addVideo(videoData: Omit<Video, 'id' | 'createdAt'>): Promise<Video> {
+export async function addVideo(videoData: Omit<Video, 'id' | 'createdAt' | 'slug'>): Promise<Video> {
   await delay(1000);
   const newVideo: Video = {
     ...videoData,
     id: `vid_${Date.now()}`,
+    slug: generateSlug(videoData.title),
     createdAt: new Date().toISOString(),
   };
   videos.unshift(newVideo);

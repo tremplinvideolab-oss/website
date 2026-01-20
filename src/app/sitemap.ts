@@ -9,7 +9,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const videos: Video[] = await getVideos();
   const videoUrls = videos.map((video) => {
     return {
-      url: `${baseUrl}/videos/${video.id}`,
+      url: `${baseUrl}/videos/${video.slug}`,
       lastModified: new Date(video.createdAt),
       changeFrequency: 'monthly' as 'monthly',
       priority: 0.8,

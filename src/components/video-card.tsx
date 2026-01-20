@@ -27,7 +27,7 @@ export function VideoCard({ video }: VideoCardProps) {
   return (
     <Card className="overflow-hidden h-full flex flex-col group transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
       <CardHeader className="p-0">
-        <Link href={`/videos/${video.id}`} className="relative block">
+        <Link href={`/videos/${video.slug}`} className="relative block">
           <Image
             src={video.thumbnailUrl}
             alt={`Thumbnail for ${video.title}`}
@@ -43,7 +43,7 @@ export function VideoCard({ video }: VideoCardProps) {
       </CardHeader>
       <CardContent className="p-4 flex-grow flex flex-col">
         <CardTitle className="font-headline text-lg leading-tight mb-2">
-          <Link href={`/videos/${video.id}`} className="hover:text-primary transition-colors">
+          <Link href={`/videos/${video.slug}`} className="hover:text-primary transition-colors">
             {video.title}
           </Link>
         </CardTitle>

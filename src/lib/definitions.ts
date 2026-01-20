@@ -1,5 +1,6 @@
 export type Video = {
   id: string;
+  slug: string;
   title: string;
   description: string;
   descriptionLong: string;

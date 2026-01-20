@@ -78,6 +78,9 @@ function UploadVideoDialog({ onVideoAdded }: { onVideoAdded: (video: Video) => v
             thumbnailUrl: `https://picsum.photos/seed/${Date.now()}/600/400`,
             thumbnailHint: 'random abstract',
             videoUrl: '#',
+            descriptionLong: data.description,
+            type: 'video-short',
+            project: 'zoolympic-world'
         };
         const newVideo = await addVideo(newVideoData);
         toast({
