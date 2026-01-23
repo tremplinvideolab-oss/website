@@ -27,6 +27,12 @@ const TikTokIcon = (props: React.SVGProps<SVGSVGElement>) => (
       <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"></path></svg>
 );
 
+const XIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor" {...props}>
+        <g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g>
+    </svg>
+);
+
 export default function Home() {
   const { dict, locale } = useI18n();
   const [latestVideos, setLatestVideos] = useState<Video[]>([]);
@@ -75,7 +81,7 @@ export default function Home() {
 
       <section className="w-full bg-muted/40 py-5">
         <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
                 <Link href="https://www.youtube.com/@TremplinVideoLab?sub_confirmation=1" target="_blank" rel="noopener noreferrer" className="group block px-8 py-5 rounded-lg border bg-card text-card-foreground hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
                     <div className="flex flex-col items-center text-center gap-4">
                         <Youtube className="h-12 w-12 text-red-600 group-hover:scale-110 transition-transform" />
@@ -98,6 +104,12 @@ export default function Home() {
                     <div className="flex flex-col items-center text-center gap-4">
                         <TikTokIcon className="h-12 w-12 group-hover:scale-110 transition-transform" />
                         <h3 className="font-headline text-xl font-bold">Notre TikTok</h3>
+                    </div>
+                </Link>
+                <Link href="https://x.com/TremplinVideo" target="_blank" rel="noopener noreferrer" className="group block px-8 py-5 rounded-lg border bg-card text-card-foreground hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div className="flex flex-col items-center text-center gap-4">
+                        <XIcon className="h-12 w-12 group-hover:scale-110 transition-transform" />
+                        <h3 className="font-headline text-xl font-bold">Compte X</h3>
                     </div>
                 </Link>
             </div>

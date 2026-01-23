@@ -111,6 +111,20 @@ let videos: Video[] = [
     project: 'zoolympic-world',
 
   },
+  {
+    id: '8',
+    slug: 'short-ping-pong-les-freres-lebrun-n-ont-qu-a-bien-se-tenir',
+    title: 'Short - Ping-pong : les frères Lebrun n\'ont qu\'à bien se tenir !',
+    description: "Dans cette vidéo, un Kangourou et une pieuvre jouent au ping-pong !",
+    descriptionLong: "Nous avons fait ce short, en relation avec notre troisième vidéo longue \"un destin en or\".\n\nEn effet, nous avons décidé ne pas mettre ce sport dans la vidéo longue, mais plutôt d'en faire un short à part entière.\n\nNotre Kangourou continue de manquer de chance dans cette partie de ping-pong étonnante !",
+    type: 'video-short',
+    thumbnailUrl: '/images/thumb_short_ping_pong.png',
+    videoUrl: 'https://www.youtube.com/shorts/LL5-pKU3ML8',
+    createdAt: '2026-01-20T18:30:00Z',
+    thumbnailHint: 'ping-pong entre deux animaux (Kangourou et une pieuvre)',
+    project: 'zoolympic-world',
+
+  },
 ];
 
 // Simulate a database table for users
