@@ -37,7 +37,7 @@ export default function RootLayout({
         <div dangerouslySetInnerHTML={{ __html: `<!-- Build Version: ${process.env.NEXT_PUBLIC_BUILD_ID} -->` }} />
         <I18nProvider>
           <GoogleAnalytics />
-          <div className="relative flex min-h-screen flex-col">
+          <div className="relative flex min-h-screen flex-col overflow-x-hidden">
             <SiteHeader />
             <main className="flex-1">{children}</main>
             <SiteFooter />
