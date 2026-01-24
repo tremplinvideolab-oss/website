@@ -125,6 +125,20 @@ let videos: Video[] = [
     project: 'zoolympic-world',
 
   },
+  {
+    id: '9',
+    slug: 'zoolympic-world-2-les-petites-souris-clip-d-animation',
+    title: 'Zoolympic World #2 - Les petites souris 🐭🌙 - Clip d\'animation ( Zoolympic World #2 )',
+    description: "Un clip musical d'animation racontant l'histoire de petites souris de manière poétique!",
+    descriptionLong: "Bien que spécialisé dans un premier temps dans la publication de vidéos, la création de musiques fait aussi partie de nos missions.\n\nDans ce tout premier clip musical sur notre chaîne youtube, retrouvez la chanson \"Les petites souris\" qui rêvent en silence d'un ciel infini !",
+    type: 'video-longue',
+    thumbnailUrl: '/images/thumb_petites_souris.png',
+    videoUrl: 'https://www.youtube.com/watch?v=z8LrNZOUI4s',
+    createdAt: '2026-01-25T13:30:00Z',
+    thumbnailHint: 'petites souris Zoolympic World avion fromage nuit kangourou grapin lit livres',
+    project: 'zoolympic-world',
+
+  },
 ];
 
 // Simulate a database table for users
