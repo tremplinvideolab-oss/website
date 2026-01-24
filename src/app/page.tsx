@@ -57,7 +57,14 @@ export default function Home() {
     <>
       <div className="container mx-auto px-4 py-8">
         <section className="text-center">
-          <div className="border bg-card text-card-foreground p-8 rounded-lg">
+          <div
+            className="text-card-foreground p-8 rounded-lg"
+            style={{
+              backgroundImage: `url('/images/background-darkgray.png')`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
             <div className="flex justify-center items-center gap-4 md:gap-8 mb-8 flex-wrap">
               <div className="w-24 h-24 md:w-28 md:h-28 flex-shrink-0">
                 <FullLogo className="text-foreground w-full h-full" />
