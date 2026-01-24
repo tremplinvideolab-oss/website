@@ -94,7 +94,7 @@ export function SiteHeader() {
               <span className="sr-only">{dict.siteHeader.toggleMenu}</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="left" className="pr-0">
+          <SheetContent side="left">
             <SheetHeader>
               <SheetTitle>
                 <Link href="/" className="flex items-center" onClick={closeMobileMenu}>
@@ -103,7 +103,7 @@ export function SiteHeader() {
                 </Link>
               </SheetTitle>
             </SheetHeader>
-            <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6 overflow-y-auto">
+            <div className="my-4 h-[calc(100vh-8rem)] pb-10 overflow-y-auto">
               <div className="flex flex-col space-y-3">
                 {mainNavLinks.map((link) => (
                   <Link
@@ -120,13 +120,13 @@ export function SiteHeader() {
                 ))}
               </div>
               
-              <div className="my-6 w-11/12 h-[1px] bg-border" />
+              <div className="my-6 w-full h-[1px] bg-border" />
               
-              <div className="pr-6 mb-6">
+              <div className="mb-6">
                 <NewsletterForm />
               </div>
 
-              <div className="my-6 w-11/12 h-[1px] bg-border" />
+              <div className="my-6 w-full h-[1px] bg-border" />
 
               <div className="flex flex-col space-y-4">
                 <Link href="https://www.youtube.com/@TremplinVideoLab?sub_confirmation=1" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-foreground transition-colors hover:text-primary font-bold" onClick={closeMobileMenu}>
