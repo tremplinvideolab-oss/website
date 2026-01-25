@@ -9,6 +9,15 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import type { Project } from "@/lib/definitions";
 import { getProjects } from "@/lib/data";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Nos Projets - Tremplin Video Lab',
+    description: 'Découvrez les projets et univers de Tremplin Video Lab.',
+    alternates: {
+        canonical: '/projets',
+    },
+};
 
 export default function ProjetsPage() {
   const { dict } = useI18n();

@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://tremplin-video-lab.com/'),
   title: 'Tremplin Video Lab : Des scénarios d\'animation orignaux !',
   description: 'Un site de partage de video modernes utilisant les dernièrs outils disponibles.',
+  alternates: {
+    canonical: '/',
+  },
   icons: {
     icon: '/logo-blanc.png',
   },
@@ -25,7 +28,6 @@ export default function RootLayout({
   return (
     <html lang="fr" suppressHydrationWarning>
       <head>
-        <link rel="canonical" href="https://tremplin-video-lab.com/" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

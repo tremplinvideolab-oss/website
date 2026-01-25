@@ -1,3 +1,4 @@
+
 'use client';
 import { useState, useEffect } from 'react';
 import { useParams, notFound } from 'next/navigation';
@@ -6,6 +7,30 @@ import type { Video } from '@/lib/definitions';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Badge } from '@/components/ui/badge';
 import { format } from 'date-fns';
+import type { Metadata } from 'next';
+
+type Props = {
+  params: { id: string }
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const slug = params.id;
+  const video = await getVideoBySlug(slug);
+
+  if (!video) {
+    return {
+      title: 'Video Not Found',
+    }
+  }
+
+  return {
+    title: video.title,
+    description: video.description,
+    alternates: {
+      canonical: `/videos/${slug}`,
+    },
+  }
+}
 
 function getYouTubeVideoId(url: string) {
     if (!url) return null;

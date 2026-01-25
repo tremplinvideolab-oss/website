@@ -8,6 +8,15 @@ import { useState, useEffect } from "react";
 import { getVideos } from "@/lib/data";
 import type { Video } from "@/lib/definitions";
 import { VideoCard } from "@/components/video-card";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Zoolympic World - Tremplin Video Lab',
+    description: 'Découvrez nos animaux athlètes dans des contextes extra-sportifs.',
+    alternates: {
+        canonical: '/des-jeux-olympiques-au-zoolympic-world',
+    },
+};
 
 export default function ZoolympicWorldPage() {
   const { dict } = useI18n();

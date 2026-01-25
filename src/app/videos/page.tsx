@@ -7,6 +7,15 @@ import { useState, useEffect } from 'react';
 import type { Video } from '@/lib/definitions';
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Toutes les vidéos - Tremplin Video Lab',
+    description: 'Parcourez toutes les vidéos créées par Tremplin Video Lab.',
+    alternates: {
+        canonical: '/videos',
+    },
+};
 
 export default function VideosPage() {
   const { dict } = useI18n();

@@ -10,6 +10,15 @@ import { useState, useEffect } from "react";
 import { getVideos } from "@/lib/data";
 import type { Video } from "@/lib/definitions";
 import { VideoCard } from "@/components/video-card";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Zoolympic Games - Tremplin Video Lab',
+    description: 'Des Jeux Olympiques de Paris 2024 aux JO 2026 de Milan Cortina !',
+    alternates: {
+        canonical: '/des-jeux-olympiques-aux-zoolympic-games',
+    },
+};
 
 export default function ZoolympicGamesPage() {
   const { dict } = useI18n();
