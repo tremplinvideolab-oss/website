@@ -156,6 +156,21 @@ let videos: Video[] = [
     project: 'zoolympic-world',
 
   }
+  ,
+  {
+    id: '11',
+    slug: 'short-un-kangourou-dans-une-cuisine',
+    title: 'Short - un kangourou dans une cuisine !',
+    description: "Short extrait de la video Zoolympic Games #2 : un destin en or pour notre Kangourou aux Jeux Olympiques",
+    descriptionLong: "Ce short est un short de transition entre notre video \"un kangourou aux jeux olympiques\" ( un destin en or - Zoolympic Games #2) et notre premier clip musical !\n\nEn effet, la fin de notre précédente vidéo longue se terminait par le début de la suivante : Le clip musical les Petites Souris !",
+    type: 'video-short',
+    thumbnailUrl: '/images/thumb_kangourou_dans_cuisine.png',
+    videoUrl: 'https://www.youtube.com/shorts/s_AWTy2zdNs',
+    createdAt: '2026-01-24T12:30:00Z',
+    thumbnailHint: 'ping-pong entre deux animaux (Kangourou et une pieuvre)',
+    project: 'zoolympic-world',
+
+  }
 ];
 
 // Simulate a database table for users

@@ -76,9 +76,15 @@ export default function ZoolympicGamesMinuteClient({ projectVideos }: { projectV
                 </CardContent>
             </Card>
 
-            <p className="leading-relaxed mt-6">
-                Mais Zoolympic Games Minute, c'est aussi une vidéo d'introduction se déroulant dans un train avec les différentes délégations, une vidéo de teasing, et une cérémonie d'ouverture avec une diva : Mariah La Raie qui interprète sa chanson "Héros" !
-            </p>
+            <div className="leading-relaxed mt-6 space-y-2">
+              <p>Mais en plus de ces 16 épisodes, Zoolympic Games Minute 2026 c'est aussi :</p>
+              <ul className="list-disc list-inside space-y-1 pl-4">
+                <li>une vidéo d'introduction se déroulant dans un train avec les différentes délégations se rendant aux Zoolympic Games</li>
+                <li>une vidéo de teasing annonçant que durant la période des Jeux Olympiques 2026, nous publierons une vidéo par jour</li>
+                <li>une cérémonie d'ouverture des jeux olympiques des animaux 2026 avec une diva : Mariah La Raie qui interprète sa chanson "Héros" !</li>
+                <li>un clip musical 'Rien n'est impossible' interprété là encore par Mariah La Raie.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
