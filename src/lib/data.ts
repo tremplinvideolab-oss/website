@@ -1,5 +1,8 @@
 
+import { skip } from 'node:test';
 import { Video, User, HomepageContent, Project } from './definitions';
+import { Skeleton } from '@/components/ui/skeleton';
+import { AirVent, FolderOpenDot } from 'lucide-react';
 
 function generateSlug(text: string): string {
     const a = 'àáâäæãåāăąçćčđďèéêëēėęěğǵḧîïíīįìłḿñńǹňôöòóœøōõőṕŕřßśšşșťțûüùúūǘůűųẃẍÿýžźż·/_,:;'
@@ -152,7 +155,7 @@ let videos: Video[] = [
     thumbnailHint: 'ping-pong entre deux animaux (Kangourou et une pieuvre)',
     project: 'zoolympic-world',
 
-  },
+  }
 ];
 
 // Simulate a database table for users
@@ -208,7 +211,16 @@ const projects: Project[] = [
         imageHint: "cartoon tree face",
         link: "/des-jeux-olympiques-au-zoolympic-world",
         logo:'/images/logo-projects/logo_zoolympic_world.png'
-    }
+    },
+    {
+      id: 'zoolympic-games-minute-2026',
+      title: "Zoolympic Games Minutes : Les Jeux Olympiques 2026 des animaux",
+      description: "Découvrez notre série consacré aux jeux olympiques de milan-cortina 2026 mettant en scène des animaux dans différents sports ! Chaque jour, nous avons publié un épisode mettant un valeur une discipline différente : Patinage artistique, Biathlon, curling, surf, slalom, hockey sur glace, shorttrack, ski de bosse, ski-cross, snowboard slopestyle, saut à ski, Skeleton, luge, bobsleigh, free-ski big Air, ski de fond\n\nMais Zoolympic Games Minute, c'est aussi une vidéo d'introduction se déroulant dans un train avec les différentes délégation, une vidéo de teasing, et une cérémonie d'ouverture avec une diva : Mariah La Raie qui interpréte sa chanson Héros !",
+      imageSrc: '/images/thumb_mariah-la-raie-chante-hero.png',
+      imageHint: "jeux olympiques des animaux 2026",
+      link: "/des-jeux-olympiques-a-la-serie-zoolympic-games-minute-2026",
+      logo:'/images/thumb_mariah-la-raie-chante-hero.png'
+  }
 ];
 
 // Simulate API latency

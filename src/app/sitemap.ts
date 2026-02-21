@@ -48,6 +48,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency: 'monthly' as 'monthly',
         priority: 0.6
     },
+    { 
+        url: `${baseUrl}/des-jeux-olympiques-a-la-serie-zoolympic-games-minute-2026`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as 'monthly',
+        priority: 0.6
+    },
   ];
 
   return [...staticPages, ...videoUrls];
