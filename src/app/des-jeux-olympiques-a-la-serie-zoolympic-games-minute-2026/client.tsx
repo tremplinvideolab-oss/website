@@ -61,7 +61,7 @@ export default function ZoolympicGamesMinuteClient({ projectVideos }: { projectV
             <Card className="bg-muted/40 border-0 text-gray-800">
                 <CardHeader>
                     <CardTitle>
-                    Une couverture complète des épreuves :
+                    Voici la liste des disciplines pour lesquelles nous avons conçu un épisode :
                     </CardTitle>
                 </CardHeader>
                 <CardContent>
