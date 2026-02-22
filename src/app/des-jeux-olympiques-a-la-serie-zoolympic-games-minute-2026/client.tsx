@@ -13,22 +13,22 @@ export default function ZoolympicGamesMinuteClient({ projectVideos }: { projectV
   const { dict } = useI18n();
 
   const sports = [
-      "Patinage artistique", 
-      "Biathlon", 
-      "Curling", 
-      "Surf", 
-      "Slalom", 
-      "Hockey sur glace", 
-      "Short-track", 
-      "Ski de bosse", 
-      "Ski-cross", 
-      "Snowboard slopestyle", 
-      "Saut à ski", 
-      "Skeleton", 
-      "Luge", 
-      "Bobsleigh", 
-      "Free-ski big Air",
-      "Ski de fond"
+      { name: "Patinage artistique", url: "https://youtu.be/nyiunFAsEIg" },
+      { name: "Hockey sur glace", url: "https://youtu.be/7t9-9xCA3BE" },
+      { name: "Curling", url: "https://youtu.be/yDFAiBsKqCw" },
+      { name: "Biathlon", url: "https://youtu.be/Eh-t4bJP5pE" },
+      { name: "Surf", url: "https://www.youtube.com/watch?v=ZK1v1LiK1r0" },
+      { name: "Short-track", url: "https://www.youtube.com/watch?v=3s8hmm05qnM" },
+      { name: "Slalom", url: "https://www.youtube.com/watch?v=iGZZqEqilDg" },
+      { name: "Bobsleigh", url: "https://www.youtube.com/watch?v=CVG1J9ZF268" },
+      { name: "Ski de fond", url: "https://www.youtube.com/watch?v=WDQMWhFIerw" },
+      { name: "Saut à ski", url: "https://www.youtube.com/watch?v=infTgldGLcs" },
+      { name: "Ski de bosses", url: "https://www.youtube.com/watch?v=BREKyLUWc84" },
+      { name: "Skeleton", url: "https://www.youtube.com/watch?v=1gTYKshX79M" },
+      { name: "Snowboard slopestyle", url: "https://www.youtube.com/watch?v=rW7PvbjsuYk" },
+      { name: "Luge", url: "https://www.youtube.com/watch?v=b1aYxBv6eSA" },
+      { name: "Ski-cross", url: "https://www.youtube.com/watch?v=5mgGVh2O-NE" },
+      { name: "Free-ski Big Air", url: "https://www.youtube.com/watch?v=IDfZiy2M2SQ" },
     ];
 
   return (
@@ -69,7 +69,9 @@ export default function ZoolympicGamesMinuteClient({ projectVideos }: { projectV
                         {sports.map((sport, index) => (
                             <div key={index} className="flex items-start mb-2 break-inside-avoid">
                                 <ListChecks className="h-5 w-5 mr-2 text-primary flex-shrink-0 mt-1" />
-                                <span>{sport}</span>
+                                <a href={sport.url} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                                    {sport.name}
+                                </a>
                             </div>
                         ))}
                     </div>
@@ -79,10 +81,10 @@ export default function ZoolympicGamesMinuteClient({ projectVideos }: { projectV
             <div className="leading-relaxed mt-6 space-y-2">
               <p>Mais en plus de ces 16 épisodes, Zoolympic Games Minute 2026 c'est aussi :</p>
               <ul className="list-disc list-inside space-y-1 pl-4">
-                <li>une vidéo d'introduction se déroulant dans un train avec les différentes délégations se rendant aux Zoolympic Games</li>
-                <li>une vidéo de teasing annonçant que durant la période des Jeux Olympiques 2026, nous publierons une vidéo par jour</li>
-                <li>une cérémonie d'ouverture des jeux olympiques des animaux 2026 avec une diva : Mariah La Raie qui interprète sa chanson "Héros" !</li>
-                <li>un clip musical 'Rien n'est impossible' interprété là encore par Mariah La Raie.</li>
+                <li><a href="https://youtu.be/T3SGrhoQq1g" className="hover:underline">une vidéo d'introduction</a> se déroulant dans un train avec les différentes délégations se rendant aux Zoolympic Games, et teasant la VIP</li>
+                <li><a href="https://youtu.be/zyZLj0xF46g" className="hover:underline">une vidéo de teasing</a> annonçant que durant la période des Jeux Olympiques 2026, nous publierons une vidéo par jour</li>
+                <li><a href="https://youtu.be/FuP5XC1zZrM" className="hover:underline">une cérémonie d'ouverture</a> des jeux olympiques des animaux 2026 avec une diva : Mariah La Raie qui interprète sa chanson "Héros" !</li>
+                <li><a href="https://youtu.be/gCkfrwZeu5g" className="hover:underline">un clip musical Rien n'est impossible</a> interprété là encore par Mariah La Raie.</li>
               </ul>
             </div>
           </div>
