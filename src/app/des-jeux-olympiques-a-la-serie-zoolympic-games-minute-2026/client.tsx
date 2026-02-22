@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useI18n } from "@/hooks/use-i18n";
@@ -69,7 +68,7 @@ export default function ZoolympicGamesMinuteClient({ projectVideos }: { projectV
                         {sports.map((sport, index) => (
                             <div key={index} className="flex items-start mb-2 break-inside-avoid">
                                 <ListChecks className="h-5 w-5 mr-2 text-primary flex-shrink-0 mt-1" />
-                                <a href={sport.url} target="_blank" rel="noopener noreferrer" className="underline">
+                                <a href={sport.url} target="_blank" rel="noopener noreferrer" className="text-primary underline font-bold">
                                     {sport.name}
                                 </a>
                             </div>
@@ -81,10 +80,10 @@ export default function ZoolympicGamesMinuteClient({ projectVideos }: { projectV
             <div className="leading-relaxed mt-6 space-y-2">
               <p>Mais en plus de ces <b>16 épisodes de la série</b>, Zoolympic Games Minute 2026 c'est aussi :</p>
               <ul className="list-disc list-inside space-y-1 my-4 pl-4">
-                <li><a href="https://youtu.be/T3SGrhoQq1g" target="_blank" rel="noopener noreferrer" className="underline">une vidéo d'introduction</a> se déroulant dans un train avec les différentes délégations se rendant aux Zoolympic Games, et teasant la VIP</li>
-                <li><a href="https://youtu.be/zyZLj0xF46g" target="_blank" rel="noopener noreferrer" className="underline">une vidéo de teasing</a> annonçant que durant la période des Jeux Olympiques 2026, nous publierons une vidéo par jour</li>
-                <li><a href="https://youtu.be/FuP5XC1zZrM" target="_blank" rel="noopener noreferrer" className="underline">une cérémonie d'ouverture</a> des jeux olympiques des animaux 2026 avec une diva : Mariah La Raie qui interprète sa chanson "Héros" !</li>
-                <li><a href="https://youtu.be/gCkfrwZeu5g" target="_blank" rel="noopener noreferrer" className="underline">un clip musical Rien n'est impossible</a> interprété là encore par Mariah La Raie.</li>
+                <li><a href="https://youtu.be/T3SGrhoQq1g" target="_blank" rel="noopener noreferrer" className="text-primary underline font-bold">une vidéo d'introduction</a> se déroulant dans un train avec les différentes délégations se rendant aux Zoolympic Games, et teasant la VIP</li>
+                <li><a href="https://youtu.be/zyZLj0xF46g" target="_blank" rel="noopener noreferrer" className="text-primary underline font-bold">une vidéo de teasing</a> annonçant que durant la période des Jeux Olympiques 2026, nous publierons une vidéo par jour</li>
+                <li><a href="https://youtu.be/FuP5XC1zZrM" target="_blank" rel="noopener noreferrer" className="text-primary underline font-bold">une cérémonie d'ouverture</a> des jeux olympiques des animaux 2026 avec une diva : Mariah La Raie qui interprète sa chanson "Héros" !</li>
+                <li><a href="https://youtu.be/gCkfrwZeu5g" target="_blank" rel="noopener noreferrer" className="text-primary underline font-bold">un clip musical Rien n'est impossible</a> interprété là encore par Mariah La Raie.</li>
               </ul>
             </div>
           </div>
