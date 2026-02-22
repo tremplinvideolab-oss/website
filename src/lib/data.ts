@@ -19,6 +19,13 @@ function generateSlug(text: string): string {
         .replace(/-+$/, '') // Trim - from end of text
 }
 
+function getYouTubeVideoId(url: string): string | null {
+    if (!url) return null;
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|shorts\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    const match = url.match(regExp);
+    return (match && match[2]?.length === 11) ? match[2] : null;
+}
+
 // Simulate a database table for videos
 let videos: Video[] = [
   {
@@ -154,22 +161,266 @@ let videos: Video[] = [
     createdAt: '2026-01-24T12:30:00Z',
     thumbnailHint: 'ping-pong entre deux animaux (Kangourou et une pieuvre)',
     project: 'zoolympic-world',
-
-  }
-  ,
+  },
   {
     id: '11',
-    slug: 'short-un-kangourou-dans-une-cuisine',
-    title: 'Short - un kangourou dans une cuisine !',
-    description: "Short extrait de la video Zoolympic Games #2 : un destin en or pour notre Kangourou aux Jeux Olympiques",
-    descriptionLong: "Ce short est un short de transition entre notre video \"un kangourou aux jeux olympiques\" ( un destin en or - Zoolympic Games #2) et notre premier clip musical !\n\nEn effet, la fin de notre précédente vidéo longue se terminait par le début de la suivante : Le clip musical les Petites Souris !",
-    type: 'video-short',
-    thumbnailUrl: '/images/thumb_kangourou_dans_cuisine.png',
-    videoUrl: 'https://www.youtube.com/shorts/s_AWTy2zdNs',
-    createdAt: '2026-01-24T12:30:00Z',
-    thumbnailHint: 'ping-pong entre deux animaux (Kangourou et une pieuvre)',
-    project: 'zoolympic-world',
-
+    slug: 'zoolympic-games-minute-2026-video-d-introduction',
+    title: "Zoolympic Games Minute 2026 : Vidéo d'introduction",
+    description: '',
+    descriptionLong: '',
+    type: 'video-longue',
+    thumbnailUrl: 'https://i.ytimg.com/vi/T3SGrhoQq1g/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/T3SGrhoQq1g',
+    createdAt: '2026-02-01T12:00:00Z',
+    thumbnailHint: 'zoolympic games introduction',
+    project: 'zoolympic-games-minute-2026'
+  },
+  {
+    id: '12',
+    slug: 'zoolympic-games-minute-2026-teaser',
+    title: 'Zoolympic Games Minute 2026 : Teaser',
+    description: '',
+    descriptionLong: '',
+    type: 'video-longue',
+    thumbnailUrl: 'https://i.ytimg.com/vi/zyZLj0xF46g/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/zyZLj0xF46g',
+    createdAt: '2026-02-02T12:00:00Z',
+    thumbnailHint: 'zoolympic games teaser',
+    project: 'zoolympic-games-minute-2026'
+  },
+  {
+    id: '13',
+    slug: 'zoolympic-games-minute-2026-ceremonie-d-ouverture',
+    title: "Zoolympic Games Minute 2026 : Cérémonie d'ouverture",
+    description: '',
+    descriptionLong: '',
+    type: 'video-longue',
+    thumbnailUrl: 'https://i.ytimg.com/vi/FuP5XC1zZrM/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/FuP5XC1zZrM',
+    createdAt: '2026-02-03T12:00:00Z',
+    thumbnailHint: 'opening ceremony stingray',
+    project: 'zoolympic-games-minute-2026'
+  },
+  {
+    id: '14',
+    slug: 'zoolympic-games-minute-2026-clip-rien-n-est-impossible',
+    title: "Zoolympic Games Minute 2026 : Clip 'Rien n'est impossible'",
+    description: '',
+    descriptionLong: '',
+    type: 'video-longue',
+    thumbnailUrl: 'https://i.ytimg.com/vi/gCkfrwZeu5g/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/gCkfrwZeu5g',
+    createdAt: '2026-02-04T12:00:00Z',
+    thumbnailHint: 'music clip',
+    project: 'zoolympic-games-minute-2026'
+  },
+  {
+    id: '15',
+    slug: 'zoolympic-games-minute-2026-patinage-artistique',
+    title: 'Zoolympic Games Minute 2026 : Patinage artistique',
+    description: '',
+    descriptionLong: '',
+    type: 'video-longue',
+    thumbnailUrl: 'https://i.ytimg.com/vi/nyiunFAsEIg/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/nyiunFAsEIg',
+    createdAt: '2026-02-05T12:00:00Z',
+    thumbnailHint: 'figure skating animals',
+    project: 'zoolympic-games-minute-2026'
+  },
+  {
+    id: '16',
+    slug: 'zoolympic-games-minute-2026-hockey-sur-glace',
+    title: 'Zoolympic Games Minute 2026 : Hockey sur glace',
+    description: '',
+    descriptionLong: '',
+    type: 'video-longue',
+    thumbnailUrl: 'https://i.ytimg.com/vi/7t9-9xCA3BE/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/7t9-9xCA3BE',
+    createdAt: '2026-02-06T12:00:00Z',
+    thumbnailHint: 'ice hockey animals',
+    project: 'zoolympic-games-minute-2026'
+  },
+  {
+    id: '17',
+    slug: 'zoolympic-games-minute-2026-curling',
+    title: 'Zoolympic Games Minute 2026 : Curling',
+    description: '',
+    descriptionLong: '',
+    type: 'video-longue',
+    thumbnailUrl: 'https://i.ytimg.com/vi/yDFAiBsKqCw/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/yDFAiBsKqCw',
+    createdAt: '2026-02-07T12:00:00Z',
+    thumbnailHint: 'curling animals',
+    project: 'zoolympic-games-minute-2026'
+  },
+  {
+    id: '18',
+    slug: 'zoolympic-games-minute-2026-biathlon',
+    title: 'Zoolympic Games Minute 2026 : Biathlon',
+    description: '',
+    descriptionLong: '',
+    type: 'video-longue',
+    thumbnailUrl: 'https://i.ytimg.com/vi/Eh-t4bJP5pE/maxresdefault.jpg',
+    videoUrl: 'https://youtu.be/Eh-t4bJP5pE',
+    createdAt: '2026-02-08T12:00:00Z',
+    thumbnailHint: 'biathlon animals',
+    project: 'zoolympic-games-minute-2026'
+  },
+  {
+    id: '19',
+    slug: 'zoolympic-games-minute-2026-surf',
+    title: 'Zoolympic Games Minute 2026 : Surf',
+    description: '',
+    descriptionLong: '',
+    type: 'video-longue',
+    thumbnailUrl: 'https://i.ytimg.com/vi/ZK1v1LiK1r0/maxresdefault.jpg',
+    videoUrl: 'https://www.youtube.com/watch?v=ZK1v1LiK1r0',
+    createdAt: '2026-02-09T12:00:00Z',
+    thumbnailHint: 'surfing animals',
+    project: 'zoolympic-games-minute-2026'
+  },
+  {
+    id: '20',
+    slug: 'zoolympic-games-minute-2026-short-track',
+    title: 'Zoolympic Games Minute 2026 : Short-track',
+    description: '',
+    descriptionLong: '',
+    type: 'video-longue',
+    thumbnailUrl: 'https://i.ytimg.com/vi/3s8hmm05qnM/maxresdefault.jpg',
+    videoUrl: 'https://www.youtube.com/watch?v=3s8hmm05qnM',
+    createdAt: '2026-02-10T12:00:00Z',
+    thumbnailHint: 'short track animals',
+    project: 'zoolympic-games-minute-2026'
+  },
+  {
+    id: '21',
+    slug: 'zoolympic-games-minute-2026-slalom',
+    title: 'Zoolympic Games Minute 2026 : Slalom',
+    description: '',
+    descriptionLong: '',
+    type: 'video-longue',
+    thumbnailUrl: 'https://i.ytimg.com/vi/iGZZqEqilDg/maxresdefault.jpg',
+    videoUrl: 'https://www.youtube.com/watch?v=iGZZqEqilDg',
+    createdAt: '2026-02-11T12:00:00Z',
+    thumbnailHint: 'slalom animals',
+    project: 'zoolympic-games-minute-2026'
+  },
+  {
+    id: '22',
+    slug: 'zoolympic-games-minute-2026-bobsleigh',
+    title: 'Zoolympic Games Minute 2026 : Bobsleigh',
+    description: '',
+    descriptionLong: '',
+    type: 'video-longue',
+    thumbnailUrl: 'https://i.ytimg.com/vi/CVG1J9ZF268/maxresdefault.jpg',
+    videoUrl: 'https://www.youtube.com/watch?v=CVG1J9ZF268',
+    createdAt: '2026-02-12T12:00:00Z',
+    thumbnailHint: 'bobsleigh animals',
+    project: 'zoolympic-games-minute-2026'
+  },
+  {
+    id: '23',
+    slug: 'zoolympic-games-minute-2026-ski-de-fond',
+    title: 'Zoolympic Games Minute 2026 : Ski de fond',
+    description: '',
+    descriptionLong: '',
+    type: 'video-longue',
+    thumbnailUrl: 'https://i.ytimg.com/vi/WDQMWhFIerw/maxresdefault.jpg',
+    videoUrl: 'https://www.youtube.com/watch?v=WDQMWhFIerw',
+    createdAt: '2026-02-13T12:00:00Z',
+    thumbnailHint: 'cross-country skiing animals',
+    project: 'zoolympic-games-minute-2026'
+  },
+  {
+    id: '24',
+    slug: 'zoolympic-games-minute-2026-saut-a-ski',
+    title: 'Zoolympic Games Minute 2026 : Saut à ski',
+    description: '',
+    descriptionLong: '',
+    type: 'video-longue',
+    thumbnailUrl: 'https://i.ytimg.com/vi/infTgldGLcs/maxresdefault.jpg',
+    videoUrl: 'https://www.youtube.com/watch?v=infTgldGLcs',
+    createdAt: '2026-02-14T12:00:00Z',
+    thumbnailHint: 'ski jumping animals',
+    project: 'zoolympic-games-minute-2026'
+  },
+  {
+    id: '25',
+    slug: 'zoolympic-games-minute-2026-ski-de-bosses',
+    title: 'Zoolympic Games Minute 2026 : Ski de bosses',
+    description: '',
+    descriptionLong: '',
+    type: 'video-longue',
+    thumbnailUrl: 'https://i.ytimg.com/vi/BREKyLUWc84/maxresdefault.jpg',
+    videoUrl: 'https://www.youtube.com/watch?v=BREKyLUWc84',
+    createdAt: '2026-02-15T12:00:00Z',
+    thumbnailHint: 'mogul skiing animals',
+    project: 'zoolympic-games-minute-2026'
+  },
+  {
+    id: '26',
+    slug: 'zoolympic-games-minute-2026-skeleton',
+    title: 'Zoolympic Games Minute 2026 : Skeleton',
+    description: '',
+    descriptionLong: '',
+    type: 'video-longue',
+    thumbnailUrl: 'https://i.ytimg.com/vi/1gTYKshX79M/maxresdefault.jpg',
+    videoUrl: 'https://www.youtube.com/watch?v=1gTYKshX79M',
+    createdAt: '2026-02-16T12:00:00Z',
+    thumbnailHint: 'skeleton animals',
+    project: 'zoolympic-games-minute-2026'
+  },
+  {
+    id: '27',
+    slug: 'zoolympic-games-minute-2026-snowboard-slopestyle',
+    title: 'Zoolympic Games Minute 2026 : Snowboard slopestyle',
+    description: '',
+    descriptionLong: '',
+    type: 'video-longue',
+    thumbnailUrl: 'https://i.ytimg.com/vi/rW7PvbjsuYk/maxresdefault.jpg',
+    videoUrl: 'https://www.youtube.com/watch?v=rW7PvbjsuYk',
+    createdAt: '2026-02-17T12:00:00Z',
+    thumbnailHint: 'snowboard animals',
+    project: 'zoolympic-games-minute-2026'
+  },
+  {
+    id: '28',
+    slug: 'zoolympic-games-minute-2026-luge',
+    title: 'Zoolympic Games Minute 2026 : Luge',
+    description: '',
+    descriptionLong: '',
+    type: 'video-longue',
+    thumbnailUrl: 'https://i.ytimg.com/vi/b1aYxBv6eSA/maxresdefault.jpg',
+    videoUrl: 'https://www.youtube.com/watch?v=b1aYxBv6eSA',
+    createdAt: '2026-02-18T12:00:00Z',
+    thumbnailHint: 'luge animals',
+    project: 'zoolympic-games-minute-2026'
+  },
+  {
+    id: '29',
+    slug: 'zoolympic-games-minute-2026-ski-cross',
+    title: 'Zoolympic Games Minute 2026 : Ski-cross',
+    description: '',
+    descriptionLong: '',
+    type: 'video-longue',
+    thumbnailUrl: 'https://i.ytimg.com/vi/5mgGVh2O-NE/maxresdefault.jpg',
+    videoUrl: 'https://www.youtube.com/watch?v=5mgGVh2O-NE',
+    createdAt: '2026-02-19T12:00:00Z',
+    thumbnailHint: 'ski cross animals',
+    project: 'zoolympic-games-minute-2026'
+  },
+  {
+    id: '30',
+    slug: 'zoolympic-games-minute-2026-free-ski-big-air',
+    title: 'Zoolympic Games Minute 2026 : Free-ski Big Air',
+    description: '',
+    descriptionLong: '',
+    type: 'video-longue',
+    thumbnailUrl: 'https://i.ytimg.com/vi/IDfZiy2M2SQ/maxresdefault.jpg',
+    videoUrl: 'https://www.youtube.com/watch?v=IDfZiy2M2SQ',
+    createdAt: '2026-02-20T12:00:00Z',
+    thumbnailHint: 'freeski animals',
+    project: 'zoolympic-games-minute-2026'
   }
 ];
 
@@ -284,11 +535,16 @@ export async function updateHomepageContent(data: Omit<HomepageContent, 'headlin
 
 export async function addVideo(videoData: Omit<Video, 'id' | 'createdAt' | 'slug'>): Promise<Video> {
   await delay(1000);
+  
+  const videoId = getYouTubeVideoId(videoData.videoUrl);
+  const thumbnailUrl = videoId ? `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg` : videoData.thumbnailUrl;
+
   const newVideo: Video = {
     ...videoData,
     id: `vid_${Date.now()}`,
     slug: generateSlug(videoData.title),
     createdAt: new Date().toISOString(),
+    thumbnailUrl: thumbnailUrl,
   };
   videos.unshift(newVideo);
   return newVideo;
