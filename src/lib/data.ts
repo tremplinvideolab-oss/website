@@ -461,32 +461,33 @@ let homepageContent: HomepageContent = {
 // Simulate a database table for projects
 const projects: Project[] = [
     {
+      id: 'zoolympic-games-minute-2026',
+      title: "Zoolympic Games Minutes : Les Jeux Olympiques 2026 des animaux",
+      description: "En savoir plus sur notre projet Zoolympic Games Minute : 1 vidéo par jour durant toute la durée des Jeux Olympiques 2026 des anmaux !",
+      imageSrc: '/images/thumb_mariah-la-raie-chante-hero.png',
+      imageHint: "jeux olympiques des animaux 2026",
+      link: "/des-jeux-olympiques-a-la-serie-zoolympic-games-minute-2026",
+      logo:'/images/thumb_mariah-la-raie-chante-hero.png'
+    }
+    ,
+    {
+      id: 'zoolympic-world',
+      title: "Zoolympic World",
+      description: "Explorez l’univers des Zoolympics : découvrez nos personnages dans des contextes extra-sportifs et plongez dans les coulisses !",
+      imageSrc: "/images/thumb_zoolympic_world_1_arbre_prends_vie.png",
+      imageHint: "cartoon tree face",
+      link: "/des-jeux-olympiques-au-zoolympic-world",
+      logo:'/images/logo-projects/logo_zoolympic_world.png'
+    },
+    {
         id: 'zoolympic-games',
-        title: "Zoolympic Games",
+        title: "Zoolympic Games 2024/2025",
         description: "Des JO de Paris 2024 à ceux de Milan 2026, suivez des animaux anthropomorphes en compétition sur de multiples disciplines !",
         imageSrc: "/images/thumb_zoolympic_games_1b.jpg",
         imageHint: "cartoon animals race",
         link: "/des-jeux-olympiques-aux-zoolympic-games",
         logo:'/images/logo-projects/logo_zoolympic_games.png'
     },
-    {
-        id: 'zoolympic-world',
-        title: "Zoolympic World",
-        description: "Explorez l’univers des Zoolympics : découvrez nos personnages dans des contextes extra-sportifs et plongez dans les coulisses !",
-        imageSrc: "/images/thumb_zoolympic_world_1_arbre_prends_vie.png",
-        imageHint: "cartoon tree face",
-        link: "/des-jeux-olympiques-au-zoolympic-world",
-        logo:'/images/logo-projects/logo_zoolympic_world.png'
-    },
-    {
-      id: 'zoolympic-games-minute-2026',
-      title: "Zoolympic Games Minutes : Les Jeux Olympiques 2026 des animaux",
-      description: "Découvrez notre série consacré aux jeux olympiques de milan-cortina 2026 mettant en scène des animaux dans différents sports ! Chaque jour, nous avons publié un épisode mettant un valeur une discipline différente : Patinage artistique, Biathlon, curling, surf, slalom, hockey sur glace, shorttrack, ski de bosse, ski-cross, snowboard slopestyle, saut à ski, Skeleton, luge, bobsleigh, free-ski big Air, ski de fond\n\nMais Zoolympic Games Minute, c'est aussi une vidéo d'introduction se déroulant dans un train avec les différentes délégation, une vidéo de teasing, et une cérémonie d'ouverture avec une diva : Mariah La Raie qui interpréte sa chanson Héros !",
-      imageSrc: '/images/thumb_mariah-la-raie-chante-hero.png',
-      imageHint: "jeux olympiques des animaux 2026",
-      link: "/des-jeux-olympiques-a-la-serie-zoolympic-games-minute-2026",
-      logo:'/images/thumb_mariah-la-raie-chante-hero.png'
-  }
 ];
 
 // Simulate API latency

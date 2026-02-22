@@ -1,4 +1,3 @@
-
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -154,10 +153,10 @@ export default function Home() {
                   <Link href="/des-jeux-olympiques-a-la-serie-zoolympic-games-minute-2026" className="text-primary underline font-bold">Zoolympic Games Minute 2026</Link>
                 </li>
                 <li>
-                  <Link href="/des-jeux-olympiques-aux-zoolympic-games" className="text-primary underline font-bold">Zoolympic Games</Link> 
+                  <Link href="/des-jeux-olympiques-aux-zoolympic-games" className="text-primary underline font-bold">Zoolympic Games 2024/2025</Link> 
                 </li>
                 <li>
-                  et le <i>spin-off</i>, <Link href="/des-jeux-olympiques-au-zoolympic-world" className="text-primary underline font-bold">Zoolympic World</Link>. 
+                  <Link href="/des-jeux-olympiques-au-zoolympic-world" className="text-primary underline font-bold">Zoolympic World</Link> : le spin-off des Zoolympic Games.
                 </li>
               </ul>
               <p className="leading-relaxed">
