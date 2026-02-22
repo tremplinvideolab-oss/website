@@ -17,7 +17,7 @@ export default function VideosClient({ videos }: { videos: Video[] }) {
         <div className="mb-8">
           <h1 className="font-headline text-4xl font-bold tracking-tight">{dict.videosPage.allVideos}</h1>
           <p className="text-muted-foreground mt-2 mb-12">
-            Voici la liste de toutes nos vidéos partagées, à retrouver sur notre 
+          Accéder aux vidéos de notre
             <Link href="https://www.youtube.com/@TremplinVideoLab?sub_confirmation=1" target="_blank" rel="noopener noreferrer" className="text-primary underline ml-1 font-bold">
               chaîne YouTube
             </Link>.

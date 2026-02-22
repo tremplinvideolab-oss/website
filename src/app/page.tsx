@@ -145,13 +145,27 @@ export default function Home() {
             <h2 className="font-headline text-xl font-bold tracking-tight mb-6">
               Quels sont nos objectifs ?
             </h2>
-            <p className="leading-relaxed">
-            À court terme, nos efforts se concentrent sur deux projets phares : <a href="/des-jeux-olympiques-aux-zoolympic-games" className="text-primary underline font-bold">Zoolympic Games</a> et son <i>spin-off</i>, <a href="/des-jeux-olympiques-au-zoolympic-world" className="text-primary underline font-bold">Zoolympic World</a>. 
-            <br/><br/>
-            Parallèlement, nous développons un troisième projet actuellement en phase de conception. Nous partagerons davantage d'informations lorsqu’il atteindra un niveau de maturité suffisamment important.
-            <br/><br/>
-            La production régulière de vidéos pour notre <a href="https://www.youtube.com/@TremplinVideoLab?sub_confirmation=1" target="_blank" rel="noopener noreferrer" className="text-primary underline font-bold">chaîne YouTube</a> nous permet d’expérimenter progressivement différents aspects de la conception de cinématiques, de renforcer notre savoir-faire et d’accélérer le développement de ce futur projet.
-             </p>
+            <div>
+              <p className="leading-relaxed">
+              À court terme, nos efforts se sont concentrés sur trois projets phares : 
+              </p>
+              <ul className="list-disc list-inside space-y-1 my-4 pl-4">
+                <li>
+                  <Link href="/des-jeux-olympiques-a-la-serie-zoolympic-games-minute-2026" className="text-primary underline font-bold">Zoolympic Games Minute 2026</Link>
+                </li>
+                <li>
+                  <Link href="/des-jeux-olympiques-aux-zoolympic-games" className="text-primary underline font-bold">Zoolympic Games</Link> 
+                </li>
+                <li>
+                  et le <i>spin-off</i>, <Link href="/des-jeux-olympiques-au-zoolympic-world" className="text-primary underline font-bold">Zoolympic World</Link>. 
+                </li>
+              </ul>
+              <p className="leading-relaxed">
+              Parallèlement, nous développons un troisième projet actuellement en phase de conception. Nous partagerons davantage d'informations lorsqu’il atteindra un niveau de maturité suffisamment important.
+              <br/><br/>
+              La production régulière de vidéos pour notre <a href="https://www.youtube.com/@TremplinVideoLab?sub_confirmation=1" target="_blank" rel="noopener noreferrer" className="text-primary underline font-bold">chaîne YouTube</a> nous permet d’expérimenter progressivement différents aspects de la conception de cinématiques, de renforcer notre savoir-faire et d’accélérer le développement de ce futur projet.
+              </p>
+            </div>
           </div>
         </div>
       </section>
