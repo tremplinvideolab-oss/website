@@ -1,3 +1,4 @@
+
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -145,11 +146,11 @@ export default function Home() {
               Quels sont nos objectifs ?
             </h2>
             <p className="leading-relaxed">
-            À court terme, nos efforts se concentrent sur deux projets phares : <a href="/des-jeux-olympiques-aux-zoolympic-games" className="text-primary hover:underline font-bold">Zoolympic Games</a> et son <i>spin-off</i>, <a href="/des-jeux-olympiques-au-zoolympic-world" className="text-primary hover:underline font-bold">Zoolympic World</a>. 
+            À court terme, nos efforts se concentrent sur deux projets phares : <a href="/des-jeux-olympiques-aux-zoolympic-games" className="text-primary underline font-bold">Zoolympic Games</a> et son <i>spin-off</i>, <a href="/des-jeux-olympiques-au-zoolympic-world" className="text-primary underline font-bold">Zoolympic World</a>. 
             <br/><br/>
             Parallèlement, nous développons un troisième projet actuellement en phase de conception. Nous partagerons davantage d'informations lorsqu’il atteindra un niveau de maturité suffisamment important.
             <br/><br/>
-            La production régulière de vidéos pour notre <a href="https://www.youtube.com/@TremplinVideoLab?sub_confirmation=1" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-bold">chaîne YouTube</a> nous permet d’expérimenter progressivement différents aspects de la conception de cinématiques, de renforcer notre savoir-faire et d’accélérer le développement de ce futur projet.
+            La production régulière de vidéos pour notre <a href="https://www.youtube.com/@TremplinVideoLab?sub_confirmation=1" target="_blank" rel="noopener noreferrer" className="text-primary underline font-bold">chaîne YouTube</a> nous permet d’expérimenter progressivement différents aspects de la conception de cinématiques, de renforcer notre savoir-faire et d’accélérer le développement de ce futur projet.
              </p>
           </div>
         </div>

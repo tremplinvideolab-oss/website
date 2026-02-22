@@ -36,7 +36,7 @@ export default function ZoolympicWorldClient({ projectVideos }: { projectVideos:
                 Au-delà de la compétition, nos personnages ont une vie, des habitudes et des centres d’intérêt qui dépassent le seul cadre du sport.
               </p>
               <p className="leading-relaxed">
-                C’est pourquoi, en amont des Jeux Olympiques de Milan-Cortina 2026, nous lançons — en complément de <Link href="/des-jeux-olympiques-aux-zoolympic-games" className="text-primary hover:underline font-bold">Zoolympic Games</Link> — une série de vidéos qui met en scène nos animaux dans leur quotidien.
+                C’est pourquoi, en amont des Jeux Olympiques de Milan-Cortina 2026, nous lançons — en complément de <Link href="/des-jeux-olympiques-aux-zoolympic-games" className="text-primary underline font-bold">Zoolympic Games</Link> — une série de vidéos qui met en scène nos animaux dans leur quotidien.
               </p>
               <p className="leading-relaxed">
                 Galettes, duels amicaux à l’épée, balades en forêt… leurs passe-temps pourraient vous surprendre, tout comme les lieux dans lesquels ils peuvent être amenés à évoluer.

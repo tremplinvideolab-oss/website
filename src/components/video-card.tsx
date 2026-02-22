@@ -43,7 +43,7 @@ export function VideoCard({ video }: VideoCardProps) {
       </CardHeader>
       <CardContent className="p-4 flex-grow flex flex-col">
         <CardTitle className="font-headline text-lg leading-tight mb-2">
-          <Link href={`/videos/${video.slug}`} className="hover:text-primary transition-colors">
+          <Link href={`/videos/${video.slug}`} className="hover:text-primary transition-colors underline">
             {video.title}
           </Link>
         </CardTitle>

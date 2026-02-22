@@ -68,7 +68,7 @@ export default function ZoolympicGamesClient({ projectVideos }: { projectVideos:
               Zoolympic Games, c’est aussi un univers plus large qui a conduit à la création du projet{" "}
               <Link
                 href="/des-jeux-olympiques-au-zoolympic-world"
-                className="text-primary hover:underline font-bold"
+                className="text-primary underline font-bold"
               >
                 Zoolympic World
               </Link>
