@@ -7,14 +7,18 @@ export function CookieConsentBanner() {
   const [showBanner, setShowBanner] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem('google_analytics_consent');
-    if (consent === null) {
+    const consentValue = localStorage.getItem('google_analytics_consent');
+    if (!consentValue) {
       setShowBanner(true);
     }
   }, []);
 
   const handleDecision = (consent: boolean) => {
-    localStorage.setItem('google_analytics_consent', String(consent));
+    const consentData = {
+      consent: consent,
+      timestamp: new Date().toISOString(),
+    };
+    localStorage.setItem('google_analytics_consent', JSON.stringify(consentData));
     setShowBanner(false);
     if (consent) {
       // Reload the page to apply the consent change and start tracking

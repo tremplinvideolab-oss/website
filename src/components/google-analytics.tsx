@@ -9,8 +9,17 @@ export function GoogleAnalytics() {
   const [consent, setConsent] = useState(false);
 
   useEffect(() => {
-    const hasConsented = localStorage.getItem('google_analytics_consent') === 'true';
-    setConsent(hasConsented);
+    const consentValue = localStorage.getItem('google_analytics_consent');
+    if (consentValue) {
+      try {
+        const { consent: hasConsented } = JSON.parse(consentValue);
+        setConsent(hasConsented === true);
+      } catch (e) {
+        // Handle old format (simple 'true'/'false' string) for backward compatibility
+        const hasConsented = consentValue === 'true';
+        setConsent(hasConsented);
+      }
+    }
   }, []);
 
   // Return null if tracking ID is not set or consent is not given
