@@ -1,12 +1,21 @@
 'use client';
 
 import Script from 'next/script';
+import { useState, useEffect } from 'react';
 
 const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID || 'GTM-MNMCKZ8W';
 
 export function GoogleAnalytics() {
-  if (!GA_TRACKING_ID) {
-    if (process.env.NODE_ENV !== 'production') {
+  const [consent, setConsent] = useState(false);
+
+  useEffect(() => {
+    const hasConsented = localStorage.getItem('google_analytics_consent') === 'true';
+    setConsent(hasConsented);
+  }, []);
+
+  // Return null if tracking ID is not set or consent is not given
+  if (!GA_TRACKING_ID || !consent) {
+    if (process.env.NODE_ENV !== 'production' && !GA_TRACKING_ID) {
         console.warn("Google Analytics is disabled because NEXT_PUBLIC_GA_ID is not set.");
     }
     return null;

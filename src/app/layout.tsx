@@ -7,6 +7,7 @@ import { SiteFooter } from '@/components/site-footer';
 import { Toaster } from '@/components/ui/toaster';
 import { I18nProvider } from '@/components/i18n-provider';
 import { GoogleAnalytics } from '@/components/google-analytics';
+import { CookieConsentBanner } from '@/components/cookie-consent-banner';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://tremplin-video-lab.com/'),
@@ -45,6 +46,7 @@ export default function RootLayout({
             <SiteFooter />
           </div>
           <Toaster />
+          <CookieConsentBanner />
         </I18nProvider>
       </body>
     </html>
