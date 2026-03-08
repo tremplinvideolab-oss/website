@@ -18,10 +18,13 @@ export function SiteFooter() {
             <span className="font-bold font-headline">Tremplin Video Lab</span> © 2026
           </p>
         </div>
-        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-center text-sm text-muted-foreground">
+        <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-center text-sm text-muted-foreground">
           <Link href="/mentions-legales" className="hover:text-primary transition-colors">Mentions Légales</Link>
+          <div className="h-4 w-px bg-muted-foreground" />
           <Link href="/politique-de-confidentialite" className="hover:text-primary transition-colors">Politique de confidentialité</Link>
+          <div className="h-4 w-px bg-muted-foreground" />
           <Button variant="link" className="p-0 h-auto text-sm text-muted-foreground hover:text-primary" onClick={showBanner}>Gérer les cookies</Button>
+          <div className="h-4 w-px bg-muted-foreground" />
           <Link href="/plan-du-site" className="hover:text-primary transition-colors">Plan du site</Link>
         </div>
         <p className="text-center text-sm text-muted-foreground">{dict.siteFooter.builtWithPassion}</p>
