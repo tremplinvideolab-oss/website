@@ -13,9 +13,12 @@ export const metadata: Metadata = {
 };
 
 export default async function PlanDuSitePage() {
-    const videos = await getVideos();
-    const projects = await getProjects();
+    const videosData = await getVideos();
+    const projectsData = await getProjects();
     const staticPages = await getStaticPages();
+
+    const videos = [...videosData].sort((a, b) => a.title.localeCompare(b.title));
+    const projects = [...projectsData].sort((a, b) => a.title.localeCompare(b.title));
 
     return (
         <div className="container mx-auto max-w-4xl px-4 py-8 md:py-12">
