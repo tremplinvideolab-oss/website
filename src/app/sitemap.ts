@@ -54,6 +54,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency: 'monthly' as 'monthly',
         priority: 0.6
     },
+    { 
+        url: `${baseUrl}/mentions-legales`,
+        lastModified: new Date(),
+        changeFrequency: 'yearly' as 'yearly',
+        priority: 0.3
+    },
+    { 
+        url: `${baseUrl}/politique-de-confidentialite`,
+        lastModified: new Date(),
+        changeFrequency: 'yearly' as 'yearly',
+        priority: 0.3
+    },
+    { 
+        url: `${baseUrl}/plan-du-site`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as 'monthly',
+        priority: 0.4
+    },
   ];
 
   return [...staticPages, ...videoUrls];

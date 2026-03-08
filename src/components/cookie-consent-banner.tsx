@@ -1,17 +1,29 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
+import { useCookieConsent } from '@/hooks/use-cookie-consent';
 
 export function CookieConsentBanner() {
-  const [showBanner, setShowBanner] = useState(false);
+  const { isBannerOpen, showBanner, hideBanner } = useCookieConsent();
 
   useEffect(() => {
     const consentValue = localStorage.getItem('google_analytics_consent');
     if (!consentValue) {
-      setShowBanner(true);
+      showBanner();
     }
-  }, []);
+  }, [showBanner]);
+
+  useEffect(() => {
+    if (isBannerOpen) {
+      document.body.classList.add('cookie-banner-open');
+    } else {
+      document.body.classList.remove('cookie-banner-open');
+    }
+    return () => {
+      document.body.classList.remove('cookie-banner-open');
+    };
+  }, [isBannerOpen]);
 
   const handleDecision = (consent: boolean) => {
     const consentData = {
@@ -19,14 +31,14 @@ export function CookieConsentBanner() {
       timestamp: new Date().toISOString(),
     };
     localStorage.setItem('google_analytics_consent', JSON.stringify(consentData));
-    setShowBanner(false);
+    hideBanner();
     if (consent) {
       // Reload the page to apply the consent change and start tracking
       window.location.reload();
     }
   };
 
-  if (!showBanner) {
+  if (!isBannerOpen) {
     return null;
   }
 

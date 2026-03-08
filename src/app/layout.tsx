@@ -8,6 +8,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { I18nProvider } from '@/components/i18n-provider';
 import { GoogleAnalytics } from '@/components/google-analytics';
 import { CookieConsentBanner } from '@/components/cookie-consent-banner';
+import { CookieConsentProvider } from '@/components/cookie-consent-provider';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://tremplin-video-lab.com/'),
@@ -39,14 +40,16 @@ export default function RootLayout({
       <body className={cn('min-h-screen bg-background font-body antialiased')}>
         <div dangerouslySetInnerHTML={{ __html: `<!-- Build Version: ${process.env.NEXT_PUBLIC_BUILD_ID} -->` }} />
         <I18nProvider>
-          <GoogleAnalytics />
-          <div className="relative flex min-h-screen flex-col overflow-x-hidden">
-            <SiteHeader />
-            <main className="flex-1">{children}</main>
-            <SiteFooter />
-          </div>
-          <Toaster />
-          <CookieConsentBanner />
+          <CookieConsentProvider>
+            <GoogleAnalytics />
+            <div className="relative flex min-h-screen flex-col overflow-x-hidden">
+              <SiteHeader />
+              <main className="flex-1">{children}</main>
+              <SiteFooter />
+            </div>
+            <Toaster />
+            <CookieConsentBanner />
+          </CookieConsentProvider>
         </I18nProvider>
       </body>
     </html>

@@ -80,4 +80,7 @@
   .whitesection {
     @apply bg-white;
   }
+  body.cookie-banner-open {
+    @apply pb-48 sm:pb-24;
+  }
 }
