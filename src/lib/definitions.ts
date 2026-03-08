@@ -35,3 +35,8 @@ export type Project = {
     link: string;
     logo: string;
 };
+
+export type StaticPage = {
+  href: string;
+  label: string;
+};

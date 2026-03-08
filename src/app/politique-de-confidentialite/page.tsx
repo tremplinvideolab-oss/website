@@ -19,7 +19,7 @@ export default function PolitiqueDeConfidentialitePage() {
     <div className="container mx-auto max-w-4xl px-4 py-8 md:py-12">
       <h1 className="font-headline text-4xl font-bold tracking-tight mb-8">Politique de confidentialité</h1>
       <div className="space-y-6 text-muted-foreground">
-        <p>Dernière mise à jour : [Date]</p>
+        <p>Dernière mise à jour : 08/03/2026</p>
         
         <section>
           <p>Cette politique de confidentialité décrit nos politiques et procédures sur la collecte, l'utilisation et la divulgation de vos informations lorsque vous utilisez le Service et vous informe de vos droits à la vie privée et de la manière dont la loi vous protège.</p>

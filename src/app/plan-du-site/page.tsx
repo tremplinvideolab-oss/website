@@ -1,8 +1,8 @@
 
-import { getVideos, getProjects } from "@/lib/data";
+import { getVideos, getProjects, getStaticPages } from "@/lib/data";
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import type { Video, Project } from "@/lib/definitions";
+import type { Video, Project, StaticPage } from "@/lib/definitions";
 
 export const metadata: Metadata = {
     title: 'Plan du site - Tremplin Video Lab',
@@ -15,14 +15,7 @@ export const metadata: Metadata = {
 export default async function PlanDuSitePage() {
     const videos = await getVideos();
     const projects = await getProjects();
-
-    const staticPages = [
-        { href: '/', label: 'Accueil' },
-        { href: '/videos', label: 'Vidéos' },
-        { href: '/projets', label: 'Projets' },
-        { href: '/mentions-legales', label: 'Mentions Légales' },
-        { href: '/politique-de-confidentialite', label: 'Politique de confidentialité' },
-    ];
+    const staticPages = await getStaticPages();
 
     return (
         <div className="container mx-auto max-w-4xl px-4 py-8 md:py-12">

@@ -1,6 +1,6 @@
 
 import { skip } from 'node:test';
-import { Video, User, HomepageContent, Project } from './definitions';
+import { Video, User, HomepageContent, Project, StaticPage } from './definitions';
 import { Skeleton } from '@/components/ui/skeleton';
 import { AirVent, FolderOpenDot } from 'lucide-react';
 
@@ -46,7 +46,7 @@ let videos: Video[] = [
     slug: 'zoolympic-world-1-un-arbre-prends-vie-et-s-anime-durant-les-4-saisons',
     title: 'Zoolympic World #1 : Un arbre prends vie et s\'anime durant les 4 saisons !',
     description: "Un lapin aux pouvoirs magiques, donne vie à un arbre qui s'anime durant les 4 saisons !",
-    descriptionLong: "Dans cette vidéo d\’animation, un lapin explore une forêt énigmatique. Au fil de sa promenade, il donne vie à l\’arbre en le métamorphosant en une créature animée.\n\n Les saisons se succèdent, de l\’été au printemps en passant par l\’automne et l\’hiver, et l\’arbre traverse chacune de ces étapes avec résilience, affrontant les épreuves du temps, mais aussi la présence d’un loup prédateur inquiétant.\n\nPortée par une musique classique, l\’histoire met en lumière le rayonnement de l\’arbre, symbole de sympathie et de bienveillance.",
+    descriptionLong: "Dans cette vidéo d’animation, un lapin explore une forêt énigmatique. Au fil de sa promenade, il donne vie à l’arbre en le métamorphosant en une créature animée.\n\n Les saisons se succèdent, de l’été au printemps en passant par l’automne et l’hiver, et l’arbre traverse chacune de ces étapes avec résilience, affrontant les épreuves du temps, mais aussi la présence d’un loup prédateur inquiétant.\n\nPortée par une musique classique, l’histoire met en lumière le rayonnement de l’arbre, symbole de sympathie et de bienveillance.",
     type: 'video-longue',
     thumbnailUrl: '/images/thumb_zoolympic_world_1_arbre_prends_vie.png',
     videoUrl: 'https://www.youtube.com/watch?v=nfk3BYiyP7I',
@@ -490,6 +490,15 @@ const projects: Project[] = [
     },
 ];
 
+const staticPages: StaticPage[] = [
+    { href: '/', label: 'Accueil' },
+    { href: '/videos', label: 'Vidéos' },
+    { href: '/projets', label: 'Projets' },
+    { href: '/mentions-legales', label: 'Mentions Légales' },
+    { href: '/politique-de-confidentialite', label: 'Politique de confidentialité' },
+    { href: '/plan-du-site', label: 'Plan du site' },
+];
+
 // Simulate API latency
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -549,4 +558,9 @@ export async function addVideo(videoData: Omit<Video, 'id' | 'createdAt' | 'slug
   };
   videos.unshift(newVideo);
   return newVideo;
+}
+
+export async function getStaticPages(): Promise<StaticPage[]> {
+  await delay(50);
+  return [...staticPages].sort((a, b) => a.label.localeCompare(b.label));
 }

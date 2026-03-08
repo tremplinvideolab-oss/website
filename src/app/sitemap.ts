@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
-import { getVideos } from '@/lib/data';
-import type { Video } from '@/lib/definitions';
+import { getVideos, getProjects, getStaticPages } from '@/lib/data';
+import type { Video, Project, StaticPage } from '@/lib/definitions';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://tremplin-video-lab.com';
@@ -16,63 +16,42 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     };
   });
 
-  // Define static pages
-  const staticPages = [
-    { 
-        url: baseUrl, 
-        lastModified: new Date(), 
-        changeFrequency: 'weekly' as 'weekly',
-        priority: 1.0
-    },
-    { 
-        url: `${baseUrl}/videos`, 
-        lastModified: new Date(),
-        changeFrequency: 'weekly' as 'weekly',
-        priority: 0.9
-    },
-    { 
-        url: `${baseUrl}/projets`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly' as 'monthly',
-        priority: 0.7
-    },
-    { 
-        url: `${baseUrl}/des-jeux-olympiques-aux-zoolympic-games`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly' as 'monthly',
-        priority: 0.6
-    },
-    { 
-        url: `${baseUrl}/des-jeux-olympiques-au-zoolympic-world`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly' as 'monthly',
-        priority: 0.6
-    },
-    { 
-        url: `${baseUrl}/des-jeux-olympiques-a-la-serie-zoolympic-games-minute-2026`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly' as 'monthly',
-        priority: 0.6
-    },
-    { 
-        url: `${baseUrl}/mentions-legales`,
-        lastModified: new Date(),
-        changeFrequency: 'yearly' as 'yearly',
-        priority: 0.3
-    },
-    { 
-        url: `${baseUrl}/politique-de-confidentialite`,
-        lastModified: new Date(),
-        changeFrequency: 'yearly' as 'yearly',
-        priority: 0.3
-    },
-    { 
-        url: `${baseUrl}/plan-du-site`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly' as 'monthly',
-        priority: 0.4
-    },
-  ];
+  const projects: Project[] = await getProjects();
+  const projectUrls = projects.map((project) => ({
+    url: `${baseUrl}${project.link}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as 'monthly',
+    priority: 0.6,
+  }));
 
-  return [...staticPages, ...videoUrls];
+  const staticPageData: StaticPage[] = await getStaticPages();
+  
+  const staticPageUrls = staticPageData.map((page) => {
+    let changeFrequency: 'yearly' | 'monthly' | 'weekly' = 'monthly';
+    let priority = 0.5;
+
+    if (page.href === '/') {
+      changeFrequency = 'weekly';
+      priority = 1.0;
+    } else if (page.href === '/videos') {
+      changeFrequency = 'weekly';
+      priority = 0.9;
+    } else if (page.href === '/projets') {
+      priority = 0.7;
+    } else if (page.href === '/mentions-legales' || page.href === '/politique-de-confidentialite') {
+      changeFrequency = 'yearly';
+      priority = 0.3;
+    } else if (page.href === '/plan-du-site') {
+      priority = 0.4;
+    }
+
+    return {
+      url: `${baseUrl}${page.href}`,
+      lastModified: new Date(),
+      changeFrequency,
+      priority,
+    };
+  });
+  
+  return [...staticPageUrls, ...projectUrls, ...videoUrls];
 }

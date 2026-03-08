@@ -22,12 +22,8 @@ export default function MentionsLegalesPage() {
         <div className="space-y-6 text-muted-foreground">
             <section>
                 <h2 className="font-headline text-2xl font-bold mt-8 mb-4 text-foreground">1. Éditeur du site</h2>
-                <p>Le site Tremplin Video Lab est édité par [Nom de l'entreprise ou personne], [Forme juridique] au capital de [Montant] €.</p>
+                <p>Le site Tremplin Video Lab est édité par le collectif Tremplin Video Lab.</p>
                 <address className="not-italic">
-                <strong>Siège social :</strong> [Votre adresse complète]<br />
-                <strong>Immatriculation :</strong> RCS de [Ville] sous le numéro [Numéro RCS]<br />
-                <strong>Numéro de TVA intracommunautaire :</strong> [Numéro de TVA]<br />
-                <strong>Directeur de la publication :</strong> [Nom du directeur], en sa qualité de [Fonction]<br />
                 <strong>Contact :</strong> <Link href="mailto:contact@tremplin-video-lab.com" className="text-primary underline">contact@tremplin-video-lab.com</Link>
                 </address>
             </section>
@@ -35,8 +31,8 @@ export default function MentionsLegalesPage() {
             <section>
                 <h2 className="font-headline text-2xl font-bold mt-8 mb-4 text-foreground">2. Hébergement</h2>
                 <p>
-                Le site est hébergé par Firebase Hosting (Google).<br />
-                <strong>Adresse :</strong> Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irlande.
+                Le site est hébergé par la société OVH SAS.<br />
+                <strong>Adresse :</strong> 2 rue Kellermann - 59100 Roubaix - France
                 </p>
             </section>
             
