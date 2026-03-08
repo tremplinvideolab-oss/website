@@ -1,3 +1,4 @@
+
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -75,7 +76,7 @@ export default function Home() {
               <div className="w-full">
             <div className="w-2/5 mx-auto my-6 h-[3px] bg-border mb-8" />
             <h1 className="font-headline text-xl font-bold tracking-tight mb-6 mt-5">
-              Tremplin Video Lab conçoit des vidéos d'animations à partir de scénarios originaux.
+              Tremplin Video Lab conçoit des vidéos d'animation à partir de scénarios originaux.
             </h1>
             <p className="leading-relaxed">
               Une approche pragmatique : combiner les outils de créations classiques et l'IA générative pour atteindre le meilleur rapport qualité / temps de production.

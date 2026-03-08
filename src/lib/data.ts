@@ -454,7 +454,7 @@ let users: User[] = [
 
 // Simulate a database table for homepage content
 let homepageContent: HomepageContent = {
-  headline: 'Tremplin Video Lab conçoit des vidéos d\'animations à partir de scénarios originaux.',
+  headline: "Tremplin Video Lab conçoit des vidéos d'animation à partir de scénarios originaux.",
   subheadline: 'Une approche pragmatique : combiner les outils de créations classiques et l\'IA générative pour atteindre le meilleur rapport qualité / temps de production.',
 };
 
