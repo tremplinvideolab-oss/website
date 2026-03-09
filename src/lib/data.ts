@@ -208,7 +208,7 @@ let videos: Video[] = [
     description: 'Clip musical de la seconde chanson de notre artiste virtuelle : Mariah La Raie.',
     descriptionLong: 'Pour clôturer les Zoolympic Games Minute 2026, nous avons créé une chanson originale dont les paroles reprennent les moments forts de notre série consacrée aux Jeux Olympiques 2026 des animaux.\n\nLa chanson Rien n’est impossible ! est interprétée par Mariah La Raie, notre diva et artiste virtuelle.\n\nMariah La Raie était déjà l’interprète de la chanson Héros, présentée lors de la cérémonie d’ouverture de nos Jeux Olympiques des animaux.',
     type: 'video-longue',
-    thumbnailUrl: '/images/thumb_rien_n_est_impossible.png',
+    thumbnailUrl: '/images/thumb_rien_n_est_impossible_2.png',
     videoUrl: 'https://youtu.be/gCkfrwZeu5g',
     createdAt: '2026-02-22T12:00:00Z',
     thumbnailHint: 'music clip',
@@ -420,6 +420,34 @@ let videos: Video[] = [
     videoUrl: 'https://www.youtube.com/watch?v=IDfZiy2M2SQ',
     createdAt: '2026-02-20T12:00:00Z',
     thumbnailHint: 'freeski animals',
+    project: 'zoolympic-games-minute-2026'
+  }
+  ,
+  {
+    id: '31',
+    slug: 'zoolympic-games-minute-2026-epilogue-1-un-message-secret-pour-le-roi',
+    title: 'Epilogue 1 - Zoolympic Games Minute 2026 - Un message secret pour le roi : Le sabotage des Jeux enfin expliqué 🐆',
+    description: 'Une panthère avec un imperméable marron et un chapeau fedora a un message secret pour le roi.',
+    descriptionLong: 'Cet épisode représente le premier des épilogues de la série des Jeux Olypiques des animaux 2026. Il a été élaboré pour cloturer la série Zoolympic Games Minutes 2026.\n\nLa vidéo présente une panthère habillée avec un imperméable marron et un chapeau fedora qui doit entreprendre un voyage pour amener un DVD au roi.\n\nPour arriver à bon port, la panthère choisis de se faire accompagner par 2 alliés : 2 volatiles vivant sur le même arbre dans une forêt.\n\nCes deux oiseaux sont un hibou noir et une chauve souris. Le moins que l\'on puisse dire est que ces 2 compères sont plutôt efficaces pour permetre à la panthère d\'amener jusqu\'au chateau du roi, un DVD secret.\n\nMais quelles informations sensibles contient exactement ce DVD ?\n\nDécouvrez toutes les révélations dans ce premier épilogue des Zoolympic Games Minute 2026 !',
+    type: 'video-longue',
+    thumbnailUrl: '/images/thumb_zoolympic_epilogue_1.png',
+    videoUrl: 'https://www.youtube.com/watch?v=4_sHedsvBbU',
+    createdAt: '2026-03-02T12:30:00Z',
+    thumbnailHint: 'animals panthere noire dvd secret',
+    project: 'zoolympic-games-minute-2026'
+  }
+  ,
+  {
+    id: '32',
+    slug: 'zoolympic-games-minute-2026-epilogue-2-final-toutes-les-revelations-sur-les-jeux-olympiques-des-animaux',
+    title: 'Epilogue 2 - Zoolympic Games Minute 2026 - Toutes les révélations !',
+    description: 'Toutes les révélations ! 😱',
+    descriptionLong: '✨ Dans cet Épilogue 2 des Zoolympic Games Minute, l’heure de la vérité est arrivée.\n\nAprès les révélations contenues dans le DVD secret, le roi convoque tout le monde au tribunal des Zoolympic Games (Jeux Olympiques 2026 des animaux).\n\nFace aux citoyens, il s’apprête à révéler ce qui s’est réellement passé durant ces Jeux...\n\nLes preuves du sabotage sont enfin dévoilées.\nEt l’accusé doit maintenant répondre de ses actes.\n\n Le roi fait alors entrer l’ours, au centre de toutes les suspicions, pour qu’il soit jugé devant tous.\n\nLa vérité éclate… mais quelles seront les conséquences pour l’avenir des Zoolympic Games ?',
+    type: 'video-longue',
+    thumbnailUrl: '/images/thumb_zoolympic_epilogue_2.png',
+    videoUrl: 'https://youtu.be/CXY8ODK-jyI',
+    createdAt: '2026-03-08T12:30:00Z',
+    thumbnailHint: 'animals roi lion juge ours',
     project: 'zoolympic-games-minute-2026'
   }
 ];

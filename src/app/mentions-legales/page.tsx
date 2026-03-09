@@ -24,7 +24,7 @@ export default function MentionsLegalesPage() {
                 <h2 className="font-headline text-2xl font-bold mt-8 mb-4 text-foreground">1. Éditeur du site</h2>
                 <p>Le site Tremplin Video Lab est édité par le collectif Tremplin Video Lab.</p>
                 <address className="not-italic">
-                <strong>Contact :</strong> <Link href="mailto:contact@tremplin-video-lab.com" className="text-primary underline">contact@tremplin-video-lab.com</Link>
+                <strong>Contact :</strong> contact@tremplin-video-lab.com
                 </address>
             </section>
             
