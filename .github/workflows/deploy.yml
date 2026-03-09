@@ -29,5 +29,5 @@ jobs:
           ssh "${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}" << 'EOF'
             set -e
             cd "${{ secrets.SSH_DEPLOY_PATH }}"
-            git stash && git pull --rebase && git stash apply && ./script/update.sh
+            git stash && git pull --rebase && git stash apply
           EOF
