@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 
 export default async function ProjetsPage() {
   const projects = await getProjects();
+  const sortedProjects = [...projects].sort((a, b) => a.position - b.position);
 
-  return <ProjetsClient projects={projects} />;
+  return <ProjetsClient projects={sortedProjects} />;
 }

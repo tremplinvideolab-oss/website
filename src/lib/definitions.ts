@@ -34,6 +34,7 @@ export type Project = {
     imageHint: string;
     link: string;
     logo: string;
+    position:number;
 };
 
 export type StaticPage = {

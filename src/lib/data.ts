@@ -450,6 +450,20 @@ let videos: Video[] = [
     thumbnailHint: 'animals roi lion juge ours',
     project: 'zoolympic-games-minute-2026'
   }
+  ,
+  {
+    id: '33',
+    slug: 'les-aventures-de-ptit-roc-episode-1-un-voyage-epique-l-odysee-de-ptit-roc',
+    title: 'Episode 1 - Les aventures de P\'tit Roc - Un voyage épique !',
+    description: 'Toutes les révélations ! 😱',
+    descriptionLong: '✨ Dans cette vidéo, nous vous présentons les aventures d\'un caillou : P\'tit Roc ! Celui-ci est devenu vivant après qu\'un petit garçon lui a dessiné des yeux avec un mystérieux marqueur (stylo).\n\nMais ce n\'est que le début de l\'aventure. Malheureusement le ptit garçon perds P\'tit Roc à qui il arrive tous les malheurs du monde lors d\'un voyage épique !\n\nUne histoire surprenante tout public !',
+    type: 'video-longue',
+    thumbnailUrl: '/images/thumb-ptit-roc-un-voyage-epique.jpg',
+    videoUrl: 'https://youtu.be/0u35-IAKO2o',
+    createdAt: '2026-03-13T12:30:00Z',
+    thumbnailHint: 'P\'tit Roc : un caillou vivant en animation 3D',
+    project: 'ptit-roc'
+  },
 ];
 
 // Simulate a database table for users
@@ -495,7 +509,8 @@ const projects: Project[] = [
       imageSrc: '/images/thumb_mariah-la-raie-chante-hero.png',
       imageHint: "jeux olympiques des animaux 2026",
       link: "/des-jeux-olympiques-a-la-serie-zoolympic-games-minute-2026",
-      logo:'/images/thumb_mariah-la-raie-chante-hero.png'
+      logo:'/images/thumb_mariah-la-raie-chante-hero.png',
+      position: 2
     }
     ,
     {
@@ -505,7 +520,8 @@ const projects: Project[] = [
       imageSrc: "/images/thumb_zoolympic_world_1_arbre_prends_vie.png",
       imageHint: "cartoon tree face",
       link: "/des-jeux-olympiques-au-zoolympic-world",
-      logo:'/images/logo-projects/logo_zoolympic_world.png'
+      logo:'/images/logo-projects/logo_zoolympic_world.png',
+      position: 3
     },
     {
         id: 'zoolympic-games',
@@ -514,7 +530,18 @@ const projects: Project[] = [
         imageSrc: "/images/thumb_zoolympic_games_1b.jpg",
         imageHint: "cartoon animals race",
         link: "/des-jeux-olympiques-aux-zoolympic-games",
-        logo:'/images/logo-projects/logo_zoolympic_games.png'
+        logo:'/images/logo-projects/logo_zoolympic_games.png',
+        position: 4
+    },
+    {
+      id: 'ptit-roc',
+      title: "Les aventures de p'tit roc",
+      description: "P'tit roc est un personnage qui a pris vie grace à un petit garçon qui a simplement dessiné des yeux à un caillou avec un marqueur (stylo).",
+      imageSrc: "/images/thumb-ptit-roc-un-voyage-epique.jpg",
+      imageHint: "cartoon caillou",
+      link: "/les-aventures-de-ptit-roc",
+      logo:'/images/thumb-ptit-roc-un-voyage-epique.jpg',
+      position: 1
     },
 ];
 
