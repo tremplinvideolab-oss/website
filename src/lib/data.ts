@@ -455,7 +455,7 @@ let videos: Video[] = [
     id: '33',
     slug: 'les-aventures-de-ptit-roc-episode-1-un-voyage-epique-l-odysee-de-ptit-roc',
     title: 'Episode 1 - Les aventures de P\'tit Roc - Un voyage épique !',
-    description: 'Toutes les révélations ! 😱',
+    description: 'L\'odyssée de P\'tit Roc',
     descriptionLong: '✨ Dans cette vidéo, nous vous présentons les aventures d\'un caillou : P\'tit Roc ! Celui-ci est devenu vivant après qu\'un petit garçon lui a dessiné des yeux avec un mystérieux marqueur (stylo).\n\nMais ce n\'est que le début de l\'aventure. Malheureusement le ptit garçon perds P\'tit Roc à qui il arrive tous les malheurs du monde lors d\'un voyage épique !\n\nUne histoire surprenante tout public !',
     type: 'video-longue',
     thumbnailUrl: '/images/thumb-ptit-roc-un-voyage-epique.jpg',
@@ -464,6 +464,19 @@ let videos: Video[] = [
     thumbnailHint: 'P\'tit Roc : un caillou vivant en animation 3D',
     project: 'ptit-roc'
   },
+  {
+    id: '34',
+    slug: 'les-aventures-de-ptit-roc-episode-2-les-malheurs-de-ptit-roc-continuent',
+    title: 'Episode 2 - Les malheurs de P\'tit Roc continuent !',
+    description: 'L\'odyssée de P\'tit Roc... la suite : Les malheurs de P\'tit Roc continuent',
+    descriptionLong: '✨ Après le premier épisode des odyssées de P\'tit Roc, découvrez le lendemain des retrouvailles de Marc et P\'tit Roc !\n\nEn effet, même à la maison, rien n\'est simple pour P\'tit Roc malheureusement !\n\n Quelqu\'un veut forcer la porte !!! Cela pourrait-il être un monstre ?!\n\nRéponse dans la vidéo de notre chaîne !',
+    type: 'video-longue',
+    thumbnailUrl: '/images/thumb-ptit-roc-ep2-les_malheurs_continuent.png',
+    videoUrl: 'https://youtu.be/oCAEP8h_PIM',
+    createdAt: '2026-03-20T12:00:00Z',
+    thumbnailHint: 'P\'tit Roc : la suite de l\'épisode 1',
+    project: 'ptit-roc'
+  }
 ];
 
 // Simulate a database table for users
